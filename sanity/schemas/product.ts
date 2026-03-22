@@ -1,1 +1,30 @@
-aW1wb3J0IHsgZGVmaW5lRmllbGQsIGRlZmluZVR5cGUgfSBmcm9tICJzYW5pdHkiOwoKZXhwb3J0IGNvbnN0IHByb2R1Y3RTY2hlbWEgPSBkZWZpbmVUeXBlKHsKICBuYW1lOiAicHJvZHVjdCIsCiAgdGl0bGU6ICJQcm9kdWN0IiwKICB0eXBlOiAiZG9jdW1lbnQiLAogIHByZXZpZXc6IHsgc2VsZWN0OiB7IHRpdGxlOiAibmFtZSIsIHN1YnRpdGxlOiAicHJpY2UiLCBtZWRpYTogImltYWdlIiB9IH0sCiAgZmllbGRzOiBbCiAgICBkZWZpbmVGaWVsZCh7IG5hbWU6ICJuYW1lIiwgIHRpdGxlOiAiUHJvZHVjdCBOYW1lIiwgdHlwZTogInN0cmluZyIsIHZhbGlkYXRpb246IChSKSA9PiBSLnJlcXVpcmVkKCkubWluKDIpLm1heCgxMjApIH0pLAogICAgZGVmaW5lRmllbGQoeyBuYW1lOiAic2x1ZyIsICB0aXRsZTogIlNsdWciLCB0eXBlOiAic2x1ZyIsIG9wdGlvbnM6IHsgc291cmNlOiAibmFtZSIsIG1heExlbmd0aDogOTYgfSwgdmFsaWRhdGlvbjogKFIpID0+IFIucmVxdWlyZWQoKSB9KSwKICAgIGRlZmluZUZpZWxkKHsgbmFtZTogInNrdSIsICAgdGl0bGU6ICJTS1UgLyBSZWZlcmVuY2UgQ29kZSIsIHR5cGU6ICJzdHJpbmciIH0pLAogICAgZGVmaW5lRmllbGQoeyBuYW1lOiAicHJpY2UiLCB0aXRsZTogIlByaWNlIiwgdHlwZTogInN0cmluZyIsIGRlc2NyaXB0aW9uOiAiZS5nLiDigqYxMiwwMDAiLCB2YWxpZGF0aW9uOiAoUikgPT4gUi5yZXF1aXJlZCgpIH0pLAogICAgZGVmaW5lRmllbGQoeyBuYW1lOiAib3JpZ2luYWxQcmljZSIsIHRpdGxlOiAiT3JpZ2luYWwgUHJpY2UgKHNhbGUgaXRlbXMgb25seSkiLCB0eXBlOiAic3RyaW5nIiB9KSwKICAgIGRlZmluZUZpZWxkKHsgbmFtZTogInNpemUiLCAgdGl0bGU6ICJTaXplIiwgdHlwZTogInN0cmluZyIsIGRlc2NyaXB0aW9uOiAiZS5nLiBVSyA2LzgiLCB2YWxpZGF0aW9uOiAoUikgPT4gUi5yZXF1aXJlZCgpIH0pLAogICAgZGVmaW5lRmllbGQoewogICAgICBuYW1lOiAiY2F0ZWdvcnkiLCB0aXRsZTogIkNhdGVnb3J5IiwgdHlwZTogInN0cmluZyIsCiAgICAgIG9wdGlvbnM6IHsKICAgICAgICBsaXN0OiBbCiAgICAgICAgICB7IHRpdGxlOiAiRGVuaW0iLCAgIHZhbHVlOiAiZGVuaW0iICAgfSwKICAgICAgICAgIHsgdGl0bGU6ICJEcmVzc2VzIiwgdmFsdWU6ICJkcmVzc2VzIiB9LAogICAgICAgICAgeyB0aXRsZTogIlRvcHMiLCAgICB2YWx1ZTogInRvcHMiICAgIH0sCiAgICAgICAgICB7IHRpdGxlOiAiU2V0cyIsICAgIHZhbHVlOiAic2V0cyIgICAgfSwKICAgICAgICAgIHsgdGl0bGU6ICJTYWxlIiwgICAgdmFsdWU6ICJzYWxlIiAgICB9LAogICAgICAgICAgeyB0aXRsZTogIktpZHMiLCAgICB2YWx1ZTogImtpZHMiICAgIH0KICAgICAgICBdLAogICAgICAgIGxheW91dDogInJhZGlvIgogICAgICB9LAogICAgICB2YWxpZGF0aW9uOiAoUikgPT4gUi5yZXF1aXJlZCgpCiAgICB9KSwKICAgIGRlZmluZUZpZWxkKHsgbmFtZTogImltYWdlIiwgdGl0bGU6ICJQcm9kdWN0IEltYWdlIiwgdHlwZTogImltYWdlIiwgb3B0aW9uczogeyBob3RzcG90OiB0cnVlIH0sIHZhbGlkYXRpb246IChSKSA9PiBSLnJlcXVpcmVkKCkgfSksCiAgICBkZWZpbmVGaWVsZCh7IG5hbWU6ICJ0cnlPbkdhcm1lbnRVcmwiLCB0aXRsZTogIlRyeS1PbiBHYXJtZW50IFVSTCAoYmcgcmVtb3ZlZCkiLCB0eXBlOiAidXJsIiwgZGVzY3JpcHRpb246ICJCYWNrZ3JvdW5kLXJlbW92ZWQgZ2FybWVudCBpbWFnZSBmb3IgdGhlIEFJIHRyeS1vbiBmZWF0dXJlLiIgfSksCiAgICBkZWZpbmVGaWVsZCh7IG5hbWU6ICJpc1NvbGRPdXQiLCB0aXRsZTogIlNvbGQgT3V0PyIsICAgICB0eXBlOiAiYm9vbGVhbiIsIGluaXRpYWxWYWx1ZTogZmFsc2UgfSksCiAgICBkZWZpbmVGaWVsZCh7IG5hbWU6ICJpc05ldyIsICAgICB0aXRsZTogIk5ldyBBcnJpdmFsPyIsICB0eXBlOiAiYm9vbGVhbiIsIGluaXRpYWxWYWx1ZTogdHJ1ZSAgfSksCiAgICBkZWZpbmVGaWVsZCh7IG5hbWU6ICJpc0tpZHMiLCAgICB0aXRsZTogIktpZHMgSXRlbT8iLCAgICB0eXBlOiAiYm9vbGVhbiIsIGluaXRpYWxWYWx1ZTogZmFsc2UgfSksCiAgICBkZWZpbmVGaWVsZCh7IG5hbWU6ICJsaXN0ZWREYXRlIiwgICB0aXRsZTogIkxpc3RlZCBEYXRlIiwgIHR5cGU6ICJkYXRlIiB9KSwKICAgIGRlZmluZUZpZWxkKHsgbmFtZTogImRlc2NyaXB0aW9uIiwgIHRpdGxlOiAiRGVzY3JpcHRpb24iLCAgdHlwZTogInRleHQiLCByb3dzOiAzIH0pCiAgXQp9KTsKCmV4cG9ydCBkZWZhdWx0IHByb2R1Y3RTY2hlbWE7Cg==
+import { defineField, defineType } from "sanity";
+
+export const productSchema = defineType({
+  name: "product",
+  title: "Product",
+  type: "document",
+  preview: { select: { title: "name", subtitle: "price", media: "image" } },
+  fields: [
+    defineField({ name: "name", title: "Product Name", type: "string", validation: (R) => R.required().min(2).max(120) }),
+    defineField({ name: "slug", title: "Slug", type: "slug", options: { source: "name", maxLength: 96 }, validation: (R) => R.required() }),
+    defineField({ name: "sku", title: "SKU / Reference", type: "string" }),
+    defineField({ name: "price", title: "Price", type: "string", description: "e.g. \u20a612,000", validation: (R) => R.required() }),
+    defineField({ name: "originalPrice", title: "Original Price (sale items only)", type: "string" }),
+    defineField({ name: "size", title: "Size", type: "string", description: "e.g. UK 6/8", validation: (R) => R.required() }),
+    defineField({
+      name: "category", title: "Category", type: "string",
+      options: { list: [{ title: "Denim", value: "denim" }, { title: "Dresses", value: "dresses" }, { title: "Tops", value: "tops" }, { title: "Sets", value: "sets" }, { title: "Sale", value: "sale" }, { title: "Kids", value: "kids" }], layout: "radio" },
+      validation: (R) => R.required(),
+    }),
+    defineField({ name: "image", title: "Product Image", type: "image", options: { hotspot: true }, validation: (R) => R.required() }),
+    defineField({ name: "tryOnGarmentUrl", title: "Try-On Garment URL (bg removed)", type: "url", description: "Background-removed garment image for the AI try-on feature." }),
+    defineField({ name: "isSoldOut", title: "Sold Out?", type: "boolean", initialValue: false }),
+    defineField({ name: "isNew", title: "New Arrival?", type: "boolean", initialValue: true }),
+    defineField({ name: "isKids", title: "Kids Item?", type: "boolean", initialValue: false }),
+    defineField({ name: "listedDate", title: "Listed Date", type: "date" }),
+    defineField({ name: "description", title: "Description", type: "text", rows: 3 }),
+  ],
+});
+
+export default productSchema;
