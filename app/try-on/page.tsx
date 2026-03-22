@@ -1,1 +1,76 @@
-aW1wb3J0IHR5cGUgeyBNZXRhZGF0YSB9IGZyb20gIm5leHQiOwppbXBvcnQgeyBTdXNwZW5zZSB9ICAgICAgZnJvbSAicmVhY3QiOwppbXBvcnQgeyBnZXRBbGxQcm9kdWN0cyB9ICAgICAgICBmcm9tICJAL2xpYi9zYW5pdHkiOwppbXBvcnQgeyBUcnlPbkdyaWRDbGllbnQgfSAgICAgIGZyb20gIkAvY29tcG9uZW50cy90cnlvbi9UcnlPbkdyaWRDbGllbnQiOwppbXBvcnQgeyBQcm9kdWN0Q2FyZFNrZWxldG9uIH0gIGZyb20gIkAvY29tcG9uZW50cy9wcm9kdWN0L1Byb2R1Y3RDYXJkIjsKaW1wb3J0IHsgSGVhZGVyIH0gICAgICAgICAgICAgICBmcm9tICJAL2NvbXBvbmVudHMvbGF5b3V0L0hlYWRlciI7CmltcG9ydCB7IEZvb3RlciB9ICAgICAgICAgICAgICAgZnJvbSAiQC9jb21wb25lbnRzL2xheW91dC9Gb290ZXIiOwoKZXhwb3J0IGNvbnN0IG1ldGFkYXRhOiBNZXRhZGF0YSA9IHsKICB0aXRsZTogIlZpcnR1YWwgVHJ5LU9uIiwKICBkZXNjcmlwdGlvbjogIlVwbG9hZCBhIHBob3RvIGFuZCBzZWUgaG93IFppcmEgRmFzaGlvbnMgcGllY2VzIGxvb2sgb24geW91IGJlZm9yZSBvcmRlcmluZy4gQUktcG93ZXJlZCB2aXJ0dWFsIHRyeS1vbiDigJQgZnJlZSwgbm8gc2lnbi11cCBuZWVkZWQuIgp9OwoKZXhwb3J0IGRlZmF1bHQgYXN5bmMgZnVuY3Rpb24gVHJ5T25QYWdlKCkgewogIGNvbnN0IGFsbCAgICAgPSBhd2FpdCBnZXRBbGxQcm9kdWN0cygpOwogIGNvbnN0IHRyeU9ucyAgPSBhbGwuZmlsdGVyKChwKSA9PiAhcC5pc0tpZHMgJiYgIXAuaXNTb2xkT3V0ICYmICEhcC50cnlPbkdhcm1lbnRVcmwpOwogIGNvbnN0IGRpc3BsYXkgPSB0cnlPbnMubGVuZ3RoID4gMCA/IHRyeU9ucyA6IGFsbC5maWx0ZXIoKHApID0+ICFwLmlzS2lkcyAmJiAhcC5pc1NvbGRPdXQpLnNsaWNlKDAsIDEyKTsKCiAgcmV0dXJuICgKICAgIDw+CiAgICAgIDxIZWFkZXIgLz4KICAgICAgPG1haW4gY2xhc3NOYW1lPSJwdC0xNiBtZDpwdC1bNjhweF0iPgogICAgICAgIDxzZWN0aW9uIGNsYXNzTmFtZT0idy1mdWxsIHB5LTE0IG1kOnB5LTIwIiBzdHlsZT17eyBiYWNrZ3JvdW5kQ29sb3I6ICJ2YXIoLS1jb2xvci1hY2NlbnQtbGlnaHQpIiB9fSBhcmlhLWxhYmVsPSJWaXJ0dWFsIHRyeS1vbiBpbnRybyI+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibWF4LXctc2NyZWVuLXhsIG14LWF1dG8gcHgtNSB0ZXh0LWNlbnRlciBmbGV4IGZsZXgtY29sIGl0ZW1zLWNlbnRlciBnYXAtNSI+CiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0ic2VjdGlvbi1sYWJlbCI+TmV3IEZlYXR1cmU8L3A+CiAgICAgICAgICAgIDxoMSBjbGFzc05hbWU9ImZvbnQtZGlzcGxheSBmb250LW1lZGl1bSB0ZXh0LWgxIHRleHQtdGV4dC1wcmltYXJ5IG1heC13LWxnIj4KICAgICAgICAgICAgICBTZWUgaXQgb24geW91IGJlZm9yZSB5b3Ugb3JkZXIuCiAgICAgICAgICAgIDwvaDE+CiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0iZm9udC1zYW5zIHRleHQtYm9keSB0ZXh0LXRleHQtc2Vjb25kYXJ5IGxlYWRpbmctZWRpdG9yaWFsIG1heC13LW1kIj4KICAgICAgICAgICAgICBQaWNrIGFueSBwaWVjZSBiZWxvdywgdXBsb2FkIGEgcGhvdG8gb2YgeW91cnNlbGYsIGFuZCBvdXIgQUkgd2lsbCBzaG93IHlvdSBleGFjdGx5IGhvdyBpdCBmaXRzIOKAlCBiZWZvcmUgeW91IHRhcCB0aGF0IFdoYXRzQXBwIGJ1dHRvbi4KICAgICAgICAgICAgPC9wPgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBmbGV4LWNvbCBzbTpmbGV4LXJvdyBnYXAtNCBtdC00IHctZnVsbCBtYXgtdy14bCI+CiAgICAgICAgICAgICAge1t7IHN0ZXA6ICIxIiwgbGFiZWw6ICJQaWNrIGEgcGllY2UiIH0sIHsgc3RlcDogIjIiLCBsYWJlbDogIlVwbG9hZCB5b3VyIHBob3RvIiB9LCB7IHN0ZXA6ICIzIiwgbGFiZWw6ICJTZWUgdGhlIGZpdCDigJQgdGhlbiBvcmRlciIgfV0ubWFwKCh7IHN0ZXAsIGxhYmVsIH0pID0+ICgKICAgICAgICAgICAgICAgIDxkaXYga2V5PXtzdGVwfSBjbGFzc05hbWU9ImZsZXgtMSBmbGV4IGZsZXgtY29sIGl0ZW1zLWNlbnRlciBnYXAtMiBiZy1zdXJmYWNlIHJvdW5kZWQtY2FyZCBwLTQgYm9yZGVyIGJvcmRlci1ib3JkZXIiPgogICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InctOCBoLTggcm91bmRlZC1mdWxsIGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIGZvbnQtc2FucyBmb250LXNlbWlib2xkIHRleHQtWzE0cHhdIHRleHQtd2hpdGUiCiAgICAgICAgICAgICAgICAgICAgc3R5bGU9e3sgYmFja2dyb3VuZENvbG9yOiAidmFyKC0tY29sb3ItYWNjZW50KSIgfX0gYXJpYS1oaWRkZW49InRydWUiPntzdGVwfTwvc3Bhbj4KICAgICAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJmb250LXNhbnMgZm9udC1tZWRpdW0gdGV4dC1bMTRweF0gdGV4dC10ZXh0LXByaW1hcnkgdGV4dC1jZW50ZXIiPntsYWJlbH08L3A+CiAgICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICApKX0KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0iZm9udC1zYW5zIHRleHQtc21hbGwgdGV4dC10ZXh0LW11dGVkIG1heC13LXNtIGxlYWRpbmctZWRpdG9yaWFsIj4KICAgICAgICAgICAgICBCZXN0IHJlc3VsdHM6IGZ1bGwtYm9keSBwaG90bywgZ29vZCBsaWdodGluZywgcGxhaW4gYmFja2dyb3VuZC4gQUktZ2VuZXJhdGVkIHByZXZpZXcuCiAgICAgICAgICAgIDwvcD4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvc2VjdGlvbj4KCiAgICAgICAgPHNlY3Rpb24gY2xhc3NOYW1lPSJtYXgtdy1zY3JlZW4teGwgbXgtYXV0byBweC01IHB5LTEwIG1kOnB5LTE0IiBhcmlhLWxhYmVsPSJTZWxlY3QgYSBwcm9kdWN0IHRvIHRyeSBvbiI+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1lbmQganVzdGlmeS1iZXR3ZWVuIGdhcC00IG1iLTYiPgogICAgICAgICAgICA8ZGl2PgogICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0ic2VjdGlvbi1sYWJlbCBtYi0xLjUiPlN0ZXAgMTwvcD4KICAgICAgICAgICAgICA8aDIgY2xhc3NOYW1lPSJmb250LWRpc3BsYXkgZm9udC1tZWRpdW0gdGV4dC1oMiB0ZXh0LXRleHQtcHJpbWFyeSI+UGljayBhIHBpZWNlIHRvIHRyeSBvbjwvaDI+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8YSBocmVmPSIvc2hvcCIgY2xhc3NOYW1lPSJmb250LXNhbnMgZm9udC1tZWRpdW0gdGV4dC1bMTRweF0gdGV4dC1wcmltYXJ5IHVuZGVybGluZSB1bmRlcmxpbmUtb2Zmc2V0LTQgaG92ZXI6dGV4dC1wcmltYXJ5LWhvdmVyIHRyYW5zaXRpb24tY29sb3JzIHNlbGYtZW5kIHBiLTAuNSI+CiAgICAgICAgICAgICAgVmlldyBhbGwg4oaSCiAgICAgICAgICAgIDwvYT4KICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPFN1c3BlbnNlIGZhbGxiYWNrPXsKICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImdyaWQgZ3JpZC1jb2xzLTIgbWQ6Z3JpZC1jb2xzLTMgZ2FwLTMgbWQ6Z2FwLTUiPgogICAgICAgICAgICAgIHtBcnJheS5mcm9tKHsgbGVuZ3RoOiA2IH0pLm1hcCgoXywgaSkgPT4gPFByb2R1Y3RDYXJkU2tlbGV0b24ga2V5PXtpfSAvPil9CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgfT4KICAgICAgICAgICAgPFRyeU9uR3JpZENsaWVudCBwcm9kdWN0cz17ZGlzcGxheX0gLz4KICAgICAgICAgIDwvU3VzcGVuc2U+CiAgICAgICAgICB7ZGlzcGxheS5sZW5ndGggPT09IDAgJiYgKAogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBmbGV4LWNvbCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgcHktMjAgZ2FwLTQiPgogICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC01eGwiIGFyaWEtaGlkZGVuPSJ0cnVlIj7inKY8L3NwYW4+CiAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJmb250LXNhbnMgZm9udC1tZWRpdW0gdGV4dC1bMTZweF0gdGV4dC10ZXh0LXNlY29uZGFyeSI+VHJ5LW9uIGNvbWluZyBzb29uLjwvcD4KICAgICAgICAgICAgICA8YSBocmVmPSIvc2hvcCIgY2xhc3NOYW1lPSJidG4tcHJpbWFyeSBtdC0yIj5Ccm93c2UgdGhlIFNob3A8L2E+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgKX0KICAgICAgICA8L3NlY3Rpb24+CiAgICAgIDwvbWFpbj4KICAgICAgPEZvb3RlciAvPgogICAgPC8+CiAgKTsKfQo=
+import type { Metadata } from "next";
+import { Suspense } from "react";
+import { getAllProducts } from "@/lib/sanity";
+import { TryOnGridClient } from "@/components/tryon/TryOnGridClient";
+import { ProductCardSkeleton } from "@/components/product/ProductCard";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
+
+export const metadata: Metadata = {
+  title: "Virtual Try-On",
+  description: "Upload a photo and see how Zira Fashions pieces look on you before ordering. AI-powered virtual try-on \u2014 free, no sign-up needed.",
+};
+
+export default async function TryOnPage() {
+  const all     = await getAllProducts();
+  const tryOns  = all.filter((p) => !p.isKids && !p.isSoldOut && !!p.tryOnGarmentUrl);
+  const display = tryOns.length > 0 ? tryOns : all.filter((p) => !p.isKids && !p.isSoldOut).slice(0, 12);
+
+  return (
+    <>
+      <Header />
+      <main className="pt-16 md:pt-[68px]">
+        <section className="w-full py-14 md:py-20" style={{ backgroundColor: "var(--color-accent-light)" }} aria-label="Virtual try-on intro">
+          <div className="max-w-screen-xl mx-auto px-5 text-center flex flex-col items-center gap-5">
+            <p className="section-label">New Feature</p>
+            <h1 className="font-display font-medium text-h1 text-text-primary max-w-lg">
+              See it on you before you order.
+            </h1>
+            <p className="font-sans text-body text-text-secondary leading-editorial max-w-md">
+              Pick any piece below, upload a photo of yourself, and our AI will show you exactly how it fits \u2014 before you tap that WhatsApp button.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 mt-4 w-full max-w-xl">
+              {[{ step: "1", label: "Pick a piece" }, { step: "2", label: "Upload your photo" }, { step: "3", label: "See the fit \u2014 then order" }].map(({ step, label }) => (
+                <div key={step} className="flex-1 flex flex-col items-center gap-2 bg-surface rounded-card p-4 border border-border">
+                  <span className="w-8 h-8 rounded-full flex items-center justify-center font-sans font-semibold text-[14px] text-white"
+                    style={{ backgroundColor: "var(--color-accent)" }} aria-hidden="true">{step}</span>
+                  <p className="font-sans font-medium text-[14px] text-text-primary text-center">{label}</p>
+                </div>
+              ))}
+            </div>
+            <p className="font-sans text-small text-text-muted max-w-sm leading-editorial">
+              Best results: full-body photo, good lighting, plain background. AI-generated preview.
+            </p>
+          </div>
+        </section>
+
+        <section className="max-w-screen-xl mx-auto px-5 py-10 md:py-14" aria-label="Select a product to try on">
+          <div className="flex items-end justify-between gap-4 mb-6">
+            <div>
+              <p className="section-label mb-1.5">Step 1</p>
+              <h2 className="font-display font-medium text-h2 text-text-primary">Pick a piece to try on</h2>
+            </div>
+            <a href="/shop" className="font-sans font-medium text-[14px] text-primary underline underline-offset-4 hover:text-primary-hover transition-colors self-end pb-0.5">
+              View all \u2192
+            </a>
+          </div>
+          <Suspense fallback={
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5">
+              {Array.from({ length: 6 }).map((_, i) => <ProductCardSkeleton key={i} />)}
+            </div>
+          }>
+            <TryOnGridClient products={display} />
+          </Suspense>
+          {display.length === 0 && (
+            <div className="flex flex-col items-center justify-center py-20 gap-4">
+              <span className="text-5xl" aria-hidden="true">\u2726</span>
+              <p className="font-sans font-medium text-[16px] text-text-secondary">Try-on coming soon.</p>
+              <a href="/shop" className="btn-primary mt-2">Browse the Shop</a>
+            </div>
+          )}
+        </section>
+      </main>
+      <Footer />
+    </>
+  );
+}
