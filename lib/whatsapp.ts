@@ -1,1 +1,63 @@
-ZXhwb3J0IGludGVyZmFjZSBQcm9kdWN0T3JkZXJEZXRhaWxzIHsKICBuYW1lOiBzdHJpbmc7CiAgc2l6ZTogc3RyaW5nOwogIHByaWNlOiBzdHJpbmc7CiAgcHJvZHVjdFVybDogc3RyaW5nOwogIHNrdT86IHN0cmluZzsKICBpc0tpZHM/OiBib29sZWFuOwp9CgpleHBvcnQgaW50ZXJmYWNlIFRyeU9uT3JkZXJEZXRhaWxzIGV4dGVuZHMgUHJvZHVjdE9yZGVyRGV0YWlscyB7CiAgZnJvbVRyeU9uOiB0cnVlOwp9CgpleHBvcnQgdHlwZSBPcmRlckRldGFpbHMgPSBQcm9kdWN0T3JkZXJEZXRhaWxzIHwgVHJ5T25PcmRlckRldGFpbHM7Cgpjb25zdCBQSE9ORSA9IHByb2Nlc3MuZW52Lk5FWFRfUFVCTElDX1dIQVRTQVBQX05VTUJFUiA/PyAiIjsKY29uc3QgQkFTRSAgPSAiaHR0cHM6Ly93YS5tZSI7CgpleHBvcnQgZnVuY3Rpb24gYnVpbGRXaGF0c0FwcE9yZGVyVXJsKAogIHByb2R1Y3Q6IE9yZGVyRGV0YWlscywKICBwaG9uZSA9IFBIT05FCik6IHN0cmluZyB7CiAgY29uc3QgaXNUcnlPbiA9ICJmcm9tVHJ5T24iIGluIHByb2R1Y3QgJiYgcHJvZHVjdC5mcm9tVHJ5T247CiAgY29uc3QgbGluZXMgPSBbCiAgICAiSGkgWmlyYSBGYXNoaW9ucyEgSSdkIGxpa2UgdG8gcGxhY2UgYW4gb3JkZXIg8J+bje+4jyIsCiAgICAiIiwKICAgIGBJdGVtOiAgJHtwcm9kdWN0Lm5hbWV9YCwKICAgIGBTaXplOiAgJHtwcm9kdWN0LnNpemV9YCwKICAgIGBQcmljZTogJHtwcm9kdWN0LnByaWNlfWAsCiAgICBgTGluazogICR7cHJvZHVjdC5wcm9kdWN0VXJsfWAsCiAgICBwcm9kdWN0LnNrdSA/IGBSZWY6ICAgJHtwcm9kdWN0LnNrdX1gIDogbnVsbCwKICAgIGlzVHJ5T24gPyAiIiA6IG51bGwsCiAgICBpc1RyeU9uID8gIlAuUy4gSSB0cmllZCB0aGlzIG9uIHVzaW5nIHRoZSB2aXJ0dWFsIHRyeS1vbiDwn5iKIiA6IG51bGwKICBdCiAgICAuZmlsdGVyKChsKSA9PiBsICE9PSBudWxsKQogICAgLmpvaW4oIlxuIik7CiAgcmV0dXJuIGAke0JBU0V9LyR7cGhvbmV9P3RleHQ9JHtlbmNvZGVVUklDb21wb25lbnQobGluZXMpfWA7Cn0KCmV4cG9ydCBmdW5jdGlvbiBidWlsZFdoYXRzQXBwQ29udGFjdFVybCgKICBncmVldGluZyA9ICJIaSBaaXJhIEZhc2hpb25zISBJIGhhdmUgYSBxdWVzdGlvbi4iLAogIHBob25lID0gUEhPTkUKKTogc3RyaW5nIHsKICByZXR1cm4gYCR7QkFTRX0vJHtwaG9uZX0/dGV4dD0ke2VuY29kZVVSSUNvbXBvbmVudChncmVldGluZyl9YDsKfQoKZXhwb3J0IGZ1bmN0aW9uIGJ1aWxkV2hhdHNBcHBOb3RpZnlVcmwoCiAgcHJvZHVjdDogUGljazxQcm9kdWN0T3JkZXJEZXRhaWxzLCAibmFtZSIgfCAic2l6ZSIgfCAic2t1IiB8ICJwcm9kdWN0VXJsIj4sCiAgcGhvbmUgPSBQSE9ORQopOiBzdHJpbmcgewogIGNvbnN0IGxpbmVzID0gWwogICAgIkhpIFppcmEgRmFzaGlvbnMhIFBsZWFzZSBub3RpZnkgbWUgd2hlbiB0aGlzIGlzIGJhY2sgaW4gc3RvY2s6IiwKICAgICIiLAogICAgYEl0ZW06ICR7cHJvZHVjdC5uYW1lfWAsCiAgICBgU2l6ZTogJHtwcm9kdWN0LnNpemV9YCwKICAgIGBMaW5rOiAke3Byb2R1Y3QucHJvZHVjdFVybH1gLAogICAgcHJvZHVjdC5za3UgPyBgUmVmOiAgJHtwcm9kdWN0LnNrdX1gIDogbnVsbAogIF0KICAgIC5maWx0ZXIoQm9vbGVhbikKICAgIC5qb2luKCJcbiIpOwogIHJldHVybiBgJHtCQVNFfS8ke3Bob25lfT90ZXh0PSR7ZW5jb2RlVVJJQ29tcG9uZW50KGxpbmVzKX1gOwp9CgpleHBvcnQgZnVuY3Rpb24gaXNXaGF0c0FwcENvbmZpZ3VyZWQoKTogYm9vbGVhbiB7CiAgcmV0dXJuIC9eXGR7NywxNX0kLy50ZXN0KFBIT05FKTsKfQo=
+export interface ProductOrderDetails {
+  name: string;
+  size: string;
+  price: string;
+  productUrl: string;
+  sku?: string;
+  isKids?: boolean;
+}
+
+export interface TryOnOrderDetails extends ProductOrderDetails {
+  fromTryOn: true;
+}
+
+export type OrderDetails = ProductOrderDetails | TryOnOrderDetails;
+
+const PHONE = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "";
+const BASE = "https://wa.me";
+
+export function buildWhatsAppOrderUrl(product: OrderDetails, phone = PHONE): string {
+  const isTryOn = "fromTryOn" in product && product.fromTryOn;
+  const lines = [
+    "Hi Zira Fashions! I'd like to place an order \ud83d\udecd\ufe0f",
+    "",
+    `Item:  ${product.name}`,
+    `Size:  ${product.size}`,
+    `Price: ${product.price}`,
+    `Link:  ${product.productUrl}`,
+    product.sku ? `Ref:   ${product.sku}` : null,
+    isTryOn ? "" : null,
+    isTryOn ? "P.S. I tried this on using the virtual try-on \ud83d\ude0a" : null,
+  ]
+    .filter((l) => l !== null)
+    .join("\n");
+  return `${BASE}/${phone}?text=${encodeURIComponent(lines)}`;
+}
+
+export function buildWhatsAppContactUrl(
+  greeting = "Hi Zira Fashions! I have a question.",
+  phone = PHONE
+): string {
+  return `${BASE}/${phone}?text=${encodeURIComponent(greeting)}`;
+}
+
+export function buildWhatsAppNotifyUrl(
+  product: Pick<ProductOrderDetails, "name" | "size" | "sku" | "productUrl">,
+  phone = PHONE
+): string {
+  const lines = [
+    "Hi Zira Fashions! Please notify me when this is back in stock:",
+    "",
+    `Item: ${product.name}`,
+    `Size: ${product.size}`,
+    `Link: ${product.productUrl}`,
+    product.sku ? `Ref:  ${product.sku}` : null,
+  ]
+    .filter(Boolean)
+    .join("\n");
+  return `${BASE}/${phone}?text=${encodeURIComponent(lines)}`;
+}
+
+export function isWhatsAppConfigured(): boolean {
+  return /^\d{7,15}$/.test(PHONE);
+}
