@@ -1,1 +1,93 @@
-aW1wb3J0IExpbmsgZnJvbSAibmV4dC9saW5rIjsKaW1wb3J0IHsgYnVpbGRXaGF0c0FwcENvbnRhY3RVcmwgfSBmcm9tICJAL2xpYi93aGF0c2FwcCI7Cgpjb25zdCBTSE9QID0gWwogIHsgbGFiZWw6ICJBbGwgUHJvZHVjdHMiLCBocmVmOiAiL3Nob3AiICAgICAgICAgfSwKICB7IGxhYmVsOiAiRGVuaW0iLCAgICAgICAgaHJlZjogIi9zaG9wL2RlbmltIiAgIH0sCiAgeyBsYWJlbDogIkRyZXNzZXMiLCAgICAgIGhyZWY6ICIvc2hvcC9kcmVzc2VzIiB9LAogIHsgbGFiZWw6ICJUb3BzIiwgICAgICAgICBocmVmOiAiL3Nob3AvdG9wcyIgICAgfSwKICB7IGxhYmVsOiAiS2lkcyIsICAgICAgICAgaHJlZjogIi9raWRzIiAgICAgICAgIH0sCiAgeyBsYWJlbDogIlNhbGUiLCAgICAgICAgIGhyZWY6ICIvc2hvcC9zYWxlIiAgICB9Cl0gYXMgY29uc3Q7Cgpjb25zdCBJTkZPID0gWwogIHsgbGFiZWw6ICJIb3cgdG8gT3JkZXIiLCBocmVmOiAiL2hvdy10by1vcmRlciIgfSwKICB7IGxhYmVsOiAiU2l6ZSBDaGFydCIsICAgaHJlZjogIi9zaXplLWNoYXJ0IiAgIH0sCiAgeyBsYWJlbDogIk91ciBQb2xpY3kiLCAgIGhyZWY6ICIvcG9saWN5IiAgICAgICB9LAogIHsgbGFiZWw6ICJBYm91dCIsICAgICAgICBocmVmOiAiL2Fib3V0IiAgICAgICAgfSwKICB7IGxhYmVsOiAiVHJ5IE9uIiwgICAgICAgaHJlZjogIi90cnktb24iICAgICAgIH0sCiAgeyBsYWJlbDogIkNvbnRhY3QiLCAgICAgIGhyZWY6ICIvY29udGFjdCIgICAgICB9Cl0gYXMgY29uc3Q7CgpmdW5jdGlvbiBXYUljb24oKSB7CiAgcmV0dXJuICgKICAgIDxzdmcgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9ImN1cnJlbnRDb2xvciIgYXJpYS1oaWRkZW49InRydWUiPgogICAgICA8cGF0aCBkPSJNMTcuNDcyIDE0LjM4MmMtLjI5Ny0uMTQ5LTEuNzU4LS44NjctMi4wMy0uOTY3LS4yNzMtLjA5OS0uNDcxLS4xNDgtLjY3LjE1LS4xOTcuMjk3LS43NjcuOTY2LS45NCAxLjE2NC0uMTczLjE5OS0uMzQ3LjIyMy0uNjQ0LjA3NS0uMjk3LS4xNS0xLjI1NS0uNDYzLTIuMzktMS40NzUtLjg4My0uNzg4LTEuNDgtMS43NjEtMS42NTMtMi4wNTktLjE3My0uMjk3LS4wMTgtLjQ1OC4xMy0uNjA2LjEzNC0uMTMzLjI5OC0uMzQ3LjQ0Ni0uNTIuMTQ5LS4xNzQuMTk4LS4yOTguMjk4LS40OTcuMDk5LS4xOTguMDUtLjM3MS0uMDI1LS41Mi0uMDc1LS4xNDktLjY2OS0xLjYxMi0uOTE2LTIuMjA3LS4yNDItLjU3OS0uNDg3LS41LS42NjktLjUxLS4xNzMtLjAwOC0uMzcxLS4wMS0uNTctLjAxLS4xOTggMC0uNTIuMDc0LS43OTIuMzcyLS4yNzIuMjk3LTEuMDQgMS4wMTYtMS4wNCAyLjQ3OSAwIDEuNDYyIDEuMDY1IDIuODc1IDEuMjEzIDMuMDc0LjE0OS4xOTggMi4wOTYgMy4yIDUuMDc3IDQuNDg3LjcwOS4zMDYgMS4yNjIuNDg5IDEuNjk0LjYyNS43MTIuMjI3IDEuMzYuMTk1IDEuODcxLjExOC41NzEtLjA4NSAxLjc1OC0uNzE5IDIuMDA2LTEuNDEzLjI0OC0uNjk0LjI0OC0xLjI4OS4xNzMtMS40MTMtLjA3NC0uMTI0LS4yNzItLjE5OC0uNTctLjM0N20tNS40MjEgNy40MDNoLS4wMDRhOS44NyA5Ljg3IDAgMDEtNS4wMzEtMS4zNzhsLS4zNjEtLjIxNC0zLjc0MS45ODIuOTk4LTMuNjQ4LS4yMzUtLjM3NGE5Ljg2IDkuODYgMCAwMS0xLjUxLTUuMjZjLjAwMS01LjQ1IDQuNDM2LTkuODg0IDkuODg4LTkuODg0IDIuNjQgMCA1LjEyMiAxLjAzIDYuOTg4IDIuODk4YTkuODI1IDkuODI1IDAgMDEyLjg5MyA2Ljk5NGMtLjAwMyA1LjQ1LTQuNDM3IDkuODg0LTkuODg1IDkuODg0bTguNDEzLTE4LjI5N0ExMS44MTUgMTEuODE1IDAgMDAxMi4wNSAwQzUuNDk1IDAgLjE2IDUuMzM1LjE1NyAxMS44OTJjMCAyLjA5Ni41NDcgNC4xNDIgMS41ODggNS45NDVMLjA1NyAyNGw2LjMwNS0xLjY1NGExMS44ODIgMTEuODgyIDAgMDA1LjY4MyAxLjQ0OGguMDA1YzYuNTU0IDAgMTEuODktNS4zMzUgMTEuODkzLTExLjg5M2ExMS44MjEgMTEuODIxIDAgMDAtMy40OC04LjQxM3oiIC8+CiAgICA8L3N2Zz4KICApOwp9CgpleHBvcnQgZnVuY3Rpb24gRm9vdGVyKCkgewogIGNvbnN0IGNvbnRhY3QgPSBidWlsZFdoYXRzQXBwQ29udGFjdFVybCgpOwogIGNvbnN0IHllYXIgICAgPSBuZXcgRGF0ZSgpLmdldEZ1bGxZZWFyKCk7CgogIHJldHVybiAoCiAgICA8Zm9vdGVyPgogICAgICA8ZGl2IGNsYXNzTmFtZT0iYmctc3VyZmFjZS1tdXRlZCBib3JkZXItdCBib3JkZXItYm9yZGVyIj4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibWF4LXctc2NyZWVuLXhsIG14LWF1dG8gcHgtNSBweS01IGZsZXggZmxleC13cmFwIGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBnYXAtNiBtZDpnYXAtMTIiPgogICAgICAgICAge1tbIvCfmpoiLCJOYXRpb253aWRlIERlbGl2ZXJ5Il0sWyLwn5KsIiwiV2hhdHNBcHAgT3JkZXJzIl0sWyLihqnvuI8iLCJDbGVhciBQb2xpY3kiXSxbIuKtkCIsIlRydXN0ZWQgYnkgMzVLKyJdXS5tYXAoKFtpY29uLCBsYWJlbF0pID0+ICgKICAgICAgICAgICAgPGRpdiBrZXk9e2xhYmVsfSBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0yIGZvbnQtc2FucyB0ZXh0LXNtYWxsIGZvbnQtbWVkaXVtIHRleHQtdGV4dC1zZWNvbmRhcnkiPgogICAgICAgICAgICAgIDxzcGFuIGFyaWEtaGlkZGVuPSJ0cnVlIj57aWNvbn08L3NwYW4+e2xhYmVsfQogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICkpfQogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KCiAgICAgIDxkaXYgc3R5bGU9e3sgYmFja2dyb3VuZENvbG9yOiAidmFyKC0tY29sb3ItcHJpbWFyeSkiIH19PgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJtYXgtdy1zY3JlZW4teGwgbXgtYXV0byBweC01IHB5LTEyIG1kOnB5LTE2Ij4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJncmlkIGdyaWQtY29scy0xIG1kOmdyaWQtY29scy0zIGdhcC0xMCBtZDpnYXAtOCI+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGZsZXgtY29sIGdhcC00Ij4KICAgICAgICAgICAgICA8TGluayBocmVmPSIvIiBjbGFzc05hbWU9ImZvbnQtZGlzcGxheSBmb250LW1lZGl1bSB0ZXh0LVsyOHB4XSB0ZXh0LXdoaXRlIHRyYWNraW5nLXRpZ2h0Ij4KICAgICAgICAgICAgICAgIFppcmEgRmFzaGlvbnMKICAgICAgICAgICAgICA8L0xpbms+CiAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJmb250LXNhbnMgdGV4dC1bMTRweF0gdGV4dC13aGl0ZS82NSBsZWFkaW5nLWVkaXRvcmlhbCBtYXgtdy1bMjQwcHhdIj4KICAgICAgICAgICAgICAgIEhvbWUgZm9yIGJyYW5kIG5ldyAmYW1wOyBwcmUtb3duZWQgVUsgYW5kIFVTIGhpZ2hzdHJlZXQgZmFzaGlvbi4gTmF0aW9ud2lkZSBkZWxpdmVyeS4KICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC00IG10LTEiPgogICAgICAgICAgICAgICAgPGEgaHJlZj0iaHR0cHM6Ly93d3cuaW5zdGFncmFtLmNvbS96aXJhZmFzaGlvbnMvIiB0YXJnZXQ9Il9ibGFuayIgcmVsPSJub29wZW5lciBub3JlZmVycmVyIgogICAgICAgICAgICAgICAgICBhcmlhLWxhYmVsPSJJbnN0YWdyYW0iIGNsYXNzTmFtZT0idGV4dC13aGl0ZS81MCBob3Zlcjp0ZXh0LXdoaXRlIHRyYW5zaXRpb24tY29sb3JzIj4KICAgICAgICAgICAgICAgICAgPHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZVdpZHRoPSIxLjUiIHN0cm9rZUxpbmVjYXA9InJvdW5kIiBzdHJva2VMaW5lam9pbj0icm91bmQiIGFyaWEtaGlkZGVuPSJ0cnVlIj4KICAgICAgICAgICAgICAgICAgICA8cmVjdCB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHg9IjIiIHk9IjIiIHJ4PSI1IiByeT0iNSIgLz4KICAgICAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTYgMTEuMzdBNCA0IDAgMSAxIDEyLjYzIDggNCA0IDAgMCAxIDE2IDExLjM3eiIgLz4KICAgICAgICAgICAgICAgICAgICA8bGluZSB4MT0iMTcuNSIgeDI9IjE3LjUxIiB5MT0iNi41IiB5Mj0iNi41IiAvPgogICAgICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgICAgIDwvYT4KICAgICAgICAgICAgICAgIDxhIGhyZWY9e2NvbnRhY3R9IHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIG5vcmVmZXJyZXIiCiAgICAgICAgICAgICAgICAgIGFyaWEtbGFiZWw9IldoYXRzQXBwIiBjbGFzc05hbWU9InRleHQtd2hpdGUvNTAgaG92ZXI6dGV4dC13aGl0ZSB0cmFuc2l0aW9uLWNvbG9ycyI+CiAgICAgICAgICAgICAgICAgIDxXYUljb24gLz4KICAgICAgICAgICAgICAgIDwvYT4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPC9kaXY+CgogICAgICAgICAgICA8ZGl2PgogICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0iZm9udC1zYW5zIGZvbnQtc2VtaWJvbGQgdGV4dC1bMTFweF0gdHJhY2tpbmctWzAuMDhlbV0gdXBwZXJjYXNlIHRleHQtd2hpdGUvNDAgbWItNCI+U2hvcDwvcD4KICAgICAgICAgICAgICA8dWwgY2xhc3NOYW1lPSJmbGV4IGZsZXgtY29sIGdhcC0yLjUiPgogICAgICAgICAgICAgICAge1NIT1AubWFwKChsKSA9PiAoCiAgICAgICAgICAgICAgICAgIDxsaSBrZXk9e2wuaHJlZn0+CiAgICAgICAgICAgICAgICAgICAgPExpbmsgaHJlZj17bC5ocmVmfSBjbGFzc05hbWU9ImZvbnQtc2FucyB0ZXh0LVsxNHB4XSB0ZXh0LXdoaXRlLzcwIGhvdmVyOnRleHQtd2hpdGUgdHJhbnNpdGlvbi1jb2xvcnMiPgogICAgICAgICAgICAgICAgICAgICAge2wubGFiZWx9CiAgICAgICAgICAgICAgICAgICAgPC9MaW5rPgogICAgICAgICAgICAgICAgICA8L2xpPgogICAgICAgICAgICAgICAgKSl9CiAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgPC9kaXY+CgogICAgICAgICAgICA8ZGl2PgogICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0iZm9udC1zYW5zIGZvbnQtc2VtaWJvbGQgdGV4dC1bMTFweF0gdHJhY2tpbmctWzAuMDhlbV0gdXBwZXJjYXNlIHRleHQtd2hpdGUvNDAgbWItNCI+SW5mbzwvcD4KICAgICAgICAgICAgICA8dWwgY2xhc3NOYW1lPSJmbGV4IGZsZXgtY29sIGdhcC0yLjUiPgogICAgICAgICAgICAgICAge0lORk8ubWFwKChsKSA9PiAoCiAgICAgICAgICAgICAgICAgIDxsaSBrZXk9e2wuaHJlZn0+CiAgICAgICAgICAgICAgICAgICAgPExpbmsgaHJlZj17bC5ocmVmfSBjbGFzc05hbWU9ImZvbnQtc2FucyB0ZXh0LVsxNHB4XSB0ZXh0LXdoaXRlLzcwIGhvdmVyOnRleHQtd2hpdGUgdHJhbnNpdGlvbi1jb2xvcnMiPgogICAgICAgICAgICAgICAgICAgICAge2wubGFiZWx9CiAgICAgICAgICAgICAgICAgICAgPC9MaW5rPgogICAgICAgICAgICAgICAgICA8L2xpPgogICAgICAgICAgICAgICAgKSl9CiAgICAgICAgICAgICAgPC91bD4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L2Rpdj4KCiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImJvcmRlci10IGJvcmRlci13aGl0ZS8xMCI+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibWF4LXctc2NyZWVuLXhsIG14LWF1dG8gcHgtNSBweS00IGZsZXggZmxleC1jb2wgc206ZmxleC1yb3cgaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiBnYXAtMiI+CiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0iZm9udC1zYW5zIHRleHQtbWljcm8gdGV4dC13aGl0ZS80MCI+wqkge3llYXJ9IFppcmEgRmFzaGlvbnMuIExhZ29zLCBOaWdlcmlhLjwvcD4KICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJmb250LXNhbnMgdGV4dC1taWNybyB0ZXh0LXdoaXRlLzMwIj5XZWJzaXRlIGJ5IFRvbHVsb3BlPC9wPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgogICAgPC9mb290ZXI+CiAgKTsKfQo=
+import Link from "next/link";
+import { buildWhatsAppContactUrl } from "@/lib/whatsapp";
+
+const SHOP = [
+  { label: "All Products", href: "/shop" },
+  { label: "Denim",        href: "/shop/denim" },
+  { label: "Dresses",      href: "/shop/dresses" },
+  { label: "Tops",         href: "/shop/tops" },
+  { label: "Kids",         href: "/kids" },
+  { label: "Sale",         href: "/shop/sale" },
+] as const;
+
+const INFO = [
+  { label: "How to Order", href: "/how-to-order" },
+  { label: "Size Chart",   href: "/size-chart" },
+  { label: "Our Policy",   href: "/policy" },
+  { label: "About",        href: "/about" },
+  { label: "Try On",       href: "/try-on" },
+  { label: "Contact",      href: "/contact" },
+] as const;
+
+function WaIcon() {
+  return (
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+  );
+}
+
+export function Footer() {
+  const contact = buildWhatsAppContactUrl();
+  const year    = new Date().getFullYear();
+
+  return (
+    <footer>
+      <div className="bg-surface-muted border-t border-border">
+        <div className="max-w-screen-xl mx-auto px-5 py-5 flex flex-wrap items-center justify-center gap-6 md:gap-12">
+          {[["Nationwide Delivery"], ["WhatsApp Orders"], ["Clear Policy"], ["Trusted by 35K+"]].map(([label]) => (
+            <div key={label} className="flex items-center gap-2 font-sans text-small font-medium text-text-secondary">{label}</div>
+          ))}
+        </div>
+      </div>
+
+      <div style={{ backgroundColor: "var(--color-primary)" }}>
+        <div className="max-w-screen-xl mx-auto px-5 py-12 md:py-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-8">
+            <div className="flex flex-col gap-4">
+              <Link href="/" className="font-display font-medium text-[28px] text-white tracking-tight">Zira Fashions</Link>
+              <p className="font-sans text-[14px] text-white/65 leading-editorial max-w-[240px]">
+                Home for brand new &amp; pre-owned UK and US highstreet fashion. Nationwide delivery across Nigeria.
+              </p>
+              <div className="flex items-center gap-4 mt-1">
+                <a href="https://www.instagram.com/zirafashions/" target="_blank" rel="noopener noreferrer"
+                  aria-label="Instagram" className="text-white/50 hover:text-white transition-colors">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                    <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                    <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                  </svg>
+                </a>
+                <a href={contact} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"
+                  className="text-white/50 hover:text-white transition-colors">
+                  <WaIcon />
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <p className="font-sans font-semibold text-[11px] tracking-[0.08em] uppercase text-white/40 mb-4">Shop</p>
+              <ul className="flex flex-col gap-2.5">
+                {SHOP.map((l) => <li key={l.href}><Link href={l.href} className="font-sans text-[14px] text-white/70 hover:text-white transition-colors">{l.label}</Link></li>)}
+              </ul>
+            </div>
+
+            <div>
+              <p className="font-sans font-semibold text-[11px] tracking-[0.08em] uppercase text-white/40 mb-4">Info</p>
+              <ul className="flex flex-col gap-2.5">
+                {INFO.map((l) => <li key={l.href}><Link href={l.href} className="font-sans text-[14px] text-white/70 hover:text-white transition-colors">{l.label}</Link></li>)}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="border-t border-white/10">
+          <div className="max-w-screen-xl mx-auto px-5 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+            <p className="font-sans text-micro text-white/40">&copy; {year} Zira Fashions. Lagos, Nigeria.</p>
+            <p className="font-sans text-micro text-white/30">Website by Tolulope</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+}
