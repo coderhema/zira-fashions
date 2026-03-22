@@ -1,1 +1,37 @@
-eyJuYW1lIjoiemlyYS1mYXNoaW9ucyIsInZlcnNpb24iOiIwLjEuMCIsInByaXZhdGUiOnRydWUsInNjcmlwdHMiOnsiZGV2IjoibmV4dCBkZXYiLCJidWlsZCI6Im5leHQgYnVpbGQiLCJzdGFydCI6Im5leHQgc3RhcnQiLCJsaW50IjoibmV4dCBsaW50In0sImRlcGVuZGVuY2llcyI6eyJAZ29vZ2xlL2dlbmFpIjoiXjEuMC4wIiwiQHNhbml0eS9jbGllbnQiOiJeNi4yMi4wIiwiQHNhbml0eS9pbWFnZS11cmwiOiJeMS4wLjIiLCJAdmVyY2VsL29nIjoiXjAuNi4zIiwiY2xvdWRpbmFyeSI6Il4yLjUuMSIsIm5leHQiOiIxNC4yLjI5IiwibmV4dC1zYW5pdHkiOiJeOS44LjAiLCJyZWFjdCI6Il4xOC4zLjEiLCJyZWFjdC1kb20iOiJeMTguMy4xIiwic2hhcnAiOiJeMC4zMy41In0sImRldkRlcGVuZGVuY2llcyI6eyJAdHlwZXMvbm9kZSI6Il4yMC4xNy42IiwiQHR5cGVzL3JlYWN0IjoiXjE4LjMuMTIiLCJAdHlwZXMvcmVhY3QtZG9tIjoiXjE4LjMuMSIsImF1dG9wcmVmaXhlciI6Il4xMC40LjIwIiwiZXNsaW50IjoiXjguNTcuMSIsImVzbGludC1jb25maWctbmV4dCI6IjE0LjIuMjkiLCJwb3N0Y3NzIjoiXjguNC40OSIsInRhaWx3aW5kY3NzIjoiXjMuNC4xNSIsInR5cGVzY3JpcHQiOiJeNS42LjMifSwiZW5naW5lcyI6eyJub2RlIjoiPj0xOC4xNy4wIn19Cg==
+{
+  "name": "zira-fashions",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@google/genai": "^1.0.0",
+    "@sanity/client": "^6.22.0",
+    "@sanity/image-url": "^1.0.2",
+    "@vercel/og": "^0.6.3",
+    "cloudinary": "^2.5.1",
+    "next": "14.2.29",
+    "next-sanity": "^9.8.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.17.6",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "14.2.29",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15",
+    "typescript": "^5.6.3"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  }
+}
