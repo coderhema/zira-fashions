@@ -1,4 +1,4 @@
-import { GoogleGenAI } from "@google/genai";
+import { GoogleGenAI, ThinkingLevel } from "@google/genai";
 import { NextRequest, NextResponse } from "next/server";
 
 export const runtime = "nodejs";
@@ -30,17 +30,7 @@ const MAX_BYTES = 10 * 1024 * 1024;
 const OK_MIME = new Set(["image/jpeg", "image/jpg", "image/png", "image/webp", "image/heic"]);
 
 function buildPrompt(name: string): string {
-  return `You are a professional fashion virtual try-on system.
-
-Two images provided:
-1. A photo of a person
-2. Fashion item: "${name}"
-
-Create a photorealistic composite of the person wearing the item.
-
-PRESERVE EXACTLY: face, expression, skin tone, hair, body proportions, background, lighting, shadows, pose.
-CHANGE: Replace their clothing with the garment. Fit naturally. Maintain garment color/fabric/texture/pattern.
-OUTPUT: Photorealistic photograph quality. No illustration. No artifacts or seams.`;
+  return `You are a professional fashion virtual try-on system.\n\nTwo images provided:\n1. A photo of a person\n2. Fashion item: "${name}"\n\nCreate a photorealistic composite of the person wearing the item.\n\nPRESERVE EXACTLY: face, expression, skin tone, hair, body proportions, background, lighting, shadows, pose.\nCHANGE: Replace their clothing with the garment. Fit naturally. Maintain garment color/fabric/texture/pattern.\nOUTPUT: Photorealistic photograph quality. No illustration. No artifacts or seams.`;
 }
 
 export async function POST(req: NextRequest): Promise<NextResponse> {
@@ -103,7 +93,7 @@ export async function POST(req: NextRequest): Promise<NextResponse> {
       config: {
         responseModalities: ["IMAGE"],
         imageConfig: { aspectRatio: "3:4", imageSize: "1K" },
-        thinkingConfig: { thinkingLevel: "minimal" },
+        thinkingConfig: { thinkingLevel: ThinkingLevel.MINIMAL },
       },
     });
 
