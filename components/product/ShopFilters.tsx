@@ -1,1 +1,49 @@
-InVzZSBjbGllbnQiOwoKaW1wb3J0IHsgdXNlUm91dGVyLCB1c2VTZWFyY2hQYXJhbXMsIHVzZVBhdGhuYW1lIH0gZnJvbSAibmV4dC9uYXZpZ2F0aW9uIjsKaW1wb3J0IHR5cGUgeyBQcm9kdWN0Q2F0ZWdvcnkgfSBmcm9tICJAL2xpYi9zYW5pdHkiOwoKY29uc3QgRklMVEVSUyA9IFsKICB7IGxhYmVsOiAiQWxsIiwgICAgIHZhbHVlOiAiYWxsIiAgICAgfSwKICB7IGxhYmVsOiAiRGVuaW0iLCAgIHZhbHVlOiAiZGVuaW0iICAgfSwKICB7IGxhYmVsOiAiRHJlc3NlcyIsIHZhbHVlOiAiZHJlc3NlcyIgfSwKICB7IGxhYmVsOiAiVG9wcyIsICAgIHZhbHVlOiAidG9wcyIgICAgfSwKICB7IGxhYmVsOiAiU2V0cyIsICAgIHZhbHVlOiAic2V0cyIgICAgfSwKICB7IGxhYmVsOiAiS2lkcyIsICAgIHZhbHVlOiAia2lkcyIgICAgfSwKICB7IGxhYmVsOiAiU2FsZSIsICAgIHZhbHVlOiAic2FsZSIgICAgfQpdIGFzIGNvbnN0OwoKdHlwZSBWYWwgPSBQcm9kdWN0Q2F0ZWdvcnkgfCAiYWxsIjsKCmludGVyZmFjZSBQcm9wcyB7IGFjdGl2ZUNhdGVnb3J5OiBQcm9kdWN0Q2F0ZWdvcnkgfCBudWxsOyB9CgpleHBvcnQgZnVuY3Rpb24gU2hvcEZpbHRlcnMoeyBhY3RpdmVDYXRlZ29yeSB9OiBQcm9wcykgewogIGNvbnN0IHJvdXRlciAgID0gdXNlUm91dGVyKCk7CiAgY29uc3QgcGF0aG5hbWUgPSB1c2VQYXRobmFtZSgpOwogIGNvbnN0IHBhcmFtcyAgID0gdXNlU2VhcmNoUGFyYW1zKCk7CgogIGZ1bmN0aW9uIHNldENhdGVnb3J5KHZhbHVlOiBWYWwpIHsKICAgIGNvbnN0IG5leHQgPSBuZXcgVVJMU2VhcmNoUGFyYW1zKHBhcmFtcy50b1N0cmluZygpKTsKICAgIHZhbHVlID09PSAiYWxsIiA/IG5leHQuZGVsZXRlKCJjYXRlZ29yeSIpIDogbmV4dC5zZXQoImNhdGVnb3J5IiwgdmFsdWUpOwogICAgcm91dGVyLnB1c2goYCR7cGF0aG5hbWV9PyR7bmV4dC50b1N0cmluZygpfWApOwogIH0KCiAgcmV0dXJuICgKICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGdhcC0yIG92ZXJmbG93LXgtYXV0byBwYi0xIHNjcm9sbGJhci1oaWRlIiByb2xlPSJncm91cCIgYXJpYS1sYWJlbD0iRmlsdGVyIGJ5IGNhdGVnb3J5Ij4KICAgICAge0ZJTFRFUlMubWFwKChmKSA9PiB7CiAgICAgICAgY29uc3QgaXNBY3RpdmUgPSBmLnZhbHVlID09PSAiYWxsIiA/ICFhY3RpdmVDYXRlZ29yeSA6IGFjdGl2ZUNhdGVnb3J5ID09PSBmLnZhbHVlOwogICAgICAgIHJldHVybiAoCiAgICAgICAgICA8YnV0dG9uIGtleT17Zi52YWx1ZX0gdHlwZT0iYnV0dG9uIiBvbkNsaWNrPXsoKSA9PiBzZXRDYXRlZ29yeShmLnZhbHVlIGFzIFZhbCl9CiAgICAgICAgICAgIGNsYXNzTmFtZT17YGZsZXgtc2hyaW5rLTAgcHgtNCBweS0yIHJvdW5kZWQtcGlsbCBib3JkZXIgZm9udC1zYW5zIGZvbnQtbWVkaXVtIHRleHQtc21hbGwgdHJhbnNpdGlvbi1jb2xvcnMgZHVyYXRpb24tWzE4MG1zXQogICAgICAgICAgICAgICR7aXNBY3RpdmUgPyAiYmctcHJpbWFyeSB0ZXh0LXdoaXRlIGJvcmRlci1wcmltYXJ5IgogICAgICAgICAgICAgICAgOiBmLnZhbHVlID09PSAic2FsZSIgPyAiYm9yZGVyLXNhbGUgdGV4dC1zYWxlIGhvdmVyOmJnLXNhbGUgaG92ZXI6dGV4dC13aGl0ZSIKICAgICAgICAgICAgICAgIDogImJvcmRlci1ib3JkZXIgdGV4dC10ZXh0LXNlY29uZGFyeSBob3Zlcjpib3JkZXItcHJpbWFyeSBob3Zlcjp0ZXh0LXByaW1hcnkgYmctc3VyZmFjZSJ9YH0KICAgICAgICAgICAgYXJpYS1wcmVzc2VkPXtpc0FjdGl2ZX0+CiAgICAgICAgICAgIHtmLmxhYmVsfQogICAgICAgICAgPC9idXR0b24+CiAgICAgICAgKTsKICAgICAgfSl9CiAgICA8L2Rpdj4KICApOwp9Cg==
+"use client";
+
+import { useRouter, useSearchParams, usePathname } from "next/navigation";
+import type { ProductCategory } from "@/lib/sanity";
+
+const FILTERS = [
+  { label: "All",     value: "all"     },
+  { label: "Denim",   value: "denim"   },
+  { label: "Dresses", value: "dresses" },
+  { label: "Tops",    value: "tops"    },
+  { label: "Sets",    value: "sets"    },
+  { label: "Kids",    value: "kids"    },
+  { label: "Sale",    value: "sale"    },
+] as const;
+
+type FilterValue = ProductCategory | "all";
+
+interface Props { activeCategory: ProductCategory | null; }
+
+export function ShopFilters({ activeCategory }: Props) {
+  const router   = useRouter();
+  const pathname = usePathname();
+  const params   = useSearchParams();
+
+  function setCategory(value: FilterValue) {
+    const next = new URLSearchParams(params.toString());
+    value === "all" ? next.delete("category") : next.set("category", value);
+    router.push(`${pathname}?${next.toString()}`);
+  }
+
+  return (
+    <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-hide" role="group" aria-label="Filter by category">
+      {FILTERS.map((f) => {
+        const isActive = f.value === "all" ? !activeCategory : activeCategory === f.value;
+        return (
+          <button key={f.value} type="button" onClick={() => setCategory(f.value as FilterValue)}
+            className={`flex-shrink-0 px-4 py-2 rounded-pill border font-sans font-medium text-small transition-colors duration-[180ms] ${
+              isActive ? "bg-primary text-white border-primary"
+              : f.value === "sale" ? "border-sale text-sale hover:bg-sale hover:text-white"
+              : "border-border text-text-secondary hover:border-primary hover:text-primary bg-surface"
+            }`}
+            aria-pressed={isActive}>
+            {f.label}
+          </button>
+        );
+      })}
+    </div>
+  );
+}
