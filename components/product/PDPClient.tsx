@@ -1,1 +1,108 @@
-InVzZSBjbGllbnQiOwoKaW1wb3J0IEltYWdlICAgIGZyb20gIm5leHQvaW1hZ2UiOwppbXBvcnQgeyB1c2VTdGF0ZSB9IGZyb20gInJlYWN0IjsKaW1wb3J0IHR5cGUgeyBTYW5pdHlQcm9kdWN0IH0gZnJvbSAiQC9saWIvc2FuaXR5IjsKaW1wb3J0IHsgVHJ5T25Nb2RhbCB9IGZyb20gIkAvY29tcG9uZW50cy90cnlvbi9UcnlPbk1vZGFsIjsKaW1wb3J0IHsgYnVpbGRXaGF0c0FwcE9yZGVyVXJsLCBidWlsZFdoYXRzQXBwTm90aWZ5VXJsIH0gZnJvbSAiQC9saWIvd2hhdHNhcHAiOwoKZnVuY3Rpb24gV2FJY29uKCkgewogIHJldHVybiAoCiAgICA8c3ZnIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJjdXJyZW50Q29sb3IiIGFyaWEtaGlkZGVuPSJ0cnVlIj4KICAgICAgPHBhdGggZD0iTTE3LjQ3MiAxNC4zODJjLS4yOTctLjE0OS0xLjc1OC0uODY3LTIuMDMtLjk2Ny0uMjczLS4wOTktLjQ3MS0uMTQ4LS42Ny4xNS0uMTk3LjI5Ny0uNzY3Ljk2Ni0uOTQgMS4xNjQtLjE3My4xOTktLjM0Ny4yMjMtLjY0NC4wNzUtLjI5Ny0uMTUtMS4yNTUtLjQ2My0yLjM5LTEuNDc1LS44ODMtLjc4OC0xLjQ4LTEuNzYxLTEuNjUzLTIuMDU5LS4xNzMtLjI5Ny0uMDE4LS40NTguMTMtLjYwNi4xMzQtLjEzMy4yOTgtLjM0Ny40NDYtLjUyLjE0OS0uMTc0LjE5OC0uMjk4LjI5OC0uNDk3LjA5OS0uMTk4LjA1LS4zNzEtLjAyNS0uNTItLjA3NS0uMTQ5LS42NjktMS42MTItLjkxNi0yLjIwNy0uMjQyLS41NzktLjQ4Ny0uNS0uNjY5LS41MS0uMTczLS4wMDgtLjM3MS0uMDEtLjU3LS4wMS0uMTk4IDAtLjUyLjA3NC0uNzkyLjM3Mi0uMjcyLjI5Ny0xLjA0IDEuMDE2LTEuMDQgMi40NzkgMCAxLjQ2MiAxLjA2NSAyLjg3NSAxLjIxMyAzLjA3NC4xNDkuMTk4IDIuMDk2IDMuMiA1LjA3NyA0LjQ4Ny43MDkuMzA2IDEuMjYyLjQ4OSAxLjY5NC42MjUuNzEyLjIyNyAxLjM2LjE5NSAxLjg3MS4xMTguNTcxLS4wODUgMS43NTgtLjcxOSAyLjAwNi0xLjQxMy4yNDgtLjY5NC4yNDgtMS4yODkuMTczLTEuNDEzLS4wNzQtLjEyNC0uMjcyLS4xOTgtLjU3LS4zNDdtLTUuNDIxIDcuNDAzaC0uMDA0YTkuODcgOS44NyAwIDAxLTUuMDMxLTEuMzc4bC0uMzYxLS4yMTQtMy43NDEuOTgyLjk5OC0zLjY0OC0uMjM1LS4zNzRhOS44NiA5Ljg2IDAgMDEtMS41MS01LjI2Yy4wMDEtNS40NSA0LjQzNi05Ljg4NCA5Ljg4OC05Ljg4NCAyLjY0IDAgNS4xMjIgMS4wMyA2Ljk4OCAyLjg5OGE5LjgyNSA5LjgyNSAwIDAxMi44OTMgNi45OTRjLS4wMDMgNS40NS00LjQzNyA5Ljg4NC05Ljg4NSA5Ljg4NG04LjQxMy0xOC4yOTdBMTEuODE1IDExLjgxNSAwIDAwMTIuMDUgMEM1LjQ5NSAwIC4xNiA1LjMzNS4xNTcgMTEuODkyYzAgMi4wOTYuNTQ3IDQuMTQyIDEuNTg4IDUuOTQ1TC4wNTcgMjRsNi4zMDUtMS42NTRhMTEuODgyIDExLjg4MiAwIDAwNS42ODMgMS40NDhoLjAwNWM2LjU1NCAwIDExLjg5LTUuMzM1IDExLjg5My0xMS44OTNhMTEuODIxIDExLjgyMSAwIDAwLTMuNDgtOC40MTN6IiAvPgogICAgPC9zdmc+CiAgKTsKfQoKaW50ZXJmYWNlIFByb3BzIHsgcHJvZHVjdDogU2FuaXR5UHJvZHVjdDsgc2l0ZVVybDogc3RyaW5nOyB9CgpleHBvcnQgZnVuY3Rpb24gUERQQ2xpZW50KHsgcHJvZHVjdCwgc2l0ZVVybCB9OiBQcm9wcykgewogIGNvbnN0IFt0cnlPbk9wZW4sIHNldFRyeU9uT3Blbl0gPSB1c2VTdGF0ZShmYWxzZSk7CiAgY29uc3QgcGRwVXJsICAgPSBgJHtzaXRlVXJsfS9wcm9kdWN0LyR7cHJvZHVjdC5zbHVnfWA7CiAgY29uc3Qgb3JkZXJVcmwgPSBidWlsZFdoYXRzQXBwT3JkZXJVcmwoeyBuYW1lOiBwcm9kdWN0Lm5hbWUsIHNpemU6IHByb2R1Y3Quc2l6ZSwgcHJpY2U6IHByb2R1Y3QucHJpY2UsIHByb2R1Y3RVcmw6IHBkcFVybCwgc2t1OiBwcm9kdWN0LnNrdSB9KTsKICBjb25zdCBub3RpZnlVcmwgPSBidWlsZFdoYXRzQXBwTm90aWZ5VXJsKHsgbmFtZTogcHJvZHVjdC5uYW1lLCBzaXplOiBwcm9kdWN0LnNpemUsIHByb2R1Y3RVcmw6IHBkcFVybCwgc2t1OiBwcm9kdWN0LnNrdSB9KTsKICBjb25zdCBpc09uU2FsZSA9ICEhcHJvZHVjdC5vcmlnaW5hbFByaWNlOwogIGNvbnN0IGNhblRyeU9uID0gIXByb2R1Y3QuaXNLaWRzICYmICEhcHJvZHVjdC50cnlPbkdhcm1lbnRVcmw7CgogIHJldHVybiAoCiAgICA8PgogICAgICA8ZGl2IGNsYXNzTmFtZT0ibWF4LXctc2NyZWVuLXhsIG14LWF1dG8gcHgtNSBweS02IG1kOnB5LTEwIj4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBmbGV4LWNvbCBtZDpmbGV4LXJvdyBnYXAtOCBtZDpnYXAtMTIgbWQ6aXRlbXMtc3RhcnQiPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9InctZnVsbCBtZDp3LVs1OCVdIGZsZXgtc2hyaW5rLTAiPgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0icmVsYXRpdmUgYXNwZWN0LXByb2R1Y3Qgdy1mdWxsIHJvdW5kZWQtY2FyZCBvdmVyZmxvdy1oaWRkZW4gYmctc3VyZmFjZS1tdXRlZCI+CiAgICAgICAgICAgICAge3Byb2R1Y3QuaW1hZ2VVcmwgPyAoCiAgICAgICAgICAgICAgICA8SW1hZ2Ugc3JjPXtwcm9kdWN0LmltYWdlVXJsfSBhbHQ9e3Byb2R1Y3QubmFtZX0gZmlsbCBwcmlvcml0eQogICAgICAgICAgICAgICAgICBzaXplcz0iKG1heC13aWR0aDo3NjhweCkgMTAwdncsIDU4dnciCiAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT17YG9iamVjdC1jb3ZlciBvYmplY3QtY2VudGVyICR7cHJvZHVjdC5pc1NvbGRPdXQgPyAiZ3JheXNjYWxlIG9wYWNpdHktNjAiIDogIiJ9YH0gLz4KICAgICAgICAgICAgICApIDogKAogICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImFic29sdXRlIGluc2V0LTAgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIiPgogICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQtNnhsIiBhcmlhLWhpZGRlbj0idHJ1ZSI+8J+Rlzwvc3Bhbj4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICl9CiAgICAgICAgICAgICAge3Byb2R1Y3QuaXNTb2xkT3V0ICYmICgKICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJhYnNvbHV0ZSB0b3AtNCBsZWZ0LTQiPgogICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InB4LTQgcHktMS41IHJvdW5kZWQtcGlsbCBiZy1zdXJmYWNlIHRleHQtdGV4dC1tdXRlZCBmb250LXNhbnMgZm9udC1tZWRpdW0gdGV4dC1zbWFsbCB0cmFja2luZy13aWRlciB1cHBlcmNhc2Ugc2hhZG93LXNtIj5Tb2xkIE91dDwvc3Bhbj4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICl9CiAgICAgICAgICAgICAgeyFwcm9kdWN0LmlzU29sZE91dCAmJiBwcm9kdWN0LmlzTmV3ICYmICgKICAgICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJhYnNvbHV0ZSB0b3AtNCBsZWZ0LTQiPgogICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InB4LTMgcHktMSByb3VuZGVkLXBpbGwgYmctcHJpbWFyeSB0ZXh0LXdoaXRlIGZvbnQtc2FucyBmb250LXNlbWlib2xkIHRleHQtWzExcHhdIHRyYWNraW5nLVswLjA2ZW1dIHVwcGVyY2FzZSI+TmV3IEluPC9zcGFuPgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgKX0KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8L2Rpdj4KCiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0idy1mdWxsIG1kOnctWzQyJV0gbWQ6c3RpY2t5IG1kOnRvcC0yNCBmbGV4IGZsZXgtY29sIGdhcC02Ij4KICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJzZWN0aW9uLWxhYmVsIGNhcGl0YWxpemUiPntwcm9kdWN0LmNhdGVnb3J5fTwvcD4KICAgICAgICAgICAgPGgxIGNsYXNzTmFtZT0iZm9udC1kaXNwbGF5IGZvbnQtbWVkaXVtIHRleHQtaDEgdGV4dC10ZXh0LXByaW1hcnkgbGVhZGluZy10aWdodCI+e3Byb2R1Y3QubmFtZX08L2gxPgoKICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiBnYXAtNCBweS00IGJvcmRlci15IGJvcmRlci1ib3JkZXIiPgogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGZsZXgtY29sIGdhcC0xIj4KICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iZm9udC1zYW5zIHRleHQtc21hbGwgdGV4dC10ZXh0LW11dGVkIj5TaXplPC9zcGFuPgogICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJzaXplLWNoaXAgdGV4dC1bMTRweF0gcHgtMyBweS0xIj57cHJvZHVjdC5zaXplfTwvc3Bhbj4KICAgICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBmbGV4LWNvbCBnYXAtMSBpdGVtcy1lbmQiPgogICAgICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJmb250LXNhbnMgdGV4dC1zbWFsbCB0ZXh0LXRleHQtbXV0ZWQiPlByaWNlPC9zcGFuPgogICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0yIj4KICAgICAgICAgICAgICAgICAge2lzT25TYWxlICYmIDxzcGFuIGNsYXNzTmFtZT0icHJpY2UtdGFnLW9yaWdpbmFsIHRleHQtWzE1cHhdIj57cHJvZHVjdC5vcmlnaW5hbFByaWNlfTwvc3Bhbj59CiAgICAgICAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT17YCR7aXNPblNhbGUgPyAicHJpY2UtdGFnLXNhbGUiIDogInByaWNlLXRhZyJ9IHRleHQtWzI0cHhdYH0+e3Byb2R1Y3QucHJpY2V9PC9zcGFuPgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgICAge3Byb2R1Y3QuZGVzY3JpcHRpb24gJiYgKAogICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0iZm9udC1zYW5zIHRleHQtYm9keSB0ZXh0LXRleHQtc2Vjb25kYXJ5IGxlYWRpbmctZWRpdG9yaWFsIj57cHJvZHVjdC5kZXNjcmlwdGlvbn08L3A+CiAgICAgICAgICAgICl9CiAgICAgICAgICAgIHtwcm9kdWN0LnNrdSAmJiA8cCBjbGFzc05hbWU9ImZvbnQtc2FucyB0ZXh0LXNtYWxsIHRleHQtdGV4dC1tdXRlZCI+UmVmOiB7cHJvZHVjdC5za3V9PC9wPn0KCiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGZsZXgtY29sIGdhcC0zIj4KICAgICAgICAgICAgICB7IXByb2R1Y3QuaXNTb2xkT3V0ID8gKAogICAgICAgICAgICAgICAgPGEgaHJlZj17b3JkZXJVcmx9IHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIG5vcmVmZXJyZXIiCiAgICAgICAgICAgICAgICAgIGNsYXNzTmFtZT0iYnRuLXdoYXRzYXBwIHctZnVsbCBqdXN0aWZ5LWNlbnRlciB0ZXh0LVsxNnB4XSBoLVs1NnB4XSIKICAgICAgICAgICAgICAgICAgYXJpYS1sYWJlbD17YE9yZGVyICR7cHJvZHVjdC5uYW1lfSBvbiBXaGF0c0FwcGB9PgogICAgICAgICAgICAgICAgICA8V2FJY29uIC8+T3JkZXIgb24gV2hhdHNBcHAKICAgICAgICAgICAgICAgIDwvYT4KICAgICAgICAgICAgICApIDogKAogICAgICAgICAgICAgICAgPGEgaHJlZj17bm90aWZ5VXJsfSB0YXJnZXQ9Il9ibGFuayIgcmVsPSJub29wZW5lciBub3JlZmVycmVyIgogICAgICAgICAgICAgICAgICBjbGFzc05hbWU9InctZnVsbCBoLVs1NnB4XSByb3VuZGVkLXBpbGwgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgZ2FwLTIgZm9udC1zYW5zIGZvbnQtc2VtaWJvbGQgdGV4dC1bMTZweF0gYmctc3VyZmFjZS1tdXRlZCB0ZXh0LXRleHQtc2Vjb25kYXJ5IGhvdmVyOmJnLWJvcmRlciB0cmFuc2l0aW9uLWNvbG9ycyI+CiAgICAgICAgICAgICAgICAgIE5vdGlmeSBNZSBXaGVuIEJhY2sgSW4gU3RvY2sKICAgICAgICAgICAgICAgIDwvYT4KICAgICAgICAgICAgICApfQogICAgICAgICAgICAgIHtjYW5UcnlPbiAmJiAhcHJvZHVjdC5pc1NvbGRPdXQgJiYgKAogICAgICAgICAgICAgICAgPGJ1dHRvbiB0eXBlPSJidXR0b24iIG9uQ2xpY2s9eygpID0+IHNldFRyeU9uT3Blbih0cnVlKX0KICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJ3LWZ1bGwgaC1bNTJweF0gcm91bmRlZC1waWxsIGJvcmRlciBib3JkZXItYm9yZGVyIGZvbnQtc2FucyBmb250LXNlbWlib2xkIHRleHQtWzE1cHhdIHRleHQtdGV4dC1zZWNvbmRhcnkgaG92ZXI6Ym9yZGVyLWFjY2VudCBob3Zlcjp0ZXh0LWFjY2VudCB0cmFuc2l0aW9uLWNvbG9ycyBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlciBnYXAtMiIKICAgICAgICAgICAgICAgICAgYXJpYS1sYWJlbD17YFRyeSBvbiAke3Byb2R1Y3QubmFtZX0gdmlydHVhbGx5YH0+CiAgICAgICAgICAgICAgICAgIDxzcGFuIGFyaWEtaGlkZGVuPSJ0cnVlIiBjbGFzc05hbWU9InRleHQtWzE3cHhdIj7inKY8L3NwYW4+VHJ5IE9uIHdpdGggQUkKICAgICAgICAgICAgICAgIDwvYnV0dG9uPgogICAgICAgICAgICAgICl9CiAgICAgICAgICAgIDwvZGl2PgoKICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggZmxleC13cmFwIGdhcC00IHB0LTIiPgogICAgICAgICAgICAgIHtbWyLwn5qaIiwiTmF0aW9ud2lkZSBkZWxpdmVyeSJdLFsi8J+SrCIsIk9yZGVyIHZpYSBXaGF0c0FwcCJdLFsi4oap77iPIiwiU2VlIG91ciBwb2xpY3kiXV0ubWFwKChbaWNvbixsYWJlbF0pID0+ICgKICAgICAgICAgICAgICAgIDxkaXYga2V5PXtsYWJlbH0gY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMS41IGZvbnQtc2FucyB0ZXh0LXNtYWxsIHRleHQtdGV4dC1tdXRlZCI+CiAgICAgICAgICAgICAgICAgIDxzcGFuIGFyaWEtaGlkZGVuPSJ0cnVlIj57aWNvbn08L3NwYW4+e2xhYmVsfQogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgKSl9CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvZGl2PgoKICAgICAge3RyeU9uT3BlbiAmJiAoCiAgICAgICAgPFRyeU9uTW9kYWwgcHJvZHVjdD17cHJvZHVjdH0gc2l0ZVVybD17c2l0ZVVybH0gb25DbG9zZT17KCkgPT4gc2V0VHJ5T25PcGVuKGZhbHNlKX0gLz4KICAgICAgKX0KICAgIDwvPgogICk7Cn0K
+"use client";
+import Image from "next/image";
+import { useState } from "react";
+import type { SanityProduct } from "@/lib/sanity";
+import { TryOnModal } from "@/components/tryon/TryOnModal";
+import { buildWhatsAppOrderUrl, buildWhatsAppNotifyUrl } from "@/lib/whatsapp";
+
+function WaIcon() {
+  return (
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+  );
+}
+
+interface Props { product: SanityProduct; siteUrl: string; }
+
+export function PDPClient({ product, siteUrl }: Props) {
+  const [tryOnOpen, setTryOnOpen] = useState(false);
+  const pdpUrl    = `${siteUrl}/product/${product.slug}`;
+  const orderUrl  = buildWhatsAppOrderUrl({ name: product.name, size: product.size, price: product.price, productUrl: pdpUrl, sku: product.sku });
+  const notifyUrl = buildWhatsAppNotifyUrl({ name: product.name, size: product.size, productUrl: pdpUrl, sku: product.sku });
+  const isOnSale  = !!product.originalPrice;
+  const canTryOn  = !product.isKids && !!product.tryOnGarmentUrl;
+
+  return (
+    <>
+      <div className="max-w-screen-xl mx-auto px-5 py-6 md:py-10">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-12 md:items-start">
+          <div className="w-full md:w-[58%] flex-shrink-0">
+            <div className="relative aspect-product w-full rounded-card overflow-hidden bg-surface-muted">
+              {product.imageUrl ? (
+                <Image src={product.imageUrl} alt={product.name} fill priority
+                  sizes="(max-width:768px) 100vw, 58vw"
+                  className={`object-cover object-center ${product.isSoldOut ? "grayscale opacity-60" : ""}`} />
+              ) : (
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="text-6xl" aria-hidden="true">👗</span>
+                </div>
+              )}
+              {product.isSoldOut && (
+                <div className="absolute top-4 left-4">
+                  <span className="px-4 py-1.5 rounded-pill bg-surface text-text-muted font-sans font-medium text-small tracking-wider uppercase shadow-sm">Sold Out</span>
+                </div>
+              )}
+              {!product.isSoldOut && product.isNew && (
+                <div className="absolute top-4 left-4">
+                  <span className="px-3 py-1 rounded-pill bg-primary text-white font-sans font-semibold text-[11px] tracking-[0.06em] uppercase">New In</span>
+                </div>
+              )}
+            </div>
+          </div>
+
+          <div className="w-full md:w-[42%] md:sticky md:top-24 flex flex-col gap-6">
+            <p className="section-label capitalize">{product.category}</p>
+            <h1 className="font-display font-medium text-h1 text-text-primary leading-tight">{product.name}</h1>
+
+            <div className="flex items-center justify-between gap-4 py-4 border-y border-border">
+              <div className="flex flex-col gap-1">
+                <span className="font-sans text-small text-text-muted">Size</span>
+                <span className="size-chip text-[14px] px-3 py-1">{product.size}</span>
+              </div>
+              <div className="flex flex-col gap-1 items-end">
+                <span className="font-sans text-small text-text-muted">Price</span>
+                <div className="flex items-center gap-2">
+                  {isOnSale && <span className="price-tag-original text-[15px]">{product.originalPrice}</span>}
+                  <span className={`${isOnSale ? "price-tag-sale" : "price-tag"} text-[24px]`}>{product.price}</span>
+                </div>
+              </div>
+            </div>
+
+            {product.description && <p className="font-sans text-body text-text-secondary leading-editorial">{product.description}</p>}
+            {product.sku && <p className="font-sans text-small text-text-muted">Ref: {product.sku}</p>}
+
+            <div className="flex flex-col gap-3">
+              {!product.isSoldOut ? (
+                <a href={orderUrl} target="_blank" rel="noopener noreferrer"
+                  className="btn-whatsapp w-full justify-center text-[16px] h-[56px]"
+                  aria-label={`Order ${product.name} on WhatsApp`}>
+                  <WaIcon />Order on WhatsApp
+                </a>
+              ) : (
+                <a href={notifyUrl} target="_blank" rel="noopener noreferrer"
+                  className="w-full h-[56px] rounded-pill flex items-center justify-center gap-2 font-sans font-semibold text-[16px] bg-surface-muted text-text-secondary hover:bg-border transition-colors">
+                  Notify Me When Back In Stock
+                </a>
+              )}
+              {canTryOn && !product.isSoldOut && (
+                <button type="button" onClick={() => setTryOnOpen(true)}
+                  className="w-full h-[52px] rounded-pill border border-border font-sans font-semibold text-[15px] text-text-secondary hover:border-accent hover:text-accent transition-colors flex items-center justify-center gap-2"
+                  aria-label={`Try on ${product.name} virtually`}>
+                  <span aria-hidden="true" className="text-[17px]">✦</span>Try On with AI
+                </button>
+              )}
+            </div>
+
+            <div className="flex flex-wrap gap-4 pt-2">
+              {[["Nationwide delivery"], ["Order via WhatsApp"], ["See our policy"]].map(([label]) => (
+                <div key={label} className="flex items-center gap-1.5 font-sans text-small text-text-muted">{label}</div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+      {tryOnOpen && <TryOnModal product={product} siteUrl={siteUrl} onClose={() => setTryOnOpen(false)} />}
+    </>
+  );
+}
