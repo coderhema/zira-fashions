@@ -1,1 +1,4 @@
-LmVudi5sb2NhbAouZW52Ci5uZXh0Lwpub2RlX21vZHVsZXMvCg==
+.env.local
+.env
+.next/
+node_modules/
