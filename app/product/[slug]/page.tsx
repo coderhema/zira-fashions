@@ -1,1 +1,74 @@
-aW1wb3J0IHsgbm90Rm91bmQgfSAgZnJvbSAibmV4dC9uYXZpZ2F0aW9uIjsKaW1wb3J0IHR5cGUgeyBNZXRhZGF0YSB9IGZyb20gIm5leHQiOwppbXBvcnQgeyBnZXRQcm9kdWN0QnlTbHVnLCBnZXRBbGxQcm9kdWN0cyB9IGZyb20gIkAvbGliL3Nhbml0eSI7CmltcG9ydCB7IEhlYWRlciB9ICAgIGZyb20gIkAvY29tcG9uZW50cy9sYXlvdXQvSGVhZGVyIjsKaW1wb3J0IHsgRm9vdGVyIH0gICAgZnJvbSAiQC9jb21wb25lbnRzL2xheW91dC9Gb290ZXIiOwppbXBvcnQgeyBQRFBDbGllbnQgfSBmcm9tICJAL2NvbXBvbmVudHMvcHJvZHVjdC9QRFBDbGllbnQiOwoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdlbmVyYXRlU3RhdGljUGFyYW1zKCkgewogIGNvbnN0IHByb2R1Y3RzID0gYXdhaXQgZ2V0QWxsUHJvZHVjdHMoKTsKICByZXR1cm4gcHJvZHVjdHMubWFwKChwKSA9PiAoeyBzbHVnOiBwLnNsdWcgfSkpOwp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2VuZXJhdGVNZXRhZGF0YSh7IHBhcmFtcyB9OiB7IHBhcmFtczogeyBzbHVnOiBzdHJpbmcgfSB9KTogUHJvbWlzZTxNZXRhZGF0YT4gewogIGNvbnN0IHByb2R1Y3QgPSBhd2FpdCBnZXRQcm9kdWN0QnlTbHVnKHBhcmFtcy5zbHVnKTsKICBpZiAoIXByb2R1Y3QpIHJldHVybiB7IHRpdGxlOiAiUHJvZHVjdCBOb3QgRm91bmQiIH07CgogIGNvbnN0IHNpdGVVcmwgPSBwcm9jZXNzLmVudi5ORVhUX1BVQkxJQ19TSVRFX1VSTCA/PyAiaHR0cHM6Ly96aXJhZmFzaGlvbnMuY29tIjsKICBjb25zdCBvZ1VybCAgID0gbmV3IFVSTCgiL2FwaS9vZyIsIHNpdGVVcmwpOwogIG9nVXJsLnNlYXJjaFBhcmFtcy5zZXQoIm5hbWUiLCAgcHJvZHVjdC5uYW1lKTsKICBvZ1VybC5zZWFyY2hQYXJhbXMuc2V0KCJwcmljZSIsIHByb2R1Y3QucHJpY2UpOwogIG9nVXJsLnNlYXJjaFBhcmFtcy5zZXQoInNpemUiLCAgcHJvZHVjdC5zaXplKTsKICBpZiAocHJvZHVjdC5pbWFnZVVybCkgICAgICAgIG9nVXJsLnNlYXJjaFBhcmFtcy5zZXQoImltYWdlIiwgcHJvZHVjdC5pbWFnZVVybCk7CiAgaWYgKHByb2R1Y3QuaXNTb2xkT3V0KSAgICAgICBvZ1VybC5zZWFyY2hQYXJhbXMuc2V0KCJiYWRnZSIsICJzb2xkLW91dCIpOwogIGVsc2UgaWYgKHByb2R1Y3Qub3JpZ2luYWxQcmljZSkgb2dVcmwuc2VhcmNoUGFyYW1zLnNldCgiYmFkZ2UiLCAic2FsZSIpOwogIGVsc2UgaWYgKHByb2R1Y3QuaXNOZXcpICAgICAgb2dVcmwuc2VhcmNoUGFyYW1zLnNldCgiYmFkZ2UiLCAibmV3Iik7CgogIGNvbnN0IHRpdGxlID0gYCR7cHJvZHVjdC5uYW1lfSDigJQgJHtwcm9kdWN0LnNpemV9YDsKICBjb25zdCBkZXNjcmlwdGlvbiA9IGAke3Byb2R1Y3QucHJpY2V9IMK3IFNpemUgJHtwcm9kdWN0LnNpemV9IMK3IFppcmEgRmFzaGlvbnMuIERNIHRvIG9yZGVyLiBOYXRpb253aWRlIGRlbGl2ZXJ5LmA7CgogIHJldHVybiB7CiAgICB0aXRsZSwKICAgIGRlc2NyaXB0aW9uLAogICAgb3BlbkdyYXBoOiB7CiAgICAgIHRpdGxlLCBkZXNjcmlwdGlvbiwKICAgICAgdXJsOiAgICBgJHtzaXRlVXJsfS9wcm9kdWN0LyR7cHJvZHVjdC5zbHVnfWAsCiAgICAgIHR5cGU6ICAgIndlYnNpdGUiLAogICAgICBpbWFnZXM6IFt7IHVybDogb2dVcmwudG9TdHJpbmcoKSwgd2lkdGg6IDEyMDAsIGhlaWdodDogNjMwLCBhbHQ6IHByb2R1Y3QubmFtZSB9XQogICAgfSwKICAgIHR3aXR0ZXI6IHsgY2FyZDogInN1bW1hcnlfbGFyZ2VfaW1hZ2UiLCB0aXRsZSwgZGVzY3JpcHRpb24gfQogIH07Cn0KCmV4cG9ydCBkZWZhdWx0IGFzeW5jIGZ1bmN0aW9uIFBEUFBhZ2UoeyBwYXJhbXMgfTogeyBwYXJhbXM6IHsgc2x1Zzogc3RyaW5nIH0gfSkgewogIGNvbnN0IHByb2R1Y3QgPSBhd2FpdCBnZXRQcm9kdWN0QnlTbHVnKHBhcmFtcy5zbHVnKTsKICBpZiAoIXByb2R1Y3QpIG5vdEZvdW5kKCk7CiAgY29uc3Qgc2l0ZVVybCA9IHByb2Nlc3MuZW52Lk5FWFRfUFVCTElDX1NJVEVfVVJMID8/ICJodHRwczovL3ppcmFmYXNoaW9ucy5jb20iOwoKICByZXR1cm4gKAogICAgPD4KICAgICAgPEhlYWRlciAvPgogICAgICA8bWFpbiBjbGFzc05hbWU9InB0LTE2IG1kOnB0LVs2OHB4XSI+CiAgICAgICAgPG5hdiBjbGFzc05hbWU9Im1heC13LXNjcmVlbi14bCBteC1hdXRvIHB4LTUgcHQtNiBwYi0yIiBhcmlhLWxhYmVsPSJCcmVhZGNydW1iIj4KICAgICAgICAgIDxvbCBjbGFzc05hbWU9ImZsZXggaXRlbXMtY2VudGVyIGdhcC0yIGZvbnQtc2FucyB0ZXh0LXNtYWxsIHRleHQtdGV4dC1tdXRlZCI+CiAgICAgICAgICAgIDxsaT48YSBocmVmPSIvIiBjbGFzc05hbWU9ImhvdmVyOnRleHQtdGV4dC1zZWNvbmRhcnkgdHJhbnNpdGlvbi1jb2xvcnMiPkhvbWU8L2E+PC9saT4KICAgICAgICAgICAgPGxpIGFyaWEtaGlkZGVuPSJ0cnVlIj7CtzwvbGk+CiAgICAgICAgICAgIDxsaT48YSBocmVmPSIvc2hvcCIgY2xhc3NOYW1lPSJob3Zlcjp0ZXh0LXRleHQtc2Vjb25kYXJ5IHRyYW5zaXRpb24tY29sb3JzIj5TaG9wPC9hPjwvbGk+CiAgICAgICAgICAgIDxsaSBhcmlhLWhpZGRlbj0idHJ1ZSI+wrc8L2xpPgogICAgICAgICAgICA8bGkgY2xhc3NOYW1lPSJ0ZXh0LXRleHQtc2Vjb25kYXJ5IHRydW5jYXRlIG1heC13LVsxODBweF0iPntwcm9kdWN0Lm5hbWV9PC9saT4KICAgICAgICAgIDwvb2w+CiAgICAgICAgPC9uYXY+CiAgICAgICAgPFBEUENsaWVudCBwcm9kdWN0PXtwcm9kdWN0fSBzaXRlVXJsPXtzaXRlVXJsfSAvPgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJtYXgtdy1zY3JlZW4teGwgbXgtYXV0byBweC01IHB5LTEyIGJvcmRlci10IGJvcmRlci1ib3JkZXIiPgogICAgICAgICAgPGEgaHJlZj0iL3Nob3AiIGNsYXNzTmFtZT0iaW5saW5lLWZsZXggaXRlbXMtY2VudGVyIGdhcC0yIGZvbnQtc2FucyBmb250LW1lZGl1bSB0ZXh0LVsxNHB4XSB0ZXh0LXRleHQtc2Vjb25kYXJ5IGhvdmVyOnRleHQtdGV4dC1wcmltYXJ5IHRyYW5zaXRpb24tY29sb3JzIj4KICAgICAgICAgICAgPHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSJjdXJyZW50Q29sb3IiIHN0cm9rZVdpZHRoPSIxLjUiIHN0cm9rZUxpbmVjYXA9InJvdW5kIiBhcmlhLWhpZGRlbj0idHJ1ZSI+CiAgICAgICAgICAgICAgPHBhdGggZD0iTTEwIDQgNiA4bDQgNCIgLz4KICAgICAgICAgICAgPC9zdmc+CiAgICAgICAgICAgIEJhY2sgdG8gYWxsIHByb2R1Y3RzCiAgICAgICAgICA8L2E+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvbWFpbj4KICAgICAgPEZvb3RlciAvPgogICAgPC8+CiAgKTsKfQo=
+import { notFound } from "next/navigation";
+import type { Metadata } from "next";
+import { getProductBySlug, getAllProducts } from "@/lib/sanity";
+import { Header } from "@/components/layout/Header";
+import { Footer } from "@/components/layout/Footer";
+import { PDPClient } from "@/components/product/PDPClient";
+
+export async function generateStaticParams() {
+  const products = await getAllProducts();
+  return products.map((p) => ({ slug: p.slug }));
+}
+
+export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
+  const product = await getProductBySlug(params.slug);
+  if (!product) return { title: "Product Not Found" };
+
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://zirafashions.com";
+  const ogUrl   = new URL("/api/og", siteUrl);
+  ogUrl.searchParams.set("name",  product.name);
+  ogUrl.searchParams.set("price", product.price);
+  ogUrl.searchParams.set("size",  product.size);
+  if (product.imageUrl)       ogUrl.searchParams.set("image", product.imageUrl);
+  if (product.isSoldOut)      ogUrl.searchParams.set("badge", "sold-out");
+  else if (product.originalPrice) ogUrl.searchParams.set("badge", "sale");
+  else if (product.isNew)     ogUrl.searchParams.set("badge", "new");
+
+  const title       = `${product.name} \u2014 ${product.size}`;
+  const description = `${product.price} \u00b7 Size ${product.size} \u00b7 Zira Fashions. DM to order. Nationwide delivery.`;
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title, description,
+      url:    `${siteUrl}/product/${product.slug}`,
+      type:   "website",
+      images: [{ url: ogUrl.toString(), width: 1200, height: 630, alt: product.name }]
+    },
+    twitter: { card: "summary_large_image", title, description }
+  };
+}
+
+export default async function PDPPage({ params }: { params: { slug: string } }) {
+  const product = await getProductBySlug(params.slug);
+  if (!product) notFound();
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://zirafashions.com";
+
+  return (
+    <>
+      <Header />
+      <main className="pt-16 md:pt-[68px]">
+        <nav className="max-w-screen-xl mx-auto px-5 pt-6 pb-2" aria-label="Breadcrumb">
+          <ol className="flex items-center gap-2 font-sans text-small text-text-muted">
+            <li><a href="/" className="hover:text-text-secondary transition-colors">Home</a></li>
+            <li aria-hidden="true">&middot;</li>
+            <li><a href="/shop" className="hover:text-text-secondary transition-colors">Shop</a></li>
+            <li aria-hidden="true">&middot;</li>
+            <li className="text-text-secondary truncate max-w-[180px]">{product.name}</li>
+          </ol>
+        </nav>
+        <PDPClient product={product} siteUrl={siteUrl} />
+        <div className="max-w-screen-xl mx-auto px-5 py-12 border-t border-border">
+          <a href="/shop" className="inline-flex items-center gap-2 font-sans font-medium text-[14px] text-text-secondary hover:text-text-primary transition-colors">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" aria-hidden="true">
+              <path d="M10 4 6 8l4 4" />
+            </svg>
+            Back to all products
+          </a>
+        </div>
+      </main>
+      <Footer />
+    </>
+  );
+}
