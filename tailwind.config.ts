@@ -1,1 +1,49 @@
-aW1wb3J0IHR5cGUgeyBDb25maWcgfSBmcm9tICJ0YWlsd2luZGNzcyI7Cgpjb25zdCBjb25maWc6IENvbmZpZyA9IHsKICBjb250ZW50OiBbCiAgICAiLi9hcHAvKiovKi57anMsdHMsanN4LHRzeCxtZHh9IiwKICAgICIuL2NvbXBvbmVudHMvKiovKi57anMsdHMsanN4LHRzeCxtZHh9IgogIF0sCiAgdGhlbWU6IHsKICAgIGV4dGVuZDogewogICAgICBjb2xvcnM6IHsKICAgICAgICBiYWNrZ3JvdW5kOiAgICAgICJ2YXIoLS1jb2xvci1iYWNrZ3JvdW5kKSIsCiAgICAgICAgc3VyZmFjZTogICAgICAgICAidmFyKC0tY29sb3Itc3VyZmFjZSkiLAogICAgICAgICJzdXJmYWNlLW11dGVkIjogInZhcigtLWNvbG9yLXN1cmZhY2UtbXV0ZWQpIiwKICAgICAgICBwcmltYXJ5OiAgICAgICAgICJ2YXIoLS1jb2xvci1wcmltYXJ5KSIsCiAgICAgICAgInByaW1hcnktaG92ZXIiOiAidmFyKC0tY29sb3ItcHJpbWFyeS1ob3ZlcikiLAogICAgICAgIGFjY2VudDogICAgICAgICAgInZhcigtLWNvbG9yLWFjY2VudCkiLAogICAgICAgICJhY2NlbnQtbGlnaHQiOiAgInZhcigtLWNvbG9yLWFjY2VudC1saWdodCkiLAogICAgICAgIHByaWNlOiAgICAgICAgICAgInZhcigtLWNvbG9yLXByaWNlKSIsCiAgICAgICAgc2FsZTogICAgICAgICAgICAidmFyKC0tY29sb3Itc2FsZSkiLAogICAgICAgIHdoYXRzYXBwOiAgICAgICAgInZhcigtLWNvbG9yLXdoYXRzYXBwKSIsCiAgICAgICAgIndoYXRzYXBwLWhvdmVyIjoidmFyKC0tY29sb3Itd2hhdHNhcHAtaG92ZXIpIiwKICAgICAgICAidGV4dC1wcmltYXJ5IjogICJ2YXIoLS1jb2xvci10ZXh0LXByaW1hcnkpIiwKICAgICAgICAidGV4dC1zZWNvbmRhcnkiOiJ2YXIoLS1jb2xvci10ZXh0LXNlY29uZGFyeSkiLAogICAgICAgICJ0ZXh0LW11dGVkIjogICAgInZhcigtLWNvbG9yLXRleHQtbXV0ZWQpIiwKICAgICAgICAia2lkcy1hY2NlbnQiOiAgICJ2YXIoLS1jb2xvci1raWRzLWFjY2VudCkiLAogICAgICAgIGJvcmRlcjogICAgICAgICAgInZhcigtLWNvbG9yLWJvcmRlcikiLAogICAgICAgICJib3JkZXItc3Ryb25nIjogInZhcigtLWNvbG9yLWJvcmRlci1zdHJvbmcpIgogICAgICB9LAogICAgICBmb250RmFtaWx5OiB7CiAgICAgICAgZGlzcGxheTogWyJ2YXIoLS1mb250LWNvcm1vcmFudCkiLCAiR2VvcmdpYSIsICJzZXJpZiJdLAogICAgICAgIHNhbnM6ICAgIFsidmFyKC0tZm9udC1kbS1zYW5zKSIsICJJbnRlciIsICJzeXN0ZW0tdWkiLCAic2Fucy1zZXJpZiJdCiAgICAgIH0sCiAgICAgIGZvbnRTaXplOiB7CiAgICAgICAgImRpc3BsYXkiOiBbImNsYW1wKDQycHgsNnZ3LDY0cHgpIiwgICB7IGxpbmVIZWlnaHQ6ICIxLjEiICB9XSwKICAgICAgICAiaDEiOiAgICAgIFsiY2xhbXAoMzJweCw0LjV2dyw0OHB4KSIsIHsgbGluZUhlaWdodDogIjEuMiIgIH1dLAogICAgICAgICJoMiI6ICAgICAgWyJjbGFtcCgyNnB4LDMuNXZ3LDM2cHgpIiwgeyBsaW5lSGVpZ2h0OiAiMS4yNSIgfV0sCiAgICAgICAgImgzIjogICAgICBbIjE4cHgiLCAgICAgICAgICAgICAgICAgICB7IGxpbmVIZWlnaHQ6ICIxLjQiICB9XSwKICAgICAgICAiYm9keSI6ICAgIFsiMTZweCIsICAgICAgICAgICAgICAgICAgIHsgbGluZUhlaWdodDogIjEuNTUiIH1dLAogICAgICAgICJzbWFsbCI6ICAgWyIxM3B4IiwgICAgICAgICAgICAgICAgICAgeyBsaW5lSGVpZ2h0OiAiMS40IiAgfV0sCiAgICAgICAgIm1pY3JvIjogICBbIjEycHgiLCAgICAgICAgICAgICAgICAgICB7IGxpbmVIZWlnaHQ6ICIxLjUiICB9XQogICAgICB9LAogICAgICBsaW5lSGVpZ2h0OiB7CiAgICAgICAgZWRpdG9yaWFsOiAiMS41NSIsCiAgICAgICAgZGlzcGxheTogICAiMS4xIiwKICAgICAgICBoZWFkaW5nOiAgICIxLjI1IiwKICAgICAgICB0aWdodDogICAgICIxLjIiCiAgICAgIH0sCiAgICAgIGJvcmRlclJhZGl1czogewogICAgICAgIGNhcmQ6ICAiMTJweCIsCiAgICAgICAgcGlsbDogICIxMDBweCIsCiAgICAgICAgaW5wdXQ6ICI4cHgiCiAgICAgIH0sCiAgICAgIGFzcGVjdFJhdGlvOiB7CiAgICAgICAgInByb2R1Y3QiOiAiMyAvIDQiCiAgICAgIH0KICAgIH0KICB9LAogIHBsdWdpbnM6IFtdCn07CgpleHBvcnQgZGVmYXVsdCBjb25maWc7Cg==
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}"
+  ],
+  theme: {
+    extend: {
+      colors: {
+        background:      "var(--color-background)",
+        surface:         "var(--color-surface)",
+        "surface-muted": "var(--color-surface-muted)",
+        primary:         "var(--color-primary)",
+        "primary-hover": "var(--color-primary-hover)",
+        accent:          "var(--color-accent)",
+        "accent-light":  "var(--color-accent-light)",
+        price:           "var(--color-price)",
+        sale:            "var(--color-sale)",
+        whatsapp:        "var(--color-whatsapp)",
+        "whatsapp-hover":"var(--color-whatsapp-hover)",
+        "text-primary":  "var(--color-text-primary)",
+        "text-secondary":"var(--color-text-secondary)",
+        "text-muted":    "var(--color-text-muted)",
+        "kids-accent":   "var(--color-kids-accent)",
+        border:          "var(--color-border)",
+        "border-strong": "var(--color-border-strong)"
+      },
+      fontFamily: {
+        display: ["var(--font-cormorant)", "Georgia", "serif"],
+        sans:    ["var(--font-dm-sans)", "Inter", "system-ui", "sans-serif"]
+      },
+      fontSize: {
+        "display": ["clamp(42px,6vw,64px)", { lineHeight: "1.1" }],
+        "h1":      ["clamp(32px,4.5vw,48px)", { lineHeight: "1.2" }],
+        "h2":      ["clamp(26px,3.5vw,36px)", { lineHeight: "1.25" }],
+        "h3":      ["18px", { lineHeight: "1.4" }],
+        "body":    ["16px", { lineHeight: "1.55" }],
+        "small":   ["13px", { lineHeight: "1.4" }],
+        "micro":   ["12px", { lineHeight: "1.5" }]
+      },
+      borderRadius: { card: "12px", pill: "100px", input: "8px" },
+      aspectRatio:  { "product": "3 / 4" }
+    }
+  },
+  plugins: []
+};
+
+export default config;
