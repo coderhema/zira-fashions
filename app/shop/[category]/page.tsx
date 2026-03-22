@@ -1,1 +1,61 @@
-aW1wb3J0IHsgbm90Rm91bmQgfSAgZnJvbSAibmV4dC9uYXZpZ2F0aW9uIjsKaW1wb3J0IHR5cGUgeyBNZXRhZGF0YSB9IGZyb20gIm5leHQiOwppbXBvcnQgeyBTdXNwZW5zZSB9ICAgICAgZnJvbSAicmVhY3QiOwppbXBvcnQgeyBnZXRQcm9kdWN0c0J5Q2F0ZWdvcnksIGdldFNhbGVQcm9kdWN0cywgZ2V0S2lkc1Byb2R1Y3RzLCB0eXBlIFByb2R1Y3RDYXRlZ29yeSB9IGZyb20gIkAvbGliL3Nhbml0eSI7CmltcG9ydCB7IFByb2R1Y3RHcmlkQ2xpZW50IH0gICBmcm9tICJAL2NvbXBvbmVudHMvcHJvZHVjdC9Qcm9kdWN0R3JpZENsaWVudCI7CmltcG9ydCB7IFByb2R1Y3RDYXJkU2tlbGV0b24gfSBmcm9tICJAL2NvbXBvbmVudHMvcHJvZHVjdC9Qcm9kdWN0Q2FyZCI7CmltcG9ydCB7IEhlYWRlciB9ICAgICAgZnJvbSAiQC9jb21wb25lbnRzL2xheW91dC9IZWFkZXIiOwppbXBvcnQgeyBGb290ZXIgfSAgICAgIGZyb20gIkAvY29tcG9uZW50cy9sYXlvdXQvRm9vdGVyIjsKaW1wb3J0IHsgU2hvcEZpbHRlcnMgfSBmcm9tICJAL2NvbXBvbmVudHMvcHJvZHVjdC9TaG9wRmlsdGVycyI7Cgpjb25zdCBWQUxJRDogUHJvZHVjdENhdGVnb3J5W10gPSBbImRlbmltIiwgImRyZXNzZXMiLCAidG9wcyIsICJzZXRzIiwgInNhbGUiLCAia2lkcyJdOwoKY29uc3QgTUVUQTogUmVjb3JkPFByb2R1Y3RDYXRlZ29yeSwgeyBoZWFkaW5nOiBzdHJpbmc7IGRlc2NyaXB0aW9uOiBzdHJpbmcgfT4gPSB7CiAgZGVuaW06ICAgeyBoZWFkaW5nOiAiVGhlIERlbmltIEVkaXQiLCAgZGVzY3JpcHRpb246ICJEZW5pbSBkcmVzc2VzLCBqdW1wc3VpdHMsIHBsYXlzdWl0cyBhdCBaaXJhIEZhc2hpb25zIExhZ29zLiIgfSwKICBkcmVzc2VzOiB7IGhlYWRpbmc6ICJEcmVzc2VzIiwgICAgICAgICBkZXNjcmlwdGlvbjogIkJlYXV0aWZ1bCBkcmVzc2VzIGZyb20gVUsgJiBVUyBoaWdoc3RyZWV0IGJyYW5kcyBhdCBaaXJhIEZhc2hpb25zLiIgfSwKICB0b3BzOiAgICB7IGhlYWRpbmc6ICJUb3BzIiwgICAgICAgICAgICBkZXNjcmlwdGlvbjogIlRvcHMgZnJvbSBVSyBhbmQgVVMgaGlnaHN0cmVldCBicmFuZHMgYXQgWmlyYSBGYXNoaW9ucy4iIH0sCiAgc2V0czogICAgeyBoZWFkaW5nOiAiQ28tb3JkcyAmIFNldHMiLCAgZGVzY3JpcHRpb246ICJNYXRjaGluZyBzZXRzIGZyb20gVUsgYW5kIFVTIGhpZ2hzdHJlZXQgYnJhbmRzIGF0IFppcmEgRmFzaGlvbnMuIiB9LAogIHNhbGU6ICAgIHsgaGVhZGluZzogIlNhbGUiLCAgICAgICAgICAgIGRlc2NyaXB0aW9uOiAiU2FsZSBpdGVtcyBhdCBaaXJhIEZhc2hpb25zIExhZ29zLiIgfSwKICBraWRzOiAgICB7IGhlYWRpbmc6ICJLaWRzIENvbGxlY3Rpb24iLCBkZXNjcmlwdGlvbjogIlRyZW5keSBVSyAmIFVTIGJyYW5kcyBmb3Iga2lkcyBhZ2VkIDDigJMxNiBhdCBaaXJhIEZhc2hpb25zLiIgfQp9OwoKZXhwb3J0IGZ1bmN0aW9uIGdlbmVyYXRlU3RhdGljUGFyYW1zKCkgewogIHJldHVybiBWQUxJRC5tYXAoKGMpID0+ICh7IGNhdGVnb3J5OiBjIH0pKTsKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdlbmVyYXRlTWV0YWRhdGEoeyBwYXJhbXMgfTogeyBwYXJhbXM6IHsgY2F0ZWdvcnk6IHN0cmluZyB9IH0pOiBQcm9taXNlPE1ldGFkYXRhPiB7CiAgY29uc3QgY2F0ID0gcGFyYW1zLmNhdGVnb3J5IGFzIFByb2R1Y3RDYXRlZ29yeTsKICBpZiAoIVZBTElELmluY2x1ZGVzKGNhdCkpIHJldHVybiB7IHRpdGxlOiAiTm90IEZvdW5kIiB9OwogIGNvbnN0IG0gPSBNRVRBW2NhdF07CiAgcmV0dXJuIHsgdGl0bGU6IG0uaGVhZGluZywgZGVzY3JpcHRpb246IG0uZGVzY3JpcHRpb24gfTsKfQoKZXhwb3J0IGRlZmF1bHQgYXN5bmMgZnVuY3Rpb24gQ2F0ZWdvcnlQYWdlKHsgcGFyYW1zIH06IHsgcGFyYW1zOiB7IGNhdGVnb3J5OiBzdHJpbmcgfSB9KSB7CiAgY29uc3QgY2F0ZWdvcnkgPSBwYXJhbXMuY2F0ZWdvcnkgYXMgUHJvZHVjdENhdGVnb3J5OwogIGlmICghVkFMSUQuaW5jbHVkZXMoY2F0ZWdvcnkpKSBub3RGb3VuZCgpOwoKICBjb25zdCBwcm9kdWN0cyA9IGNhdGVnb3J5ID09PSAic2FsZSIgID8gYXdhaXQgZ2V0U2FsZVByb2R1Y3RzKCkKICAgIDogY2F0ZWdvcnkgPT09ICJraWRzIiAgPyBhd2FpdCBnZXRLaWRzUHJvZHVjdHMoKQogICAgOiBhd2FpdCBnZXRQcm9kdWN0c0J5Q2F0ZWdvcnkoY2F0ZWdvcnkpOwoKICBjb25zdCBtICAgICAgPSBNRVRBW2NhdGVnb3J5XTsKICBjb25zdCBpc0tpZHMgPSBjYXRlZ29yeSA9PT0gImtpZHMiOwoKICByZXR1cm4gKAogICAgPD4KICAgICAgPEhlYWRlciAvPgogICAgICA8bWFpbiBjbGFzc05hbWU9InB0LTE2IG1kOnB0LVs2OHB4XSI+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9Im1heC13LXNjcmVlbi14bCBteC1hdXRvIHB4LTUgcHktOCBtZDpweS0xMiI+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibWItOCI+CiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0ic2VjdGlvbi1sYWJlbCBtYi0xLjUiPntpc0tpZHMgPyAiWmlyYSBGYXNoaW9ucyBLaWRzIiA6ICJaaXJhIEZhc2hpb25zIn08L3A+CiAgICAgICAgICAgIDxoMSBjbGFzc05hbWU9ImZvbnQtZGlzcGxheSBmb250LW1lZGl1bSB0ZXh0LWgxIHRleHQtdGV4dC1wcmltYXJ5Ij57bS5oZWFkaW5nfTwvaDE+CiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0iZm9udC1zYW5zIHRleHQtc21hbGwgdGV4dC10ZXh0LW11dGVkIG10LTEiPntwcm9kdWN0cy5sZW5ndGh9IGl0ZW17cHJvZHVjdHMubGVuZ3RoICE9PSAxID8gInMiIDogIiJ9PC9wPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICB7IWlzS2lkcyAmJiA8U2hvcEZpbHRlcnMgYWN0aXZlQ2F0ZWdvcnk9e2NhdGVnb3J5fSAvPn0KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJtdC02Ij4KICAgICAgICAgICAgPFN1c3BlbnNlIGZhbGxiYWNrPXsKICAgICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZ3JpZCBncmlkLWNvbHMtMiBtZDpncmlkLWNvbHMtMyBnYXAtMyBtZDpnYXAtNSI+CiAgICAgICAgICAgICAgICB7QXJyYXkuZnJvbSh7IGxlbmd0aDogNiB9KS5tYXAoKF8sIGkpID0+IDxQcm9kdWN0Q2FyZFNrZWxldG9uIGtleT17aX0gLz4pfQogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICB9PgogICAgICAgICAgICAgIDxQcm9kdWN0R3JpZENsaWVudCBwcm9kdWN0cz17cHJvZHVjdHN9IHNob3dUcnlPbj17IWlzS2lkc30gLz4KICAgICAgICAgICAgPC9TdXNwZW5zZT4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgogICAgICA8L21haW4+CiAgICAgIDxGb290ZXIgLz4KICAgIDwvPgogICk7Cn0K
+import { notFound }             from "next/navigation";
+import type { Metadata }        from "next";
+import { Suspense }             from "react";
+import { getProductsByCategory, getSaleProducts, getKidsProducts, type ProductCategory } from "@/lib/sanity";
+import { ProductGridClient }    from "@/components/product/ProductGridClient";
+import { ProductCardSkeleton }  from "@/components/product/ProductCard";
+import { Header }               from "@/components/layout/Header";
+import { Footer }               from "@/components/layout/Footer";
+import { ShopFilters }          from "@/components/product/ShopFilters";
+
+const VALID: ProductCategory[] = ["denim", "dresses", "tops", "sets", "sale", "kids"];
+
+const META: Record<ProductCategory, { heading: string; description: string }> = {
+  denim:   { heading: "The Denim Edit",  description: "Denim dresses, jumpsuits, playsuits at Zira Fashions Lagos." },
+  dresses: { heading: "Dresses",         description: "Beautiful dresses from UK & US highstreet brands at Zira Fashions." },
+  tops:    { heading: "Tops",            description: "Tops from UK and US highstreet brands at Zira Fashions." },
+  sets:    { heading: "Co-ords & Sets",  description: "Matching sets from UK and US highstreet brands at Zira Fashions." },
+  sale:    { heading: "Sale",            description: "Sale items at Zira Fashions Lagos." },
+  kids:    { heading: "Kids Collection", description: "Trendy UK & US brands for kids aged 0\u201316 at Zira Fashions." },
+};
+
+export function generateStaticParams() {
+  return VALID.map((c) => ({ category: c }));
+}
+
+export async function generateMetadata({ params }: { params: { category: string } }): Promise<Metadata> {
+  const cat = params.category as ProductCategory;
+  if (!VALID.includes(cat)) return { title: "Category Not Found" };
+  const m = META[cat];
+  return { title: m.heading, description: m.description };
+}
+
+export default async function CategoryPage({ params }: { params: { category: string } }) {
+  const category = params.category as ProductCategory;
+  if (!VALID.includes(category)) notFound();
+  const products = category === "sale" ? await getSaleProducts() : category === "kids" ? await getKidsProducts() : await getProductsByCategory(category);
+  const m = META[category];
+  const isKids = category === "kids";
+
+  return (
+    <>
+      <Header />
+      <main className="pt-16 md:pt-[68px]">
+        <div className="max-w-screen-xl mx-auto px-5 py-8 md:py-12">
+          <div className="mb-8">
+            <p className="section-label mb-1.5">{isKids ? "Zira Fashions Kids" : "Zira Fashions"}</p>
+            <h1 className="font-display font-medium text-h1 text-text-primary">{m.heading}</h1>
+            <p className="font-sans text-small text-text-muted mt-1">{products.length} item{products.length !== 1 ? "s" : ""}</p>
+          </div>
+          {!isKids && <ShopFilters activeCategory={category} />}
+          <div className="mt-6">
+            <Suspense fallback={<div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5">{Array.from({length:6}).map((_,i)=><ProductCardSkeleton key={i}/>)}</div>}>
+              <ProductGridClient products={products} showTryOn={!isKids} />
+            </Suspense>
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </>
+  );
+}
