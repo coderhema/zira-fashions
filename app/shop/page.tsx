@@ -1,1 +1,44 @@
-aW1wb3J0IHR5cGUgeyBNZXRhZGF0YSB9IGZyb20gIm5leHQiOwppbXBvcnQgeyBTdXNwZW5zZSB9ICAgICAgZnJvbSAicmVhY3QiOwppbXBvcnQgeyBnZXRBbGxQcm9kdWN0cywgZ2V0UHJvZHVjdHNCeUNhdGVnb3J5LCBnZXRTYWxlUHJvZHVjdHMsIHR5cGUgUHJvZHVjdENhdGVnb3J5IH0gZnJvbSAiQC9saWIvc2FuaXR5IjsKaW1wb3J0IHsgUHJvZHVjdEdyaWRDbGllbnQgfSAgIGZyb20gIkAvY29tcG9uZW50cy9wcm9kdWN0L1Byb2R1Y3RHcmlkQ2xpZW50IjsKaW1wb3J0IHsgUHJvZHVjdENhcmRTa2VsZXRvbiB9IGZyb20gIkAvY29tcG9uZW50cy9wcm9kdWN0L1Byb2R1Y3RDYXJkIjsKaW1wb3J0IHsgSGVhZGVyIH0gICAgZnJvbSAiQC9jb21wb25lbnRzL2xheW91dC9IZWFkZXIiOwppbXBvcnQgeyBGb290ZXIgfSAgICBmcm9tICJAL2NvbXBvbmVudHMvbGF5b3V0L0Zvb3RlciI7CmltcG9ydCB7IFNob3BGaWx0ZXJzIH0gZnJvbSAiQC9jb21wb25lbnRzL3Byb2R1Y3QvU2hvcEZpbHRlcnMiOwoKZXhwb3J0IGNvbnN0IG1ldGFkYXRhOiBNZXRhZGF0YSA9IHsKICB0aXRsZTogIlNob3AgQWxsIFByb2R1Y3RzIiwKICBkZXNjcmlwdGlvbjogIkJyb3dzZSBhbGwgWmlyYSBGYXNoaW9ucyBpdGVtcyDigJQgZGVuaW0sIGRyZXNzZXMsIHRvcHMsIHNldHMgYW5kIG1vcmUuIEJyYW5kIG5ldyAmIHByZS1vd25lZCBVSyBhbmQgVVMgaGlnaHN0cmVldCBicmFuZHMuIE5hdGlvbndpZGUgZGVsaXZlcnkuIgp9OwoKY29uc3QgVkFMSUQ6IFByb2R1Y3RDYXRlZ29yeVtdID0gWyJkZW5pbSIsICJkcmVzc2VzIiwgInRvcHMiLCAic2V0cyIsICJzYWxlIiwgImtpZHMiXTsKCmV4cG9ydCBkZWZhdWx0IGFzeW5jIGZ1bmN0aW9uIFNob3BQYWdlKHsgc2VhcmNoUGFyYW1zIH06IHsgc2VhcmNoUGFyYW1zOiB7IGNhdGVnb3J5Pzogc3RyaW5nIH0gfSkgewogIGNvbnN0IHJhd0NhdCAgPSBzZWFyY2hQYXJhbXMuY2F0ZWdvcnk7CiAgY29uc3QgY2F0ZWdvcnkgPSBWQUxJRC5pbmNsdWRlcyhyYXdDYXQgYXMgUHJvZHVjdENhdGVnb3J5KSA/IHJhd0NhdCBhcyBQcm9kdWN0Q2F0ZWdvcnkgOiBudWxsOwogIGNvbnN0IHByb2R1Y3RzID0gY2F0ZWdvcnkgPT09ICJzYWxlIgogICAgPyBhd2FpdCBnZXRTYWxlUHJvZHVjdHMoKQogICAgOiBjYXRlZ29yeSA/IGF3YWl0IGdldFByb2R1Y3RzQnlDYXRlZ29yeShjYXRlZ29yeSkgOiBhd2FpdCBnZXRBbGxQcm9kdWN0cygpOwogIGNvbnN0IGhlYWRpbmcgID0gY2F0ZWdvcnkgPyBjYXRlZ29yeS5jaGFyQXQoMCkudG9VcHBlckNhc2UoKSArIGNhdGVnb3J5LnNsaWNlKDEpIDogIkFsbCBQcm9kdWN0cyI7CgogIHJldHVybiAoCiAgICA8PgogICAgICA8SGVhZGVyIC8+CiAgICAgIDxtYWluIGNsYXNzTmFtZT0icHQtMTYgbWQ6cHQtWzY4cHhdIj4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibWF4LXctc2NyZWVuLXhsIG14LWF1dG8gcHgtNSBweS04IG1kOnB5LTEyIj4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJtYi04Ij4KICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJzZWN0aW9uLWxhYmVsIG1iLTEuNSI+WmlyYSBGYXNoaW9uczwvcD4KICAgICAgICAgICAgPGgxIGNsYXNzTmFtZT0iZm9udC1kaXNwbGF5IGZvbnQtbWVkaXVtIHRleHQtaDEgdGV4dC10ZXh0LXByaW1hcnkiPntoZWFkaW5nfTwvaDE+CiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0iZm9udC1zYW5zIHRleHQtc21hbGwgdGV4dC10ZXh0LW11dGVkIG10LTEiPntwcm9kdWN0cy5sZW5ndGh9IGl0ZW17cHJvZHVjdHMubGVuZ3RoICE9PSAxID8gInMiIDogIiJ9PC9wPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8U2hvcEZpbHRlcnMgYWN0aXZlQ2F0ZWdvcnk9e2NhdGVnb3J5fSAvPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9Im10LTYiPgogICAgICAgICAgICA8U3VzcGVuc2UgZmFsbGJhY2s9ewogICAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJncmlkIGdyaWQtY29scy0yIG1kOmdyaWQtY29scy0zIGdhcC0zIG1kOmdhcC01Ij4KICAgICAgICAgICAgICAgIHtBcnJheS5mcm9tKHsgbGVuZ3RoOiA2IH0pLm1hcCgoXywgaSkgPT4gPFByb2R1Y3RDYXJkU2tlbGV0b24ga2V5PXtpfSAvPil9CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIH0+CiAgICAgICAgICAgICAgPFByb2R1Y3RHcmlkQ2xpZW50IHByb2R1Y3RzPXtwcm9kdWN0c30gc2hvd1RyeU9uIC8+CiAgICAgICAgICAgIDwvU3VzcGVuc2U+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L2Rpdj4KICAgICAgPC9tYWluPgogICAgICA8Rm9vdGVyIC8+CiAgICA8Lz4KICApOwp9Cg==
+import type { Metadata }         from "next";
+import { Suspense }              from "react";
+import { getAllProducts, getProductsByCategory, getSaleProducts, type ProductCategory } from "@/lib/sanity";
+import { ProductGridClient }     from "@/components/product/ProductGridClient";
+import { ProductCardSkeleton }   from "@/components/product/ProductCard";
+import { Header }                from "@/components/layout/Header";
+import { Footer }                from "@/components/layout/Footer";
+import { ShopFilters }           from "@/components/product/ShopFilters";
+
+export const metadata: Metadata = {
+  title: "Shop All Products",
+  description: "Browse all Zira Fashions items \u2014 denim, dresses, tops, sets and more. Brand new & pre-owned UK and US highstreet brands. Nationwide delivery.",
+};
+
+const VALID: ProductCategory[] = ["denim", "dresses", "tops", "sets", "sale", "kids"];
+
+export default async function ShopPage({ searchParams }: { searchParams: { category?: string } }) {
+  const rawCat  = searchParams.category;
+  const category = VALID.includes(rawCat as ProductCategory) ? rawCat as ProductCategory : null;
+  const products = category === "sale" ? await getSaleProducts() : category ? await getProductsByCategory(category) : await getAllProducts();
+  const heading  = category ? category.charAt(0).toUpperCase() + category.slice(1) : "All Products";
+
+  return (
+    <>
+      <Header />
+      <main className="pt-16 md:pt-[68px]">
+        <div className="max-w-screen-xl mx-auto px-5 py-8 md:py-12">
+          <div className="mb-8">
+            <p className="section-label mb-1.5">Zira Fashions</p>
+            <h1 className="font-display font-medium text-h1 text-text-primary">{heading}</h1>
+            <p className="font-sans text-small text-text-muted mt-1">{products.length} item{products.length !== 1 ? "s" : ""}</p>
+          </div>
+          <ShopFilters activeCategory={category} />
+          <div className="mt-6">
+            <Suspense fallback={<div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5">{Array.from({length:6}).map((_,i)=><ProductCardSkeleton key={i}/>)}</div>}>
+              <ProductGridClient products={products} showTryOn />
+            </Suspense>
+          </div>
+        </div>
+      </main>
+      <Footer />
+    </>
+  );
+}
