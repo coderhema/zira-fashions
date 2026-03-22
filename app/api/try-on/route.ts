@@ -1,1 +1,127 @@
-aW1wb3J0e0dvb2dsZUdlbkFJfWZyb20iQGdvb2dsZS9nZW5haSI7aW1wb3J0e05leHRSZXF1ZXN0LE5leHRSZXNwb25zZX1mcm9tIm5leHQvc2VydmVyIjsKZXhwb3J0IGNvbnN0IHJ1bnRpbWU9Im5vZGVqcyI7CmludGVyZmFjZSBSTEV7Y291bnQ6bnVtYmVyO3dpbmRvd1N0YXJ0Om51bWJlcn0KY29uc3QgV0lORE9XPTYwKjYwKjEwMDAsTUFYPTMscmw9bmV3IE1hcDxzdHJpbmcsUkxFPigpOwpmdW5jdGlvbiBjaGVja1JMKGlwOnN0cmluZyl7Y29uc3Qgbm93PURhdGUubm93KCk7Y29uc3QgZT1ybC5nZXQoaXApO2lmKCFlfHxub3ctZS53aW5kb3dTdGFydD5XSU5ET1cpe3JsLnNldChpcCx7Y291bnQ6MSx3aW5kb3dTdGFydDpub3d9KTtyZXR1cm57YWxsb3dlZDp0cnVlLHJlbWFpbmluZzpNQVgtMX07fWlmKGUuY291bnQ+PU1BWClyZXR1cm57YWxsb3dlZDpmYWxzZSxyZW1haW5pbmc6MH07ZS5jb3VudCsrO3JldHVybnthbGxvd2VkOnRydWUscmVtYWluaW5nOk1BWC1lLmNvdW50fTt9CmZ1bmN0aW9uIHBydW5lKCl7Y29uc3Qgbm93PURhdGUubm93KCk7Zm9yKGNvbnN0W2ssdl1vZiBybClpZihub3ctdi53aW5kb3dTdGFydD5XSU5ET1cpcmwuZGVsZXRlKGspO30KZnVuY3Rpb24gZ2V0SXAocmVxOk5leHRSZXF1ZXN0KXtyZXR1cm4gcmVxLmhlYWRlcnMuZ2V0KCJ4LWZvcndhcmRlZC1mb3IiKT8uc3BsaXQoIiwiKVswXT8udHJpbSgpPz9yZXEuaGVhZGVycy5nZXQoIngtcmVhbC1pcCIpPz8idW5rbm93biI7fQpjb25zdCBNQVhfQj0xMCoxMDI0KjEwMjQ7Y29uc3QgT0s9bmV3IFNldChbImltYWdlL2pwZWciLCJpbWFnZS9qcGciLCJpbWFnZS9wbmciLCJpbWFnZS93ZWJwIiwiaW1hZ2UvaGVpYyJdKTsKZnVuY3Rpb24gYnVpbGRQcm9tcHQobmFtZTpzdHJpbmcpe3JldHVybmBZb3UgYXJlIGEgcHJvZmVzc2lvbmFsIGZhc2hpb24gdmlydHVhbCB0cnktb24gc3lzdGVtLlxuXG5Ud28gaW1hZ2VzIHByb3ZpZGVkOlxuMS4gQSBwaG90byBvZiBhIHBlcnNvblxuMi4gRmFzaGlvbiBpdGVtOiAiJHtuYW1lfSJcblxuQ3JlYXRlIGEgcGhvdG9yZWFsaXN0aWMgY29tcG9zaXRlIG9mIHRoZSBwZXJzb24gd2VhcmluZyB0aGUgaXRlbS5cblBSRVNFUlZFOiBmYWNlLCBza2luIHRvbmUsIGhhaXIsIGJvZHkgcHJvcG9ydGlvbnMsIGJhY2tncm91bmQsIGxpZ2h0aW5nLCBwb3NlLlxuQ0hBTkdFOiBSZXBsYWNlIGNsb3RoaW5nIHdpdGggdGhlIGdhcm1lbnQuIE1haW50YWluIGdhcm1lbnQgY29sb3IvdGV4dHVyZS9wYXR0ZXJuLlxuT1VUUFVUOiBQaG90b3JlYWxpc3RpYyBwaG90b2dyYXBoIHF1YWxpdHkuIE5vIGlsbHVzdHJhdGlvbiBzdHlsZS4gTm8gYXJ0aWZhY3RzLmA7fQpleHBvcnQgYXN5bmMgZnVuY3Rpb24gUE9TVChyZXE6TmV4dFJlcXVlc3QpOlByb21pc2U8TmV4dFJlc3BvbnNlPnsKICBwcnVuZSgpO2NvbnN0IGlwPWdldElwKHJlcSk7Y29uc3R7YWxsb3dlZCxyZW1haW5pbmd9PWNoZWNrUkwoaXApOwogIGlmKCFhbGxvd2VkKXJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7ZXJyb3I6IlRyeS1vbiBsaW1pdCByZWFjaGVkLiBUcnkgYWdhaW4gaW4gYW4gaG91ci4ifSx7c3RhdHVzOjQyOSxoZWFkZXJzOnsiUmV0cnktQWZ0ZXIiOiIzNjAwIn19KTsKICBsZXQgZmQ6Rm9ybURhdGE7dHJ5e2ZkPWF3YWl0IHJlcS5mb3JtRGF0YSgpO31jYXRjaHtyZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oe2Vycm9yOiJJbnZhbGlkIGZvcm0gZGF0YS4ifSx7c3RhdHVzOjQwMH0pO30KICBjb25zdCBwZj1mZC5nZXQoInBlcnNvbkltYWdlIikgYXMgRmlsZXxudWxsO2NvbnN0IGd1PWZkLmdldCgiZ2FybWVudFVybCIpIGFzIHN0cmluZ3xudWxsO2NvbnN0IGduPWZkLmdldCgiZ2FybWVudE5hbWUiKSBhcyBzdHJpbmd8bnVsbDsKICBpZighcGZ8fCEocGYgaW5zdGFuY2VvZiBGaWxlKSlyZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oe2Vycm9yOiJwZXJzb25JbWFnZSByZXF1aXJlZC4ifSx7c3RhdHVzOjQwMH0pOwogIGlmKCFndSlyZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oe2Vycm9yOiJnYXJtZW50VXJsIHJlcXVpcmVkLiJ9LHtzdGF0dXM6NDAwfSk7CiAgY29uc3QgbWltZT1wZi50eXBlfHwiaW1hZ2UvanBlZyI7CiAgaWYoIU9LLmhhcyhtaW1lKSlyZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oe2Vycm9yOiJVbnN1cHBvcnRlZCBmaWxlIHR5cGUuIn0se3N0YXR1czo0MDB9KTsKICBpZihwZi5zaXplPk1BWF9CKXJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7ZXJyb3I6IlBob3RvIHRvbyBsYXJnZSAobWF4IDEwTUIpLiJ9LHtzdGF0dXM6NDAwfSk7CiAgY29uc3QgcGI2ND1CdWZmZXIuZnJvbShhd2FpdCBwZi5hcnJheUJ1ZmZlcigpKS50b1N0cmluZygiYmFzZTY0Iik7CiAgbGV0IGdiNjQ6c3RyaW5nO2xldCBnbT0iaW1hZ2UvanBlZyI7CiAgdHJ5e2NvbnN0IGdyPWF3YWl0IGZldGNoKGd1LHtzaWduYWw6QWJvcnRTaWduYWwudGltZW91dCgxMDAwMCl9KTtpZighZ3Iub2spdGhyb3cgbmV3IEVycm9yKGAke2dyLnN0YXR1c31gKTtnbT0oZ3IuaGVhZGVycy5nZXQoImNvbnRlbnQtdHlwZSIpPz8iaW1hZ2UvanBlZyIpLnNwbGl0KCI7IilbMF0udHJpbSgpO2diNjQ9QnVmZmVyLmZyb20oYXdhaXQgZ3IuYXJyYXlCdWZmZXIoKSkudG9TdHJpbmcoImJhc2U2NCIpO30KICBjYXRjaChlKXtyZXR1cm4gTmV4dFJlc3BvbnNlLmpzb24oe2Vycm9yOmBDb3VsZCBub3QgbG9hZCBwcm9kdWN0IGltYWdlOiAke2UgaW5zdGFuY2VvZiBFcnJvcj9lLm1lc3NhZ2U6InVua25vd24ifWB9LHtzdGF0dXM6NTAwfSk7fQogIGNvbnN0IGtleT1wcm9jZXNzLmVudi5HRU1JTklfQVBJX0tFWTtpZigha2V5KXJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7ZXJyb3I6IlRyeS1vbiBzZXJ2aWNlIG5vdCBjb25maWd1cmVkLiJ9LHtzdGF0dXM6NTAzfSk7CiAgdHJ5ewogICAgY29uc3QgYWk9bmV3IEdvb2dsZUdlbkFJKHthcGlLZXk6a2V5fSk7CiAgICBjb25zdCByZXM9YXdhaXQgYWkubW9kZWxzLmdlbmVyYXRlQ29udGVudCh7bW9kZWw6ImdlbWluaS0zLjEtZmxhc2gtaW1hZ2UtcHJldmlldyIsY29udGVudHM6W3twYXJ0czpbe3RleHQ6YnVpbGRQcm9tcHQoZ24/PyJmYXNoaW9uIGl0ZW0iKX0se2lubGluZURhdGE6e21pbWVUeXBlOm1pbWUgYXMgImltYWdlL2pwZWcifCJpbWFnZS9wbmcifCJpbWFnZS93ZWJwIixkYXRhOnBiNjR9fSx7aW5saW5lRGF0YTp7bWltZVR5cGU6Z20gYXMgImltYWdlL2pwZWcifCJpbWFnZS9wbmcifCJpbWFnZS93ZWJwIixkYXRhOmdiNjR9fV19XSxjb25maWc6e3Jlc3BvbnNlTW9kYWxpdGllczpbIklNQUdFIl0saW1hZ2VDb25maWc6e2FzcGVjdFJhdGlvOiIzOjQiLGltYWdlU2l6ZToiMUsifSx0aGlua2luZ0NvbmZpZzp7dGhpbmtpbmdMZXZlbDoibWluaW1hbCJ9fX0pOwogICAgY29uc3QgcGFydHM9cmVzLmNhbmRpZGF0ZXM/LlswXT8uY29udGVudD8ucGFydHM/P1tdOwogICAgZm9yKGNvbnN0IHAgb2YgcGFydHMpaWYocC5pbmxpbmVEYXRhKXJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7aW1hZ2VEYXRhOnAuaW5saW5lRGF0YS5kYXRhLG1pbWVUeXBlOnAuaW5saW5lRGF0YS5taW1lVHlwZT8/ImltYWdlL2pwZWcifSx7aGVhZGVyczp7IkNhY2hlLUNvbnRyb2wiOiJuby1zdG9yZSIsIlgtVHJ5T24tUmVtYWluaW5nIjpTdHJpbmcocmVtYWluaW5nKX19KTsKICAgIHJldHVybiBOZXh0UmVzcG9uc2UuanNvbih7ZXJyb3I6Ik5vIGltYWdlIHJldHVybmVkLiBUcnkgYWdhaW4uIn0se3N0YXR1czo1MDB9KTsKICB9Y2F0Y2goZSl7Y29uc3QgbXNnPWUgaW5zdGFuY2VvZiBFcnJvcj9lLm1lc3NhZ2U6InVua25vd24iO2lmKG1zZy5pbmNsdWRlcygiUkVTT1VSQ0VfRVhIQVVTVEVEIil8fG1zZy5pbmNsdWRlcygiNDI5IikpcmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHtlcnJvcjoiU2VydmljZSBidXN5LiBUcnkgYWdhaW4gc29vbi4ifSx7c3RhdHVzOjUwM30pO2NvbnNvbGUuZXJyb3IoIlsvYXBpL3RyeS1vbl0iLG1zZyk7cmV0dXJuIE5leHRSZXNwb25zZS5qc29uKHtlcnJvcjoiVHJ5LW9uIGZhaWxlZC4gUGxlYXNlIHRyeSBhZ2Fpbi4ifSx7c3RhdHVzOjUwMH0pO30KfQo=
+import { GoogleGenAI } from "@google/genai";
+import { NextRequest, NextResponse } from "next/server";
+
+export const runtime = "nodejs";
+
+interface RLE { count: number; windowStart: number; }
+const WINDOW = 60 * 60 * 1000, MAX = 3;
+const rl = new Map<string, RLE>();
+
+function checkRL(ip: string) {
+  const now = Date.now(), e = rl.get(ip);
+  if (!e || now - e.windowStart > WINDOW) { rl.set(ip, { count: 1, windowStart: now }); return { allowed: true, remaining: MAX - 1 }; }
+  if (e.count >= MAX) return { allowed: false, remaining: 0 };
+  e.count++;
+  return { allowed: true, remaining: MAX - e.count };
+}
+
+function prune() {
+  const now = Date.now();
+  for (const [k, v] of rl) if (now - v.windowStart > WINDOW) rl.delete(k);
+}
+
+function getIp(req: NextRequest) {
+  return req.headers.get("x-forwarded-for")?.split(",")[0]?.trim()
+    ?? req.headers.get("x-real-ip")
+    ?? "unknown";
+}
+
+const MAX_BYTES = 10 * 1024 * 1024;
+const OK_MIME = new Set(["image/jpeg", "image/jpg", "image/png", "image/webp", "image/heic"]);
+
+function buildPrompt(name: string): string {
+  return `You are a professional fashion virtual try-on system.
+
+Two images provided:
+1. A photo of a person
+2. Fashion item: "${name}"
+
+Create a photorealistic composite of the person wearing the item.
+
+PRESERVE EXACTLY: face, expression, skin tone, hair, body proportions, background, lighting, shadows, pose.
+CHANGE: Replace their clothing with the garment. Fit naturally. Maintain garment color/fabric/texture/pattern.
+OUTPUT: Photorealistic photograph quality. No illustration. No artifacts or seams.`;
+}
+
+export async function POST(req: NextRequest): Promise<NextResponse> {
+  prune();
+  const ip = getIp(req);
+  const { allowed, remaining } = checkRL(ip);
+  if (!allowed) return NextResponse.json(
+    { error: "Try-on limit reached. Try again in an hour." },
+    { status: 429, headers: { "Retry-After": "3600" } }
+  );
+
+  let fd: FormData;
+  try { fd = await req.formData(); }
+  catch { return NextResponse.json({ error: "Invalid form data." }, { status: 400 }); }
+
+  const personFile  = fd.get("personImage") as File | null;
+  const garmentUrl  = fd.get("garmentUrl")  as string | null;
+  const garmentName = fd.get("garmentName") as string | null;
+
+  if (!personFile || !(personFile instanceof File))
+    return NextResponse.json({ error: "personImage required." }, { status: 400 });
+  if (!garmentUrl)
+    return NextResponse.json({ error: "garmentUrl required." }, { status: 400 });
+
+  const mime = personFile.type || "image/jpeg";
+  if (!OK_MIME.has(mime))
+    return NextResponse.json({ error: "Unsupported file type." }, { status: 400 });
+  if (personFile.size > MAX_BYTES)
+    return NextResponse.json({ error: "Photo too large (max 10MB)." }, { status: 400 });
+
+  const personB64 = Buffer.from(await personFile.arrayBuffer()).toString("base64");
+
+  let garmentB64: string, garmentMime = "image/jpeg";
+  try {
+    const gr = await fetch(garmentUrl, { signal: AbortSignal.timeout(10_000) });
+    if (!gr.ok) throw new Error(`${gr.status}`);
+    garmentMime = (gr.headers.get("content-type") ?? "image/jpeg").split(";")[0].trim();
+    garmentB64 = Buffer.from(await gr.arrayBuffer()).toString("base64");
+  } catch (e) {
+    return NextResponse.json(
+      { error: `Could not load product image: ${e instanceof Error ? e.message : "unknown"}` },
+      { status: 500 }
+    );
+  }
+
+  const key = process.env.GEMINI_API_KEY;
+  if (!key) return NextResponse.json({ error: "Try-on service not configured." }, { status: 503 });
+
+  try {
+    const ai = new GoogleGenAI({ apiKey: key });
+    const res = await ai.models.generateContent({
+      model: "gemini-3.1-flash-image-preview",
+      contents: [{
+        parts: [
+          { text: buildPrompt(garmentName ?? "fashion item") },
+          { inlineData: { mimeType: mime as "image/jpeg" | "image/png" | "image/webp", data: personB64 } },
+          { inlineData: { mimeType: garmentMime as "image/jpeg" | "image/png" | "image/webp", data: garmentB64 } },
+        ],
+      }],
+      config: {
+        responseModalities: ["IMAGE"],
+        imageConfig: { aspectRatio: "3:4", imageSize: "1K" },
+        thinkingConfig: { thinkingLevel: "minimal" },
+      },
+    });
+
+    const parts = res.candidates?.[0]?.content?.parts ?? [];
+    for (const part of parts) {
+      if (part.inlineData) {
+        return NextResponse.json(
+          { imageData: part.inlineData.data, mimeType: part.inlineData.mimeType ?? "image/jpeg" },
+          { headers: { "Cache-Control": "no-store", "X-TryOn-Remaining": String(remaining) } }
+        );
+      }
+    }
+    return NextResponse.json({ error: "No image returned. Please try again." }, { status: 500 });
+  } catch (e) {
+    const msg = e instanceof Error ? e.message : "unknown";
+    if (msg.includes("RESOURCE_EXHAUSTED") || msg.includes("429"))
+      return NextResponse.json({ error: "Service busy. Try again in a few minutes." }, { status: 503 });
+    console.error("[/api/try-on]", msg);
+    return NextResponse.json({ error: "Try-on failed. Please try again." }, { status: 500 });
+  }
+}
