@@ -1,1 +1,37 @@
-InVzZSBjbGllbnQiOwoKaW1wb3J0IHsgdXNlU3RhdGUsIHVzZUNhbGxiYWNrIH0gZnJvbSAicmVhY3QiOwppbXBvcnQgdHlwZSB7IFNhbml0eVByb2R1Y3QgfSAgICBmcm9tICJAL2xpYi9zYW5pdHkiOwppbXBvcnQgeyBQcm9kdWN0Q2FyZCB9ICAgICAgICAgICBmcm9tICIuL1Byb2R1Y3RDYXJkIjsKaW1wb3J0IHsgVHJ5T25Nb2RhbCB9ICAgICAgICAgICAgZnJvbSAiQC9jb21wb25lbnRzL3RyeW9uL1RyeU9uTW9kYWwiOwoKaW50ZXJmYWNlIFByb3BzIHsKICBwcm9kdWN0czogU2FuaXR5UHJvZHVjdFtdOwogIHNob3dUcnlPbj86IGJvb2xlYW47CiAgcHJpb3JpdHlDb3VudD86IG51bWJlcjsKfQoKZXhwb3J0IGZ1bmN0aW9uIFByb2R1Y3RHcmlkQ2xpZW50KHsgcHJvZHVjdHMsIHNob3dUcnlPbiA9IHRydWUsIHByaW9yaXR5Q291bnQgPSAzIH06IFByb3BzKSB7CiAgY29uc3QgW3RyeU9uLCBzZXRUcnlPbl0gPSB1c2VTdGF0ZTxTYW5pdHlQcm9kdWN0IHwgbnVsbD4obnVsbCk7CiAgY29uc3Qgb3BlbiAgPSB1c2VDYWxsYmFjaygocDogU2FuaXR5UHJvZHVjdCkgPT4gc2V0VHJ5T24ocCksIFtdKTsKICBjb25zdCBjbG9zZSA9IHVzZUNhbGxiYWNrKCgpID0+IHNldFRyeU9uKG51bGwpLCBbXSk7CgogIGlmICghcHJvZHVjdHMubGVuZ3RoKSB7CiAgICByZXR1cm4gKAogICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBmbGV4LWNvbCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIgcHktMjAgZ2FwLTQiPgogICAgICAgIDxzcGFuIGNsYXNzTmFtZT0idGV4dC01eGwiIGFyaWEtaGlkZGVuPSJ0cnVlIj7wn5GXPC9zcGFuPgogICAgICAgIDxwIGNsYXNzTmFtZT0iZm9udC1zYW5zIGZvbnQtbWVkaXVtIHRleHQtWzE2cHhdIHRleHQtdGV4dC1zZWNvbmRhcnkiPk5vIHByb2R1Y3RzIGhlcmUgeWV0LjwvcD4KICAgICAgICA8cCBjbGFzc05hbWU9ImZvbnQtc2FucyB0ZXh0LXNtYWxsIHRleHQtdGV4dC1tdXRlZCI+TmV3IGl0ZW1zIGRyb3AgcmVndWxhcmx5LjwvcD4KICAgICAgPC9kaXY+CiAgICApOwogIH0KCiAgcmV0dXJuICgKICAgIDw+CiAgICAgIDxkaXYgY2xhc3NOYW1lPSJncmlkIGdyaWQtY29scy0yIG1kOmdyaWQtY29scy0zIGdhcC0zIG1kOmdhcC01IiByb2xlPSJsaXN0IiBhcmlhLWxhYmVsPSJQcm9kdWN0cyI+CiAgICAgICAge3Byb2R1Y3RzLm1hcCgocCwgaSkgPT4gKAogICAgICAgICAgPGRpdiBrZXk9e3AuX2lkfSByb2xlPSJsaXN0aXRlbSI+CiAgICAgICAgICAgIDxQcm9kdWN0Q2FyZCBwcm9kdWN0PXtwfSBzaG93VHJ5T249e3Nob3dUcnlPbn0gb25UcnlPbj17b3Blbn0gcHJpb3JpdHk9e2kgPCBwcmlvcml0eUNvdW50fSAvPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgKSl9CiAgICAgIDwvZGl2PgogICAgICB7dHJ5T24gJiYgPFRyeU9uTW9kYWwgcHJvZHVjdD17dHJ5T259IHNpdGVVcmw9e3Byb2Nlc3MuZW52Lk5FWFRfUFVCTElDX1NJVEVfVVJMfSBvbkNsb3NlPXtjbG9zZX0gLz59CiAgICA8Lz4KICApOwp9Cg==
+"use client";
+
+import { useState, useCallback } from "react";
+import type { SanityProduct }    from "@/lib/sanity";
+import { ProductCard }           from "./ProductCard";
+import { TryOnModal }            from "@/components/tryon/TryOnModal";
+
+interface Props { products: SanityProduct[]; showTryOn?: boolean; priorityCount?: number; }
+
+export function ProductGridClient({ products, showTryOn = true, priorityCount = 3 }: Props) {
+  const [tryOn, setTryOn] = useState<SanityProduct | null>(null);
+  const open  = useCallback((p: SanityProduct) => setTryOn(p), []);
+  const close = useCallback(() => setTryOn(null), []);
+
+  if (!products.length) {
+    return (
+      <div className="flex flex-col items-center justify-center py-20 gap-4">
+        <span className="text-5xl" aria-hidden="true">👗</span>
+        <p className="font-sans font-medium text-[16px] text-text-secondary">No products here yet.</p>
+        <p className="font-sans text-small text-text-muted">New items drop regularly.</p>
+      </div>
+    );
+  }
+
+  return (
+    <>
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5" role="list" aria-label="Products">
+        {products.map((p, i) => (
+          <div key={p._id} role="listitem">
+            <ProductCard product={p} showTryOn={showTryOn} onTryOn={open} priority={i < priorityCount} />
+          </div>
+        ))}
+      </div>
+      {tryOn && <TryOnModal product={tryOn} siteUrl={process.env.NEXT_PUBLIC_SITE_URL} onClose={close} />}
+    </>
+  );
+}
