@@ -1,1 +1,93 @@
-aW1wb3J0IHsgY3JlYXRlQ2xpZW50LCB0eXBlIFF1ZXJ5UGFyYW1zIH0gZnJvbSAiQHNhbml0eS9jbGllbnQiOwppbXBvcnQgaW1hZ2VVcmxCdWlsZGVyIGZyb20gIkBzYW5pdHkvaW1hZ2UtdXJsIjsKaW1wb3J0IHR5cGUgeyBTYW5pdHlJbWFnZVNvdXJjZSB9IGZyb20gIkBzYW5pdHkvaW1hZ2UtdXJsL2xpYi90eXBlcy90eXBlcyI7CgpleHBvcnQgdHlwZSBQcm9kdWN0Q2F0ZWdvcnkgPQogIHwgImRlbmltIiB8ICJkcmVzc2VzIiB8ICJ0b3BzIiB8ICJzZXRzIiB8ICJzYWxlIiB8ICJraWRzIjsKCmV4cG9ydCBpbnRlcmZhY2UgU2FuaXR5UHJvZHVjdCB7CiAgX2lkOiBzdHJpbmc7CiAgX2NyZWF0ZWRBdDogc3RyaW5nOwogIG5hbWU6IHN0cmluZzsKICBzbHVnOiBzdHJpbmc7CiAgc2t1Pzogc3RyaW5nOwogIHByaWNlOiBzdHJpbmc7CiAgb3JpZ2luYWxQcmljZT86IHN0cmluZzsKICBzaXplOiBzdHJpbmc7CiAgY2F0ZWdvcnk6IFByb2R1Y3RDYXRlZ29yeTsKICBpbWFnZTogU2FuaXR5SW1hZ2VTb3VyY2U7CiAgaW1hZ2VVcmw6IHN0cmluZzsKICB0cnlPbkdhcm1lbnRVcmw/OiBzdHJpbmc7CiAgaXNTb2xkT3V0OiBib29sZWFuOwogIGlzTmV3OiBib29sZWFuOwogIGlzS2lkczogYm9vbGVhbjsKICBsaXN0ZWREYXRlPzogc3RyaW5nOwogIGRlc2NyaXB0aW9uPzogc3RyaW5nOwp9Cgpjb25zdCBwcm9qZWN0SWQgID0gcHJvY2Vzcy5lbnYuTkVYVF9QVUJMSUNfU0FOSVRZX1BST0pFQ1RfSUQgPz8gIiI7CmNvbnN0IGRhdGFzZXQgICAgPSBwcm9jZXNzLmVudi5ORVhUX1BVQkxJQ19TQU5JVFlfREFUQVNFVCAgICA/PyAicHJvZHVjdGlvbiI7CmNvbnN0IGFwaVZlcnNpb24gPSAiMjAyNC0wMy0wMSI7CgpleHBvcnQgY29uc3Qgc2VydmVyQ2xpZW50ID0gY3JlYXRlQ2xpZW50KHsKICBwcm9qZWN0SWQsIGRhdGFzZXQsIGFwaVZlcnNpb24sCiAgdXNlQ2RuOiBmYWxzZSwKICB0b2tlbjogcHJvY2Vzcy5lbnYuU0FOSVRZX0FQSV9UT0tFTgp9KTsKCmV4cG9ydCBjb25zdCBicm93c2VyQ2xpZW50ID0gY3JlYXRlQ2xpZW50KHsKICBwcm9qZWN0SWQsIGRhdGFzZXQsIGFwaVZlcnNpb24sCiAgdXNlQ2RuOiB0cnVlCn0pOwoKY29uc3QgYnVpbGRlciA9IGltYWdlVXJsQnVpbGRlcihzZXJ2ZXJDbGllbnQpOwoKZXhwb3J0IGZ1bmN0aW9uIHByb2R1Y3RJbWFnZVVybChzb3VyY2U6IFNhbml0eUltYWdlU291cmNlLCB3aWR0aCA9IDYwMCk6IHN0cmluZyB7CiAgcmV0dXJuIGJ1aWxkZXIKICAgIC5pbWFnZShzb3VyY2UpCiAgICAud2lkdGgod2lkdGgpCiAgICAuaGVpZ2h0KE1hdGgucm91bmQod2lkdGggKiAoNCAvIDMpKSkKICAgIC5hdXRvKCJmb3JtYXQiKQogICAgLnF1YWxpdHkoODIpCiAgICAuZml0KCJjcm9wIikKICAgIC5jcm9wKCJjZW50ZXIiKQogICAgLnVybCgpOwp9CgpleHBvcnQgZnVuY3Rpb24gdXJsRm9yKHNvdXJjZTogU2FuaXR5SW1hZ2VTb3VyY2UpIHsKICByZXR1cm4gYnVpbGRlci5pbWFnZShzb3VyY2UpLmF1dG8oImZvcm1hdCIpLnF1YWxpdHkoODApOwp9Cgpjb25zdCBGSUVMRFMgPSBgCiAgX2lkLCBfY3JlYXRlZEF0LCBuYW1lLCAic2x1ZyI6IHNsdWcuY3VycmVudCwKICBza3UsIHByaWNlLCBvcmlnaW5hbFByaWNlLCBzaXplLCBjYXRlZ29yeSwgaW1hZ2UsCiAgdHJ5T25HYXJtZW50VXJsLCBpc1NvbGRPdXQsIGlzTmV3LCBpc0tpZHMsIGxpc3RlZERhdGUsIGRlc2NyaXB0aW9uCmA7Cgp0eXBlIFJhdyA9IE9taXQ8U2FuaXR5UHJvZHVjdCwgImltYWdlVXJsIj47CgpmdW5jdGlvbiBoeWRyYXRlKHJhd3M6IFJhd1tdKTogU2FuaXR5UHJvZHVjdFtdIHsKICByZXR1cm4gcmF3cy5tYXAoKHApID0+ICh7IC4uLnAsIGltYWdlVXJsOiBwLmltYWdlID8gcHJvZHVjdEltYWdlVXJsKHAuaW1hZ2UpIDogIiIgfSkpOwp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gZ2V0QWxsUHJvZHVjdHMoKSB7CiAgcmV0dXJuIGh5ZHJhdGUoYXdhaXQgc2VydmVyQ2xpZW50LmZldGNoPFJhd1tdPigKICAgIGAqW190eXBlID09ICJwcm9kdWN0Il0gfCBvcmRlcihfY3JlYXRlZEF0IGRlc2MpIHsgJHtGSUVMRFN9IH1gCiAgKSk7Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRGZWF0dXJlZFByb2R1Y3RzKGxpbWl0ID0gNikgewogIHJldHVybiBoeWRyYXRlKGF3YWl0IHNlcnZlckNsaWVudC5mZXRjaDxSYXdbXT4oCiAgICBgKltfdHlwZSA9PSAicHJvZHVjdCIgJiYgaXNTb2xkT3V0ICE9IHRydWUgJiYgaXNLaWRzICE9IHRydWVdCiAgICAgfCBvcmRlcihpc05ldyBkZXNjLCBfY3JlYXRlZEF0IGRlc2MpWzAuLi4ke2xpbWl0fV0geyAke0ZJRUxEU30gfWAKICApKTsKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdldFByb2R1Y3RzQnlDYXRlZ29yeShjYXRlZ29yeTogUHJvZHVjdENhdGVnb3J5KSB7CiAgcmV0dXJuIGh5ZHJhdGUoYXdhaXQgc2VydmVyQ2xpZW50LmZldGNoPFJhd1tdPigKICAgIGAqW190eXBlID09ICJwcm9kdWN0IiAmJiBjYXRlZ29yeSA9PSAkY2F0ZWdvcnldCiAgICAgfCBvcmRlcihpc1NvbGRPdXQgYXNjLCBfY3JlYXRlZEF0IGRlc2MpIHsgJHtGSUVMRFN9IH1gLAogICAgeyBjYXRlZ29yeSB9CiAgKSk7Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRLaWRzUHJvZHVjdHMoKSB7CiAgcmV0dXJuIGh5ZHJhdGUoYXdhaXQgc2VydmVyQ2xpZW50LmZldGNoPFJhd1tdPigKICAgIGAqW190eXBlID09ICJwcm9kdWN0IiAmJiBpc0tpZHMgPT0gdHJ1ZV0KICAgICB8IG9yZGVyKGlzU29sZE91dCBhc2MsIF9jcmVhdGVkQXQgZGVzYykgeyAke0ZJRUxEU30gfWAKICApKTsKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIGdldFByb2R1Y3RCeVNsdWcoc2x1Zzogc3RyaW5nKTogUHJvbWlzZTxTYW5pdHlQcm9kdWN0IHwgbnVsbD4gewogIGNvbnN0IHJhdyA9IGF3YWl0IHNlcnZlckNsaWVudC5mZXRjaDxSYXcgfCBudWxsPigKICAgIGAqW190eXBlID09ICJwcm9kdWN0IiAmJiBzbHVnLmN1cnJlbnQgPT0gJHNsdWddWzBdIHsgJHtGSUVMRFN9IH1gLAogICAgeyBzbHVnIH0KICApOwogIGlmICghcmF3KSByZXR1cm4gbnVsbDsKICByZXR1cm4gaHlkcmF0ZShbcmF3XSlbMF07Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBnZXRTYWxlUHJvZHVjdHMoKSB7CiAgcmV0dXJuIGh5ZHJhdGUoYXdhaXQgc2VydmVyQ2xpZW50LmZldGNoPFJhd1tdPigKICAgIGAqW190eXBlID09ICJwcm9kdWN0IiAmJiAoY2F0ZWdvcnkgPT0gInNhbGUiIHx8IGRlZmluZWQob3JpZ2luYWxQcmljZSkpXQogICAgIHwgb3JkZXIoX2NyZWF0ZWRBdCBkZXNjKSB7ICR7RklFTERTfSB9YAogICkpOwp9CgpleHBvcnQgYXN5bmMgZnVuY3Rpb24gc2VhcmNoUHJvZHVjdHMocTogc3RyaW5nKSB7CiAgaWYgKCFxLnRyaW0oKSkgcmV0dXJuIFtdOwogIHJldHVybiBoeWRyYXRlKGF3YWl0IHNlcnZlckNsaWVudC5mZXRjaDxSYXdbXT4oCiAgICBgKltfdHlwZSA9PSAicHJvZHVjdCIgJiYgbmFtZSBtYXRjaCAkcV0KICAgICB8IG9yZGVyKGlzU29sZE91dCBhc2MsIF9jcmVhdGVkQXQgZGVzYylbMC4uLjIwXSB7ICR7RklFTERTfSB9YCwKICAgIHsgcTogYCR7cS50b0xvd2VyQ2FzZSgpfSpgIH0KICApKTsKfQoKZXhwb3J0IGFzeW5jIGZ1bmN0aW9uIHNhbml0eUZldGNoPFQ+KHF1ZXJ5OiBzdHJpbmcsIHBhcmFtczogUXVlcnlQYXJhbXMgPSB7fSkgewogIHJldHVybiBzZXJ2ZXJDbGllbnQuZmV0Y2g8VD4ocXVlcnksIHBhcmFtcyk7Cn0K
+import { createClient, type QueryParams } from "@sanity/client";
+import imageUrlBuilder from "@sanity/image-url";
+import type { SanityImageSource } from "@sanity/image-url/lib/types/types";
+
+export type ProductCategory = "denim" | "dresses" | "tops" | "sets" | "sale" | "kids";
+
+export interface SanityProduct {
+  _id: string;
+  _createdAt: string;
+  name: string;
+  slug: string;
+  sku?: string;
+  price: string;
+  originalPrice?: string;
+  size: string;
+  category: ProductCategory;
+  image: SanityImageSource;
+  imageUrl: string;
+  tryOnGarmentUrl?: string;
+  isSoldOut: boolean;
+  isNew: boolean;
+  isKids: boolean;
+  listedDate?: string;
+  description?: string;
+}
+
+const projectId  = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID ?? "";
+const dataset    = process.env.NEXT_PUBLIC_SANITY_DATASET    ?? "production";
+const apiVersion = "2024-03-01";
+
+export const serverClient = createClient({
+  projectId, dataset, apiVersion, useCdn: false,
+  token: process.env.SANITY_API_TOKEN,
+});
+export const browserClient = createClient({ projectId, dataset, apiVersion, useCdn: true });
+
+const builder = imageUrlBuilder(serverClient);
+
+export function productImageUrl(source: SanityImageSource, width = 600): string {
+  return builder.image(source)
+    .width(width).height(Math.round(width * (4 / 3)))
+    .auto("format").quality(82).fit("crop").crop("center").url();
+}
+export function urlFor(source: SanityImageSource) {
+  return builder.image(source).auto("format").quality(80);
+}
+
+const FIELDS = `_id,_createdAt,name,"slug":slug.current,sku,price,originalPrice,size,category,image,tryOnGarmentUrl,isSoldOut,isNew,isKids,listedDate,description`;
+type Raw = Omit<SanityProduct, "imageUrl">;
+function hydrate(raws: Raw[]): SanityProduct[] {
+  return raws.map((p) => ({ ...p, imageUrl: p.image ? productImageUrl(p.image) : "" }));
+}
+
+export async function getAllProducts() {
+  return hydrate(await serverClient.fetch<Raw[]>(`*[_type=="product"]|order(_createdAt desc){${FIELDS}}`));
+}
+export async function getFeaturedProducts(limit = 6) {
+  return hydrate(await serverClient.fetch<Raw[]>(
+    `*[_type=="product"&&isSoldOut!=true&&isKids!=true]|order(isNew desc,_createdAt desc)[0...${limit}]{${FIELDS}}`
+  ));
+}
+export async function getProductsByCategory(category: ProductCategory) {
+  return hydrate(await serverClient.fetch<Raw[]>(
+    `*[_type=="product"&&category==$category]|order(isSoldOut asc,_createdAt desc){${FIELDS}}`, { category }
+  ));
+}
+export async function getKidsProducts() {
+  return hydrate(await serverClient.fetch<Raw[]>(
+    `*[_type=="product"&&isKids==true]|order(isSoldOut asc,_createdAt desc){${FIELDS}}`
+  ));
+}
+export async function getProductBySlug(slug: string): Promise<SanityProduct | null> {
+  const raw = await serverClient.fetch<Raw | null>(
+    `*[_type=="product"&&slug.current==$slug][0]{${FIELDS}}`, { slug }
+  );
+  if (!raw) return null;
+  return hydrate([raw])[0];
+}
+export async function getSaleProducts() {
+  return hydrate(await serverClient.fetch<Raw[]>(
+    `*[_type=="product"&&(category=="sale"||defined(originalPrice))]|order(_createdAt desc){${FIELDS}}`
+  ));
+}
+export async function searchProducts(q: string) {
+  if (!q.trim()) return [];
+  return hydrate(await serverClient.fetch<Raw[]>(
+    `*[_type=="product"&&name match $q]|order(isSoldOut asc,_createdAt desc)[0...20]{${FIELDS}}`,
+    { q: `${q.toLowerCase()}*` }
+  ));
+}
+export async function sanityFetch<T>(query: string, params: QueryParams = {}) {
+  return serverClient.fetch<T>(query, params);
+}
