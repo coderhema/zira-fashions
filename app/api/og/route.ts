@@ -1,1 +1,59 @@
-aW1wb3J0IHsgSW1hZ2VSZXNwb25zZSB9IGZyb20gIkB2ZXJjZWwvb2ciOwppbXBvcnQgdHlwZSB7IE5leHRSZXF1ZXN0IH0gZnJvbSAibmV4dC9zZXJ2ZXIiOwoKZXhwb3J0IGNvbnN0IHJ1bnRpbWUgPSAiZWRnZSI7Cgpjb25zdCBDID0gewogIGJnOiAiI0Y3RjRFRSIsIHNmOiAiI0ZGRkZGRiIsIHNtOiAiI0YwRURFNiIsIHByOiAiIzJDM0E1QyIsCiAgYWM6ICIjQzlBMDkwIiwgcHJpY2U6ICIjQzlBMDkwIiwgc2FsZTogIiNCMDVBNEEiLCB3YTogIiMyNUQzNjYiLAogIHRleHQ6ICIjMUExQTFBIiwgdHM6ICIjNUM1QzVDIiwgdG06ICIjOUE5NDkwIiwga2lkczogIiNFOEEwQjAiLAogIGJvcmRlcjogIiNFOEU0REMiCn07Cgpjb25zdCBCQURHRVMgPSB7CiAgbmV3OiAgICAgICB7IGxhYmVsOiAiTmV3IEluIiwgICBiZzogQy5wciwgICB0ZXh0OiAiI0ZGRiIgIH0sCiAgc2FsZTogICAgICB7IGxhYmVsOiAiU2FsZSIsICAgICBiZzogQy5zYWxlLCB0ZXh0OiAiI0ZGRiIgIH0sCiAgInNvbGQtb3V0Ijp7IGxhYmVsOiAiU29sZCBPdXQiLCBiZzogQy5zbSwgICB0ZXh0OiBDLnRtICAgIH0KfSBhcyBjb25zdDsKCmZ1bmN0aW9uIHNwKHBhcmFtczogVVJMU2VhcmNoUGFyYW1zLCBrZXk6IHN0cmluZywgZGVmID0gIiIpIHsKICByZXR1cm4gcGFyYW1zLmdldChrZXkpID8/IGRlZjsKfQpmdW5jdGlvbiB0cnVuYyhzOiBzdHJpbmcsIG46IG51bWJlcikgewogIHJldHVybiBzLmxlbmd0aCA8PSBuID8gcyA6IHMuc2xpY2UoMCwgbiAtIDEpICsgIuKApiI7Cn0KCmV4cG9ydCBhc3luYyBmdW5jdGlvbiBHRVQocmVxOiBOZXh0UmVxdWVzdCk6IFByb21pc2U8SW1hZ2VSZXNwb25zZT4gewogIGNvbnN0IHBhcmFtcyA9IG5ldyBVUkwocmVxLnVybCkuc2VhcmNoUGFyYW1zOwogIGNvbnN0IG5hbWUgICA9IHRydW5jKHNwKHBhcmFtcywgIm5hbWUiLCAiWmlyYSBGYXNoaW9ucyIpLCA0OCk7CiAgY29uc3QgcHJpY2UgID0gc3AocGFyYW1zLCAicHJpY2UiKTsKICBjb25zdCBzaXplICAgPSBzcChwYXJhbXMsICJzaXplIik7CiAgY29uc3QgaW1nVXJsID0gc3AocGFyYW1zLCAiaW1hZ2UiKTsKICBjb25zdCBiYWRnZSAgPSBzcChwYXJhbXMsICJiYWRnZSIpIGFzIGtleW9mIHR5cGVvZiBCQURHRVMgfCAiIjsKICBjb25zdCBpc0tpZHMgPSBzcChwYXJhbXMsICJraWRzIikgPT09ICJ0cnVlIjsKICBjb25zdCBhY2NlbnQgPSBpc0tpZHMgPyBDLmtpZHMgOiBDLmFjOwogIGNvbnN0IGJjICAgICA9IGJhZGdlICYmIGJhZGdlIGluIEJBREdFUyA/IEJBREdFU1tiYWRnZV0gOiBudWxsOwoKICByZXR1cm4gbmV3IEltYWdlUmVzcG9uc2UoCiAgICAoCiAgICAgIDxkaXYgc3R5bGU9e3sgd2lkdGg6IDEyMDAsIGhlaWdodDogNjMwLCBiYWNrZ3JvdW5kQ29sb3I6IEMuYmcsIGRpc3BsYXk6ICJmbGV4IiwgZmxleERpcmVjdGlvbjogInJvdyIsIGFsaWduSXRlbXM6ICJjZW50ZXIiLCBqdXN0aWZ5Q29udGVudDogInNwYWNlLWJldHdlZW4iLCBwYWRkaW5nOiAiNDBweCA3MnB4IiwgZm9udEZhbWlseTogInNhbnMtc2VyaWYiLCBwb3NpdGlvbjogInJlbGF0aXZlIiwgb3ZlcmZsb3c6ICJoaWRkZW4iIH19PgogICAgICAgIDxkaXYgc3R5bGU9e3sgcG9zaXRpb246ICJhYnNvbHV0ZSIsIHRvcDogLTEyMCwgcmlnaHQ6IC0xMjAsIHdpZHRoOiAzNDAsIGhlaWdodDogMzQwLCBib3JkZXJSYWRpdXM6ICI1MCUiLCBiYWNrZ3JvdW5kQ29sb3I6IEMucHIsIG9wYWNpdHk6IDAuMDYgfX0gLz4KICAgICAgICA8ZGl2IHN0eWxlPXt7IHBvc2l0aW9uOiAiYWJzb2x1dGUiLCBib3R0b206IC04MCwgbGVmdDogLTgwLCB3aWR0aDogMjQwLCBoZWlnaHQ6IDI0MCwgYm9yZGVyUmFkaXVzOiAiNTAlIiwgYmFja2dyb3VuZENvbG9yOiBhY2NlbnQsIG9wYWNpdHk6IDAuMTIgfX0gLz4KCiAgICAgICAgPGRpdiBzdHlsZT17eyB3aWR0aDogNTIwLCBoZWlnaHQ6IDU0OCwgYmFja2dyb3VuZENvbG9yOiBDLnNmLCBib3JkZXJSYWRpdXM6IDE2LCBvdmVyZmxvdzogImhpZGRlbiIsIGRpc3BsYXk6ICJmbGV4IiwgYWxpZ25JdGVtczogImNlbnRlciIsIGp1c3RpZnlDb250ZW50OiAiY2VudGVyIiwgZmxleFNocmluazogMCwgYm9yZGVyOiBgMXB4IHNvbGlkICR7Qy5ib3JkZXJ9YCwgcG9zaXRpb246ICJyZWxhdGl2ZSIgfX0+CiAgICAgICAgICB7aW1nVXJsID8gKAogICAgICAgICAgICAvLyBlc2xpbnQtZGlzYWJsZS1uZXh0LWxpbmUgQG5leHQvbmV4dC9uby1pbWctZWxlbWVudAogICAgICAgICAgICA8aW1nIHNyYz17aW1nVXJsfSBhbHQ9e25hbWV9IHdpZHRoPXs1MjB9IGhlaWdodD17NTQ4fSBzdHlsZT17eyBvYmplY3RGaXQ6ICJjb3ZlciIsIHdpZHRoOiAiMTAwJSIsIGhlaWdodDogIjEwMCUiIH19IC8+CiAgICAgICAgICApIDogKAogICAgICAgICAgICA8ZGl2IHN0eWxlPXt7IGRpc3BsYXk6ICJmbGV4IiwgZmxleERpcmVjdGlvbjogImNvbHVtbiIsIGFsaWduSXRlbXM6ICJjZW50ZXIiLCBjb2xvcjogQy50bSB9fT4KICAgICAgICAgICAgICA8ZGl2IHN0eWxlPXt7IGZvbnRTaXplOiA0OCB9fT7wn5GXPC9kaXY+CiAgICAgICAgICAgICAgPGRpdiBzdHlsZT17eyBmb250U2l6ZTogMTQsIGZvbnRXZWlnaHQ6IDUwMCwgbWFyZ2luVG9wOiA4IH19PlppcmEgRmFzaGlvbnM8L2Rpdj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICApfQogICAgICAgICAge2JjICYmICgKICAgICAgICAgICAgPGRpdiBzdHlsZT17eyBwb3NpdGlvbjogImFic29sdXRlIiwgdG9wOiAxNiwgbGVmdDogMTYsIGJhY2tncm91bmRDb2xvcjogYmMuYmcsIGNvbG9yOiBiYy50ZXh0LCBmb250U2l6ZTogMTIsIGZvbnRXZWlnaHQ6IDYwMCwgbGV0dGVyU3BhY2luZzogIjAuMDZlbSIsIHRleHRUcmFuc2Zvcm06ICJ1cHBlcmNhc2UiLCBwYWRkaW5nOiAiNnB4IDE0cHgiLCBib3JkZXJSYWRpdXM6IDEwMCB9fT4KICAgICAgICAgICAgICB7YmMubGFiZWx9CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgKX0KICAgICAgICA8L2Rpdj4KCiAgICAgICAgPGRpdiBzdHlsZT17eyBkaXNwbGF5OiAiZmxleCIsIGZsZXhEaXJlY3Rpb246ICJjb2x1bW4iLCBqdXN0aWZ5Q29udGVudDogImNlbnRlciIsIHdpZHRoOiA1NDAsIHBhZGRpbmdMZWZ0OiA1NiB9fT4KICAgICAgICAgIDxkaXYgc3R5bGU9e3sgZm9udFNpemU6IDEyLCBmb250V2VpZ2h0OiA1MDAsIGNvbG9yOiBhY2NlbnQsIGxldHRlclNwYWNpbmc6ICIwLjFlbSIsIHRleHRUcmFuc2Zvcm06ICJ1cHBlcmNhc2UiLCBtYXJnaW5Cb3R0b206IDIwIH19PlppcmEgRmFzaGlvbnM8L2Rpdj4KICAgICAgICAgIDxkaXYgc3R5bGU9e3sgZm9udFNpemU6IG5hbWUubGVuZ3RoID4gMjQgPyAzNiA6IDQ0LCBmb250V2VpZ2h0OiA2MDAsIGNvbG9yOiBDLnRleHQsIGxpbmVIZWlnaHQ6IDEuMiwgbWFyZ2luQm90dG9tOiAyMCB9fT57bmFtZX08L2Rpdj4KICAgICAgICAgIHtzaXplICYmIDxkaXYgc3R5bGU9e3sgZm9udFNpemU6IDEzLCBmb250V2VpZ2h0OiA1MDAsIGNvbG9yOiBDLnRzLCBiYWNrZ3JvdW5kQ29sb3I6IEMuc20sIHBhZGRpbmc6ICI1cHggMTRweCIsIGJvcmRlclJhZGl1czogMTAwLCBtYXJnaW5Cb3R0b206IDE2LCB3aWR0aDogImZpdC1jb250ZW50IiB9fT57c2l6ZX08L2Rpdj59CiAgICAgICAgICB7cHJpY2UgJiYgPGRpdiBzdHlsZT17eyBmb250U2l6ZTogNDAsIGZvbnRXZWlnaHQ6IDcwMCwgY29sb3I6IGJhZGdlID09PSAic2FsZSIgPyBDLnNhbGUgOiBDLnByaWNlLCBtYXJnaW5Cb3R0b206IDM2LCBsaW5lSGVpZ2h0OiAxIH19PntwcmljZX08L2Rpdj59CiAgICAgICAgICA8ZGl2IHN0eWxlPXt7IHdpZHRoOiA0OCwgaGVpZ2h0OiAyLCBiYWNrZ3JvdW5kQ29sb3I6IGFjY2VudCwgbWFyZ2luQm90dG9tOiAzMiwgYm9yZGVyUmFkaXVzOiAxIH19IC8+CiAgICAgICAgICA8ZGl2IHN0eWxlPXt7IGRpc3BsYXk6ICJmbGV4IiwgYWxpZ25JdGVtczogImNlbnRlciIsIGdhcDogMTAsIGJhY2tncm91bmRDb2xvcjogQy53YSwgY29sb3I6ICIjRkZGIiwgZm9udFNpemU6IDE3LCBmb250V2VpZ2h0OiA2MDAsIHBhZGRpbmc6ICIxNnB4IDI4cHgiLCBib3JkZXJSYWRpdXM6IDEwMCwgd2lkdGg6ICJmaXQtY29udGVudCIgfX0+CiAgICAgICAgICAgIPCfkqwgT3JkZXIgb24gV2hhdHNBcHAKICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPGRpdiBzdHlsZT17eyBtYXJnaW5Ub3A6IDE2LCBmb250U2l6ZTogMTMsIGNvbG9yOiBDLnRtIH19PvCfmpogTmF0aW9ud2lkZSBkZWxpdmVyeSBhdmFpbGFibGU8L2Rpdj4KICAgICAgICA8L2Rpdj4KICAgICAgPC9kaXY+CiAgICApLAogICAgeyB3aWR0aDogMTIwMCwgaGVpZ2h0OiA2MzAgfQogICk7Cn0K
+import { ImageResponse } from "@vercel/og";
+import type { NextRequest } from "next/server";
+
+export const runtime = "edge";
+
+const C = {
+  bg: "#F7F4EE", sf: "#FFFFFF", sm: "#F0EDE6", pr: "#2C3A5C",
+  ac: "#C9A090", price: "#C9A090", sale: "#B05A4A", wa: "#25D366",
+  text: "#1A1A1A", ts: "#5C5C5C", tm: "#9A9490", kids: "#E8A0B0", border: "#E8E4DC",
+};
+
+const BADGES = {
+  new:        { label: "New In",   bg: C.pr,   text: "#FFF" },
+  sale:       { label: "Sale",     bg: C.sale,  text: "#FFF" },
+  "sold-out": { label: "Sold Out", bg: C.sm,    text: C.tm   },
+} as const;
+
+function p(sp: URLSearchParams, k: string, d = "") { return sp.get(k) ?? d; }
+function t(s: string, n: number) { return s.length <= n ? s : s.slice(0, n - 1) + "\u2026"; }
+
+export async function GET(req: NextRequest): Promise<ImageResponse> {
+  const params = new URL(req.url).searchParams;
+  const name   = t(p(params, "name", "Zira Fashions"), 48);
+  const price  = p(params, "price");
+  const size   = p(params, "size");
+  const imgUrl = p(params, "image");
+  const badge  = p(params, "badge") as keyof typeof BADGES | "";
+  const isKids = p(params, "kids") === "true";
+  const accent = isKids ? C.kids : C.ac;
+  const bc     = badge && badge in BADGES ? BADGES[badge] : null;
+
+  return new ImageResponse(
+    (
+      <div style={{ width: 1200, height: 630, backgroundColor: C.bg, display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", padding: "40px 72px", fontFamily: "sans-serif", position: "relative", overflow: "hidden" }}>
+        <div style={{ position: "absolute", top: -120, right: -120, width: 340, height: 340, borderRadius: "50%", backgroundColor: C.pr, opacity: 0.06 }} />
+        <div style={{ position: "absolute", bottom: -80, left: -80, width: 240, height: 240, borderRadius: "50%", backgroundColor: accent, opacity: 0.12 }} />
+        <div style={{ width: 520, height: 548, backgroundColor: C.sf, borderRadius: 16, overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, border: `1px solid ${C.border}`, position: "relative" }}>
+          {imgUrl
+            ? (<img src={imgUrl} alt={name} width={520} height={548} style={{ objectFit: "cover", width: "100%", height: "100%" }} />)
+            : (<div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", color: C.tm }}><div style={{ fontSize: 48 }}>👗</div><div style={{ fontSize: 14, fontWeight: 500, marginTop: 8 }}>Zira Fashions</div></div>)
+          }
+          {bc && <div style={{ position: "absolute", top: 16, left: 16, backgroundColor: bc.bg, color: bc.text, fontSize: 12, fontWeight: 600, letterSpacing: "0.06em", textTransform: "uppercase", padding: "6px 14px", borderRadius: 100 }}>{bc.label}</div>}
+        </div>
+        <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", width: 540, paddingLeft: 56 }}>
+          <div style={{ fontSize: 12, fontWeight: 500, color: accent, letterSpacing: "0.1em", textTransform: "uppercase", marginBottom: 20 }}>Zira Fashions</div>
+          <div style={{ fontSize: name.length > 24 ? 36 : 44, fontWeight: 600, color: C.text, lineHeight: 1.2, marginBottom: 20 }}>{name}</div>
+          {size && <div style={{ fontSize: 13, fontWeight: 500, color: C.ts, backgroundColor: C.sm, padding: "5px 14px", borderRadius: 100, marginBottom: 16, width: "fit-content" }}>{size}</div>}
+          {price && <div style={{ fontSize: 40, fontWeight: 700, color: badge === "sale" ? C.sale : C.price, marginBottom: 36, lineHeight: 1 }}>{price}</div>}
+          <div style={{ width: 48, height: 2, backgroundColor: accent, marginBottom: 32, borderRadius: 1 }} />
+          <div style={{ display: "flex", alignItems: "center", gap: 10, backgroundColor: C.wa, color: "#FFF", fontSize: 17, fontWeight: 600, padding: "16px 28px", borderRadius: 100, width: "fit-content" }}>
+            Order on WhatsApp
+          </div>
+          <div style={{ marginTop: 16, fontSize: 13, color: C.tm }}>Nationwide delivery available</div>
+        </div>
+      </div>
+    ),
+    { width: 1200, height: 630 }
+  );
+}
