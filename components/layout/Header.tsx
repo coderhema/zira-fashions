@@ -1,1 +1,123 @@
-InVzZSBjbGllbnQiOwoKaW1wb3J0IExpbmsgZnJvbSAibmV4dC9saW5rIjsKaW1wb3J0IHsgdXNlU3RhdGUsIHVzZUVmZmVjdCB9IGZyb20gInJlYWN0IjsKaW1wb3J0IHsgYnVpbGRXaGF0c0FwcENvbnRhY3RVcmwgfSBmcm9tICJAL2xpYi93aGF0c2FwcCI7Cgpjb25zdCBOQVYgPSBbCiAgeyBsYWJlbDogIlNob3AiLCAgIGhyZWY6ICIvc2hvcCIgICAgICAgfSwKICB7IGxhYmVsOiAiRGVuaW0iLCAgaHJlZjogIi9zaG9wL2RlbmltIiB9LAogIHsgbGFiZWw6ICJLaWRzIiwgICBocmVmOiAiL2tpZHMiICAgICAgIH0sCiAgeyBsYWJlbDogIlRyeSBPbiIsIGhyZWY6ICIvdHJ5LW9uIiAgICAgfSwKICB7IGxhYmVsOiAiQWJvdXQiLCAgaHJlZjogIi9hYm91dCIgICAgICB9Cl0gYXMgY29uc3Q7CgpmdW5jdGlvbiBXYUljb24oKSB7CiAgcmV0dXJuICgKICAgIDxzdmcgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiB2aWV3Qm94PSIwIDAgMjQgMjQiIGZpbGw9ImN1cnJlbnRDb2xvciIgYXJpYS1oaWRkZW49InRydWUiPgogICAgICA8cGF0aCBkPSJNMTcuNDcyIDE0LjM4MmMtLjI5Ny0uMTQ5LTEuNzU4LS44NjctMi4wMy0uOTY3LS4yNzMtLjA5OS0uNDcxLS4xNDgtLjY3LjE1LS4xOTcuMjk3LS43NjcuOTY2LS45NCAxLjE2NC0uMTczLjE5OS0uMzQ3LjIyMy0uNjQ0LjA3NS0uMjk3LS4xNS0xLjI1NS0uNDYzLTIuMzktMS40NzUtLjg4My0uNzg4LTEuNDgtMS43NjEtMS42NTMtMi4wNTktLjE3My0uMjk3LS4wMTgtLjQ1OC4xMy0uNjA2LjEzNC0uMTMzLjI5OC0uMzQ3LjQ0Ni0uNTIuMTQ5LS4xNzQuMTk4LS4yOTguMjk4LS40OTcuMDk5LS4xOTguMDUtLjM3MS0uMDI1LS41Mi0uMDc1LS4xNDktLjY2OS0xLjYxMi0uOTE2LTIuMjA3LS4yNDItLjU3OS0uNDg3LS41LS42NjktLjUxLS4xNzMtLjAwOC0uMzcxLS4wMS0uNTctLjAxLS4xOTggMC0uNTIuMDc0LS43OTIuMzcyLS4yNzIuMjk3LTEuMDQgMS4wMTYtMS4wNCAyLjQ3OSAwIDEuNDYyIDEuMDY1IDIuODc1IDEuMjEzIDMuMDc0LjE0OS4xOTggMi4wOTYgMy4yIDUuMDc3IDQuNDg3LjcwOS4zMDYgMS4yNjIuNDg5IDEuNjk0LjYyNS43MTIuMjI3IDEuMzYuMTk1IDEuODcxLjExOC41NzEtLjA4NSAxLjc1OC0uNzE5IDIuMDA2LTEuNDEzLjI0OC0uNjk0LjI0OC0xLjI4OS4xNzMtMS40MTMtLjA3NC0uMTI0LS4yNzItLjE5OC0uNTctLjM0N20tNS40MjEgNy40MDNoLS4wMDRhOS44NyA5Ljg3IDAgMDEtNS4wMzEtMS4zNzhsLS4zNjEtLjIxNC0zLjc0MS45ODIuOTk4LTMuNjQ4LS4yMzUtLjM3NGE5Ljg2IDkuODYgMCAwMS0xLjUxLTUuMjZjLjAwMS01LjQ1IDQuNDM2LTkuODg0IDkuODg4LTkuODg0IDIuNjQgMCA1LjEyMiAxLjAzIDYuOTg4IDIuODk4YTkuODI1IDkuODI1IDAgMDEyLjg5MyA2Ljk5NGMtLjAwMyA1LjQ1LTQuNDM3IDkuODg0LTkuODg1IDkuODg0bTguNDEzLTE4LjI5N0ExMS44MTUgMTEuODE1IDAgMDAxMi4wNSAwQzUuNDk1IDAgLjE2IDUuMzM1LjE1NyAxMS44OTJjMCAyLjA5Ni41NDcgNC4xNDIgMS41ODggNS45NDVMLjA1NyAyNGw2LjMwNS0xLjY1NGExMS44ODIgMTEuODgyIDAgMDA1LjY4MyAxLjQ0OGguMDA1YzYuNTU0IDAgMTEuODktNS4zMzUgMTEuODkzLTExLjg5M2ExMS44MjEgMTEuODIxIDAgMDAtMy40OC04LjQxM3oiIC8+CiAgICA8L3N2Zz4KICApOwp9CgpleHBvcnQgZnVuY3Rpb24gSGVhZGVyKCkgewogIGNvbnN0IFtzY3JvbGxlZCwgc2V0U2Nyb2xsZWRdID0gdXNlU3RhdGUoZmFsc2UpOwogIGNvbnN0IFtvcGVuLCAgICAgc2V0T3Blbl0gICAgID0gdXNlU3RhdGUoZmFsc2UpOwoKICB1c2VFZmZlY3QoKCkgPT4gewogICAgY29uc3QgZm4gPSAoKSA9PiBzZXRTY3JvbGxlZCh3aW5kb3cuc2Nyb2xsWSA+IDgwKTsKICAgIHdpbmRvdy5hZGRFdmVudExpc3RlbmVyKCJzY3JvbGwiLCBmbiwgeyBwYXNzaXZlOiB0cnVlIH0pOwogICAgcmV0dXJuICgpID0+IHdpbmRvdy5yZW1vdmVFdmVudExpc3RlbmVyKCJzY3JvbGwiLCBmbik7CiAgfSwgW10pOwoKICB1c2VFZmZlY3QoKCkgPT4gewogICAgZG9jdW1lbnQuYm9keS5zdHlsZS5vdmVyZmxvdyA9IG9wZW4gPyAiaGlkZGVuIiA6ICIiOwogICAgcmV0dXJuICgpID0+IHsgZG9jdW1lbnQuYm9keS5zdHlsZS5vdmVyZmxvdyA9ICIiOyB9OwogIH0sIFtvcGVuXSk7CgogIGNvbnN0IGNvbnRhY3QgPSBidWlsZFdoYXRzQXBwQ29udGFjdFVybCgpOwoKICByZXR1cm4gKAogICAgPD4KICAgICAgPGhlYWRlcgogICAgICAgIGNsYXNzTmFtZT17YGZpeGVkIHRvcC0wIGluc2V0LXgtMCB6LTQwIGgtMTYgbWQ6aC1bNjhweF0gdHJhbnNpdGlvbi1hbGwgZHVyYXRpb24tWzI4MG1zXQogICAgICAgICAgJHtzY3JvbGxlZCA/ICJiZy1zdXJmYWNlIHNoYWRvdy1bMF8ycHhfMjBweF8tNHB4X3JnYmEoNDQsNTgsOTIsMC4xMildIiA6ICJiZy10cmFuc3BhcmVudCJ9YH0KICAgICAgPgogICAgICAgIDxkaXYgY2xhc3NOYW1lPSJtYXgtdy1zY3JlZW4teGwgbXgtYXV0byBoLWZ1bGwgcHgtNSBtZDpweC04IGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktYmV0d2VlbiI+CiAgICAgICAgICA8TGluawogICAgICAgICAgICBocmVmPSIvIgogICAgICAgICAgICBjbGFzc05hbWU9e2Bmb250LWRpc3BsYXkgZm9udC1tZWRpdW0gdGV4dC1bMjJweF0gbWQ6dGV4dC1bMjZweF0gdHJhY2tpbmctdGlnaHQgdHJhbnNpdGlvbi1jb2xvcnMgZHVyYXRpb24tWzE4MG1zXQogICAgICAgICAgICAgICR7c2Nyb2xsZWQgPyAidGV4dC10ZXh0LXByaW1hcnkiIDogInRleHQtd2hpdGUifWB9CiAgICAgICAgICA+CiAgICAgICAgICAgIFppcmEgRmFzaGlvbnMKICAgICAgICAgIDwvTGluaz4KCiAgICAgICAgICA8bmF2IGNsYXNzTmFtZT0iaGlkZGVuIG1kOmZsZXggaXRlbXMtY2VudGVyIGdhcC03IiBhcmlhLWxhYmVsPSJNYWluIG5hdmlnYXRpb24iPgogICAgICAgICAgICB7TkFWLm1hcCgobCkgPT4gKAogICAgICAgICAgICAgIDxMaW5rCiAgICAgICAgICAgICAgICBrZXk9e2wuaHJlZn0KICAgICAgICAgICAgICAgIGhyZWY9e2wuaHJlZn0KICAgICAgICAgICAgICAgIGNsYXNzTmFtZT17YHJlbGF0aXZlIGZvbnQtc2FucyBmb250LW1lZGl1bSB0ZXh0LVsxNHB4XSB0cmFja2luZy13aWRlIHRyYW5zaXRpb24tY29sb3JzIGR1cmF0aW9uLVsxODBtc10KICAgICAgICAgICAgICAgICAgYWZ0ZXI6YWJzb2x1dGUgYWZ0ZXI6Ym90dG9tLVstM3B4XSBhZnRlcjpsZWZ0LTAgYWZ0ZXI6aC1bMS41cHhdIGFmdGVyOnctMCBhZnRlcjpiZy1jdXJyZW50CiAgICAgICAgICAgICAgICAgIGFmdGVyOnRyYW5zaXRpb24tW3dpZHRoXSBhZnRlcjpkdXJhdGlvbi1bMTgwbXNdIGhvdmVyOmFmdGVyOnctZnVsbAogICAgICAgICAgICAgICAgICAke3Njcm9sbGVkID8gInRleHQtdGV4dC1zZWNvbmRhcnkgaG92ZXI6dGV4dC10ZXh0LXByaW1hcnkiIDogInRleHQtd2hpdGUvODUgaG92ZXI6dGV4dC13aGl0ZSJ9YH0KICAgICAgICAgICAgICA+CiAgICAgICAgICAgICAgICB7bC5sYWJlbH0KICAgICAgICAgICAgICA8L0xpbms+CiAgICAgICAgICAgICkpfQogICAgICAgICAgPC9uYXY+CgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImhpZGRlbiBtZDpmbGV4IGl0ZW1zLWNlbnRlciBnYXAtNCI+CiAgICAgICAgICAgIDxhIGhyZWY9e2NvbnRhY3R9IHRhcmdldD0iX2JsYW5rIiByZWw9Im5vb3BlbmVyIG5vcmVmZXJyZXIiCiAgICAgICAgICAgICAgY2xhc3NOYW1lPXtgdHJhbnNpdGlvbi1jb2xvcnMgaG92ZXI6b3BhY2l0eS03MCAke3Njcm9sbGVkID8gInRleHQtcHJpbWFyeSIgOiAidGV4dC13aGl0ZSJ9YH0KICAgICAgICAgICAgICBhcmlhLWxhYmVsPSJXaGF0c0FwcCI+PFdhSWNvbiAvPjwvYT4KICAgICAgICAgICAgPExpbmsgaHJlZj0iL3NlYXJjaCIgYXJpYS1sYWJlbD0iU2VhcmNoIgogICAgICAgICAgICAgIGNsYXNzTmFtZT17YHRyYW5zaXRpb24tY29sb3JzIGhvdmVyOm9wYWNpdHktNzAgJHtzY3JvbGxlZCA/ICJ0ZXh0LXRleHQtc2Vjb25kYXJ5IiA6ICJ0ZXh0LXdoaXRlIn1gfT4KICAgICAgICAgICAgICA8c3ZnIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlV2lkdGg9IjIiIHN0cm9rZUxpbmVjYXA9InJvdW5kIiBzdHJva2VMaW5lam9pbj0icm91bmQiIGFyaWEtaGlkZGVuPSJ0cnVlIj4KICAgICAgICAgICAgICAgIDxjaXJjbGUgY3g9IjExIiBjeT0iMTEiIHI9IjgiIC8+PHBhdGggZD0ibTIxIDIxLTQuMzUtNC4zNSIgLz4KICAgICAgICAgICAgICA8L3N2Zz4KICAgICAgICAgICAgPC9MaW5rPgogICAgICAgICAgPC9kaXY+CgogICAgICAgICAgPGJ1dHRvbiB0eXBlPSJidXR0b24iIG9uQ2xpY2s9eygpID0+IHNldE9wZW4odHJ1ZSl9CiAgICAgICAgICAgIGNsYXNzTmFtZT17YG1kOmhpZGRlbiBmbGV4IGZsZXgtY29sIGdhcC1bNXB4XSBwLTIgdHJhbnNpdGlvbi1jb2xvcnMgJHtzY3JvbGxlZCA/ICJ0ZXh0LXRleHQtcHJpbWFyeSIgOiAidGV4dC13aGl0ZSJ9YH0KICAgICAgICAgICAgYXJpYS1sYWJlbD0iT3BlbiBtZW51IiBhcmlhLWV4cGFuZGVkPXtvcGVufT4KICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPSJibG9jayB3LTYgaC1bMS41cHhdIGJnLWN1cnJlbnQgcm91bmRlZC1mdWxsIiAvPgogICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9ImJsb2NrIHctNiBoLVsxLjVweF0gYmctY3VycmVudCByb3VuZGVkLWZ1bGwiIC8+CiAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT0iYmxvY2sgdy00IGgtWzEuNXB4XSBiZy1jdXJyZW50IHJvdW5kZWQtZnVsbCBtbC1hdXRvIiAvPgogICAgICAgICAgPC9idXR0b24+CiAgICAgICAgPC9kaXY+CiAgICAgIDwvaGVhZGVyPgoKICAgICAgey8qIEJhY2tkcm9wICovfQogICAgICA8ZGl2CiAgICAgICAgY2xhc3NOYW1lPXtgZml4ZWQgaW5zZXQtMCB6LTUwIG1kOmhpZGRlbiB0cmFuc2l0aW9uLW9wYWNpdHkgZHVyYXRpb24tWzI0MG1zXQogICAgICAgICAgJHtvcGVuID8gIm9wYWNpdHktMTAwIHBvaW50ZXItZXZlbnRzLWF1dG8iIDogIm9wYWNpdHktMCBwb2ludGVyLWV2ZW50cy1ub25lIn1gfQogICAgICAgIGFyaWEtaGlkZGVuPSJ0cnVlIgogICAgICAgIG9uQ2xpY2s9eygpID0+IHNldE9wZW4oZmFsc2UpfQogICAgICAgIHN0eWxlPXt7IGJhY2tncm91bmQ6ICJyZ2JhKDQ0LDU4LDkyLDAuNSkiLCBiYWNrZHJvcEZpbHRlcjogImJsdXIoNHB4KSIgfX0KICAgICAgLz4KCiAgICAgIHsvKiBEcmF3ZXIgKi99CiAgICAgIDxkaXYKICAgICAgICBjbGFzc05hbWU9e2BmaXhlZCB0b3AtMCByaWdodC0wIGJvdHRvbS0wIHotNTAgdy1bODB2d10gbWF4LXctWzMyMHB4XSBtZDpoaWRkZW4gZmxleCBmbGV4LWNvbAogICAgICAgICAgdHJhbnNpdGlvbi10cmFuc2Zvcm0gZHVyYXRpb24tWzI0MG1zXSBlYXNlLVtjdWJpYy1iZXppZXIoMC40LDAsMC4yLDEpXQogICAgICAgICAgJHtvcGVuID8gInRyYW5zbGF0ZS14LTAiIDogInRyYW5zbGF0ZS14LWZ1bGwifWB9CiAgICAgICAgc3R5bGU9e3sgYmFja2dyb3VuZENvbG9yOiAidmFyKC0tY29sb3ItcHJpbWFyeSkiIH19CiAgICAgICAgcm9sZT0iZGlhbG9nIiBhcmlhLW1vZGFsPSJ0cnVlIiBhcmlhLWxhYmVsPSJOYXZpZ2F0aW9uIG1lbnUiCiAgICAgID4KICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBqdXN0aWZ5LWVuZCBwLTUiPgogICAgICAgICAgPGJ1dHRvbiB0eXBlPSJidXR0b24iIG9uQ2xpY2s9eygpID0+IHNldE9wZW4oZmFsc2UpfQogICAgICAgICAgICBjbGFzc05hbWU9InRleHQtd2hpdGUvNzAgaG92ZXI6dGV4dC13aGl0ZSBwLTIgdHJhbnNpdGlvbi1jb2xvcnMiIGFyaWEtbGFiZWw9IkNsb3NlIG1lbnUiPgogICAgICAgICAgICA8c3ZnIHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlV2lkdGg9IjIiIHN0cm9rZUxpbmVjYXA9InJvdW5kIiBzdHJva2VMaW5lam9pbj0icm91bmQiIGFyaWEtaGlkZGVuPSJ0cnVlIj4KICAgICAgICAgICAgICA8cGF0aCBkPSJNMTggNiA2IDE4TTYgNmwxMiAxMiIgLz4KICAgICAgICAgICAgPC9zdmc+CiAgICAgICAgICA8L2J1dHRvbj4KICAgICAgICA8L2Rpdj4KICAgICAgICA8bmF2IGNsYXNzTmFtZT0iZmxleCBmbGV4LWNvbCBweC04IHBiLTggZ2FwLTEgZmxleC0xIiBhcmlhLWxhYmVsPSJNb2JpbGUgbmF2aWdhdGlvbiI+CiAgICAgICAgICB7TkFWLm1hcCgobCkgPT4gKAogICAgICAgICAgICA8TGluayBrZXk9e2wuaHJlZn0gaHJlZj17bC5ocmVmfSBvbkNsaWNrPXsoKSA9PiBzZXRPcGVuKGZhbHNlKX0KICAgICAgICAgICAgICBjbGFzc05hbWU9ImZvbnQtZGlzcGxheSBmb250LW1lZGl1bSB0ZXh0LVszNnB4XSB0ZXh0LXdoaXRlLzkwIGhvdmVyOnRleHQtd2hpdGUgbGVhZGluZy10aWdodCBweS0yIHRyYW5zaXRpb24tY29sb3JzIj4KICAgICAgICAgICAgICB7bC5sYWJlbH0KICAgICAgICAgICAgPC9MaW5rPgogICAgICAgICAgKSl9CiAgICAgICAgPC9uYXY+CiAgICAgICAgPGRpdiBjbGFzc05hbWU9InB4LTggcGItMTAiPgogICAgICAgICAgPGEgaHJlZj17Y29udGFjdH0gdGFyZ2V0PSJfYmxhbmsiIHJlbD0ibm9vcGVuZXIgbm9yZWZlcnJlciIgb25DbGljaz17KCkgPT4gc2V0T3BlbihmYWxzZSl9CiAgICAgICAgICAgIGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTIgZm9udC1zYW5zIGZvbnQtbWVkaXVtIHRleHQtWzE0cHhdIHRleHQtd2hpdGUvNzAgaG92ZXI6dGV4dC13aGl0ZSB0cmFuc2l0aW9uLWNvbG9ycyI+CiAgICAgICAgICAgIDxXYUljb24gLz4gQ2hhdCBvbiBXaGF0c0FwcAogICAgICAgICAgPC9hPgogICAgICAgIDwvZGl2PgogICAgICA8L2Rpdj4KICAgIDwvPgogICk7Cn0K
+"use client";
+import Link from "next/link";
+import { useState, useEffect } from "react";
+import { buildWhatsAppContactUrl } from "@/lib/whatsapp";
+
+const NAV = [
+  { label: "Shop",   href: "/shop" },
+  { label: "Denim",  href: "/shop/denim" },
+  { label: "Kids",   href: "/kids" },
+  { label: "Try On", href: "/try-on" },
+  { label: "About",  href: "/about" },
+] as const;
+
+function WaIcon() {
+  return (
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+  );
+}
+
+export function Header() {
+  const [scrolled, setScrolled] = useState(false);
+  const [open,     setOpen]     = useState(false);
+
+  useEffect(() => {
+    const fn = () => setScrolled(window.scrollY > 80);
+    window.addEventListener("scroll", fn, { passive: true });
+    return () => window.removeEventListener("scroll", fn);
+  }, []);
+
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => { document.body.style.overflow = ""; };
+  }, [open]);
+
+  const contact = buildWhatsAppContactUrl();
+
+  return (
+    <>
+      <header className={`fixed top-0 inset-x-0 z-40 h-16 md:h-[68px] transition-all duration-[280ms] ${
+        scrolled ? "bg-surface shadow-[0_2px_20px_-4px_rgba(44,58,92,0.12)]" : "bg-transparent"
+      }`}>
+        <div className="max-w-screen-xl mx-auto h-full px-5 md:px-8 flex items-center justify-between">
+          <Link href="/" className={`font-display font-medium text-[22px] md:text-[26px] tracking-tight transition-colors duration-[180ms] ${
+            scrolled ? "text-text-primary" : "text-white"
+          }`}>Zira Fashions</Link>
+
+          <nav className="hidden md:flex items-center gap-7" aria-label="Main navigation">
+            {NAV.map((l) => (
+              <Link key={l.href} href={l.href}
+                className={`relative font-sans font-medium text-[14px] tracking-wide transition-colors duration-[180ms] after:absolute after:bottom-[-3px] after:left-0 after:h-[1.5px] after:w-0 after:bg-current after:transition-[width] after:duration-[180ms] hover:after:w-full ${
+                  scrolled ? "text-text-secondary hover:text-text-primary" : "text-white/85 hover:text-white"
+                }`}>{l.label}</Link>
+            ))}
+          </nav>
+
+          <div className="hidden md:flex items-center gap-4">
+            <a href={contact} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"
+              className={`transition-colors hover:opacity-70 ${scrolled ? "text-primary" : "text-white"}`}>
+              <WaIcon />
+            </a>
+            <Link href="/search" aria-label="Search"
+              className={`transition-colors hover:opacity-70 ${scrolled ? "text-text-secondary" : "text-white"}`}>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                <circle cx="11" cy="11" r="8" /><path d="m21 21-4.35-4.35" />
+              </svg>
+            </Link>
+          </div>
+
+          <button type="button" onClick={() => setOpen(true)}
+            className={`md:hidden flex flex-col gap-[5px] p-2 transition-colors ${scrolled ? "text-text-primary" : "text-white"}`}
+            aria-label="Open menu" aria-expanded={open}>
+            <span className="block w-6 h-[1.5px] bg-current rounded-full" />
+            <span className="block w-6 h-[1.5px] bg-current rounded-full" />
+            <span className="block w-4 h-[1.5px] bg-current rounded-full ml-auto" />
+          </button>
+        </div>
+      </header>
+
+      <div
+        className={`fixed inset-0 z-50 md:hidden transition-opacity duration-[240ms] ${
+          open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
+        }`}
+        aria-hidden="true"
+        onClick={() => setOpen(false)}
+        style={{ background: "rgba(44,58,92,0.5)", backdropFilter: "blur(4px)" }}
+      />
+
+      <div
+        className={`fixed top-0 right-0 bottom-0 z-50 w-[80vw] max-w-[320px] md:hidden flex flex-col transition-transform duration-[240ms] ease-[cubic-bezier(0.4,0,0.2,1)] ${
+          open ? "translate-x-0" : "translate-x-full"
+        }`}
+        style={{ backgroundColor: "var(--color-primary)" }}
+        role="dialog" aria-modal="true" aria-label="Navigation menu"
+      >
+        <div className="flex justify-end p-5">
+          <button type="button" onClick={() => setOpen(false)}
+            className="text-white/70 hover:text-white p-2 transition-colors" aria-label="Close menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M18 6 6 18M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <nav className="flex flex-col px-8 pb-8 gap-1 flex-1" aria-label="Mobile navigation">
+          {NAV.map((l) => (
+            <Link key={l.href} href={l.href} onClick={() => setOpen(false)}
+              className="font-display font-medium text-[36px] text-white/90 hover:text-white leading-tight py-2 transition-colors">
+              {l.label}
+            </Link>
+          ))}
+        </nav>
+        <div className="px-8 pb-10">
+          <a href={contact} target="_blank" rel="noopener noreferrer"
+            className="flex items-center gap-2 font-sans font-medium text-[14px] text-white/70 hover:text-white transition-colors"
+            onClick={() => setOpen(false)}>
+            <WaIcon /> Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </>
+  );
+}
