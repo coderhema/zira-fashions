@@ -1,1 +1,54 @@
-aW1wb3J0IHR5cGV7Q29uZmlnfWZyb20idGFpbHdpbmRjc3MiO2NvbnN0IGNvbmZpZzpDb25maWc9e2NvbnRlbnQ6WyIuL2FwcC8qKi8qLntqcyx0cyxqc3gsdHN4LG1keH0iLCIuL2NvbXBvbmVudHMvKiovKi57anMsdHMsanN4LHRzeCxtZHh9Il0sdGhlbWU6e2V4dGVuZDp7Y29sb3JzOntiYWNrZ3JvdW5kOiJ2YXIoLS1jb2xvci1iYWNrZ3JvdW5kKSIsc3VyZmFjZToidmFyKC0tY29sb3Itc3VyZmFjZSkiLCJzdXJmYWNlLW11dGVkIjoidmFyKC0tY29sb3Itc3VyZmFjZS1tdXRlZCkiLHByaW1hcnk6InZhcigtLWNvbG9yLXByaW1hcnkpIiwicHJpbWFyeS1ob3ZlciI6InZhcigtLWNvbG9yLXByaW1hcnktaG92ZXIpIixhY2NlbnQ6InZhcigtLWNvbG9yLWFjY2VudCkiLCJhY2NlbnQtbGlnaHQiOiJ2YXIoLS1jb2xvci1hY2NlbnQtbGlnaHQpIixwcmljZToidmFyKC0tY29sb3ItcHJpY2UpIixzYWxlOiJ2YXIoLS1jb2xvci1zYWxlKSIsd2hhdHNhcHA6InZhcigtLWNvbG9yLXdoYXRzYXBwKSIsInRleHQtcHJpbWFyeSI6InZhcigtLWNvbG9yLXRleHQtcHJpbWFyeSkiLCJ0ZXh0LXNlY29uZGFyeSI6InZhcigtLWNvbG9yLXRleHQtc2Vjb25kYXJ5KSIsInRleHQtbXV0ZWQiOiJ2YXIoLS1jb2xvci10ZXh0LW11dGVkKSIsImtpZHMtYWNjZW50IjoidmFyKC0tY29sb3Ita2lkcy1hY2NlbnQpIixib3JkZXI6InZhcigtLWNvbG9yLWJvcmRlcikiLCJib3JkZXItc3Ryb25nIjoidmFyKC0tY29sb3ItYm9yZGVyLXN0cm9uZykifSxmb250RmFtaWx5OntkaXNwbGF5OlsidmFyKC0tZm9udC1jb3Jtb3JhbnQpIiwiR2VvcmdpYSIsInNlcmlmIl0sc2FuczpbInZhcigtLWZvbnQtZG0tc2FucykiLCJJbnRlciIsInN5c3RlbS11aSIsInNhbnMtc2VyaWYiXX0sZm9udFNpemU6eyJkaXNwbGF5IjpbImNsYW1wKDQycHgsNnZ3LDY0cHgpIix7bGluZUhlaWdodDoiMS4xIn1dLCJoMSI6WyJjbGFtcCgzMnB4LDQuNXZ3LDQ4cHgpIix7bGluZUhlaWdodDoiMS4yIn1dLCJoMiI6WyJjbGFtcCgyNnB4LDMuNXZ3LDM2cHgpIix7bGluZUhlaWdodDoiMS4yNSJ9XSwiaDMiOlsiMThweCIse2xpbmVIZWlnaHQ6IjEuNCJ9XSwiYm9keSI6WyIxNnB4Iix7bGluZUhlaWdodDoiMS41NSJ9XSwic21hbGwiOlsiMTNweCIse2xpbmVIZWlnaHQ6IjEuNCJ9XSwibWljcm8iOlsiMTJweCIse2xpbmVIZWlnaHQ6IjEuNSJ9XX0sYm9yZGVyUmFkaXVzOntjYXJkOiIxMnB4IixwaWxsOiIxMDBweCIsaW5wdXQ6IjhweCJ9LGFzcGVjdFJhdGlvOnsicHJvZHVjdCI6IjMgLyA0In19fSxwbHVnaW5zOltdfTtleHBvcnQgZGVmYXVsdCBjb25maWc7Cg==
+import type { Config } from 'tailwindcss';
+
+const config: Config = {
+  content: [
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}'
+  ],
+  theme: {
+    extend: {
+      colors: {
+        background: 'var(--color-background)',
+        surface: 'var(--color-surface)',
+        'surface-muted': 'var(--color-surface-muted)',
+        primary: 'var(--color-primary)',
+        'primary-hover': 'var(--color-primary-hover)',
+        accent: 'var(--color-accent)',
+        'accent-light': 'var(--color-accent-light)',
+        price: 'var(--color-price)',
+        sale: 'var(--color-sale)',
+        whatsapp: 'var(--color-whatsapp)',
+        'text-primary': 'var(--color-text-primary)',
+        'text-secondary': 'var(--color-text-secondary)',
+        'text-muted': 'var(--color-text-muted)',
+        'kids-accent': 'var(--color-kids-accent)',
+        border: 'var(--color-border)',
+        'border-strong': 'var(--color-border-strong)'
+      },
+      fontFamily: {
+        display: ['var(--font-cormorant)', 'Georgia', 'serif'],
+        sans: ['var(--font-dm-sans)', 'Inter', 'system-ui', 'sans-serif']
+      },
+      fontSize: {
+        display: ['clamp(42px,6vw,64px)', { lineHeight: '1.1' }],
+        h1: ['clamp(32px,4.5vw,48px)', { lineHeight: '1.2' }],
+        h2: ['clamp(26px,3.5vw,36px)', { lineHeight: '1.25' }],
+        h3: ['18px', { lineHeight: '1.4' }],
+        body: ['16px', { lineHeight: '1.55' }],
+        small: ['13px', { lineHeight: '1.4' }],
+        micro: ['12px', { lineHeight: '1.5' }]
+      },
+      borderRadius: {
+        card: '12px',
+        pill: '100px',
+        input: '8px'
+      },
+      aspectRatio: {
+        product: '3 / 4'
+      }
+    }
+  },
+  plugins: []
+};
+
+export default config;
