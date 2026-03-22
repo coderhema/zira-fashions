@@ -1,1 +1,50 @@
-aW1wb3J0IHR5cGUgeyBNZXRhZGF0YSB9IGZyb20gIm5leHQiOwppbXBvcnQgeyBDb3Jtb3JhbnRfR2FyYW1vbmQsIERNX1NhbnMgfSBmcm9tICJuZXh0L2ZvbnQvZ29vZ2xlIjsKaW1wb3J0ICIuL2dsb2JhbHMuY3NzIjsKCmNvbnN0IGNvcm1vcmFudEdhcmFtb25kID0gQ29ybW9yYW50X0dhcmFtb25kKHsKICBzdWJzZXRzOiBbImxhdGluIl0sCiAgd2VpZ2h0OiBbIjMwMCIsICI0MDAiLCAiNTAwIiwgIjYwMCJdLAogIHN0eWxlOiBbIm5vcm1hbCIsICJpdGFsaWMiXSwKICB2YXJpYWJsZTogIi0tZm9udC1jb3Jtb3JhbnQiLAogIGRpc3BsYXk6ICJzd2FwIgp9KTsKCmNvbnN0IGRtU2FucyA9IERNX1NhbnMoewogIHN1YnNldHM6IFsibGF0aW4iXSwKICB3ZWlnaHQ6IFsiNDAwIiwgIjUwMCIsICI2MDAiLCAiNzAwIl0sCiAgdmFyaWFibGU6ICItLWZvbnQtZG0tc2FucyIsCiAgZGlzcGxheTogInN3YXAiCn0pOwoKZXhwb3J0IGNvbnN0IG1ldGFkYXRhOiBNZXRhZGF0YSA9IHsKICB0aXRsZTogewogICAgZGVmYXVsdDogIlppcmEgRmFzaGlvbnMg4oCUIFVLICYgVVMgSGlnaHN0cmVldCBCcmFuZHMsIExhZ29zIiwKICAgIHRlbXBsYXRlOiAiJXMgfCBaaXJhIEZhc2hpb25zIgogIH0sCiAgZGVzY3JpcHRpb246CiAgICAiSG9tZSBmb3IgYnJhbmQgbmV3ICYgcHJlLW93bmVkIFVLIGFuZCBVUyBoaWdoc3RyZWV0IGZhc2hpb24uIERlbmltIGRyZXNzZXMsIGp1bXBzdWl0cywgcGxheXN1aXRzLiBOYXRpb253aWRlIGRlbGl2ZXJ5LiBETSB0byBvcmRlci4iLAogIG1ldGFkYXRhQmFzZTogbmV3IFVSTCgKICAgIHByb2Nlc3MuZW52Lk5FWFRfUFVCTElDX1NJVEVfVVJMID8/ICJodHRwczovL3ppcmFmYXNoaW9ucy5jb20iCiAgKSwKICBvcGVuR3JhcGg6IHsKICAgIHR5cGU6ICJ3ZWJzaXRlIiwKICAgIGxvY2FsZTogImVuX05HIiwKICAgIHNpdGVOYW1lOiAiWmlyYSBGYXNoaW9ucyIsCiAgICBpbWFnZXM6IFt7IHVybDogIi9vZy1kZWZhdWx0LmpwZyIsIHdpZHRoOiAxMjAwLCBoZWlnaHQ6IDYzMCB9XQogIH0KfTsKCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFJvb3RMYXlvdXQoewogIGNoaWxkcmVuCn06IHsKICBjaGlsZHJlbjogUmVhY3QuUmVhY3ROb2RlOwp9KSB7CiAgcmV0dXJuICgKICAgIDxodG1sIGxhbmc9ImVuIiBjbGFzc05hbWU9e2Ake2Nvcm1vcmFudEdhcmFtb25kLnZhcmlhYmxlfSAke2RtU2Fucy52YXJpYWJsZX1gfT4KICAgICAgPGhlYWQ+CiAgICAgICAgPGxpbmsgcmVsPSJwcmVjb25uZWN0IiBocmVmPSJodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tIiAvPgogICAgICAgIDxsaW5rIHJlbD0icHJlY29ubmVjdCIgaHJlZj0iaHR0cHM6Ly9mb250cy5nc3RhdGljLmNvbSIgY3Jvc3NPcmlnaW49ImFub255bW91cyIgLz4KICAgICAgPC9oZWFkPgogICAgICA8Ym9keSBjbGFzc05hbWU9ImZvbnQtc2FucyBiZy1iYWNrZ3JvdW5kIHRleHQtdGV4dC1wcmltYXJ5IGFudGlhbGlhc2VkIG1pbi1oLXNjcmVlbiI+CiAgICAgICAge2NoaWxkcmVufQogICAgICA8L2JvZHk+CiAgICA8L2h0bWw+CiAgKTsKfQo=
+import type { Metadata } from "next";
+import { Cormorant_Garamond, DM_Sans } from "next/font/google";
+import "./globals.css";
+
+const cormorantGaramond = Cormorant_Garamond({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+  style: ["normal", "italic"],
+  variable: "--font-cormorant",
+  display: "swap",
+});
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-dm-sans",
+  display: "swap",
+});
+
+export const metadata: Metadata = {
+  title: {
+    default: "Zira Fashions \u2014 UK & US Highstreet Brands, Lagos",
+    template: "%s | Zira Fashions",
+  },
+  description:
+    "Home for brand new & pre-owned UK and US highstreet fashion. Denim dresses, jumpsuits, playsuits. Nationwide delivery. DM to order.",
+  metadataBase: new URL(
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://zirafashions.com"
+  ),
+  openGraph: {
+    type: "website",
+    locale: "en_NG",
+    siteName: "Zira Fashions",
+    images: [{ url: "/og-default.jpg", width: 1200, height: 630 }],
+  },
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en" className={`${cormorantGaramond.variable} ${dmSans.variable}`}>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      </head>
+      <body className="font-sans bg-background text-text-primary antialiased min-h-screen">
+        {children}
+      </body>
+    </html>
+  );
+}
