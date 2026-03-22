@@ -1,1 +1,47 @@
-InVzZSBjbGllbnQiOwoKaW1wb3J0IHsgdXNlU3RhdGUsIHVzZUNhbGxiYWNrIH0gZnJvbSAicmVhY3QiOwppbXBvcnQgSW1hZ2UgICAgICAgICAgICAgICAgICAgICBmcm9tICJuZXh0L2ltYWdlIjsKaW1wb3J0IHR5cGUgeyBTYW5pdHlQcm9kdWN0IH0gICAgZnJvbSAiQC9saWIvc2FuaXR5IjsKaW1wb3J0IHsgVHJ5T25Nb2RhbCB9ICAgICAgICAgICAgZnJvbSAiLi9UcnlPbk1vZGFsIjsKCmludGVyZmFjZSBQcm9wcyB7IHByb2R1Y3RzOiBTYW5pdHlQcm9kdWN0W107IH0KCmV4cG9ydCBmdW5jdGlvbiBUcnlPbkdyaWRDbGllbnQoeyBwcm9kdWN0cyB9OiBQcm9wcykgewogIGNvbnN0IFtzZWwsICBzZXRTZWxdICA9IHVzZVN0YXRlPFNhbml0eVByb2R1Y3QgfCBudWxsPihudWxsKTsKICBjb25zdCBvcGVuICA9IHVzZUNhbGxiYWNrKChwOiBTYW5pdHlQcm9kdWN0KSA9PiBzZXRTZWwocCksIFtdKTsKICBjb25zdCBjbG9zZSA9IHVzZUNhbGxiYWNrKCgpID0+IHNldFNlbChudWxsKSwgW10pOwoKICByZXR1cm4gKAogICAgPD4KICAgICAgPGRpdiBjbGFzc05hbWU9ImdyaWQgZ3JpZC1jb2xzLTIgbWQ6Z3JpZC1jb2xzLTMgZ2FwLTMgbWQ6Z2FwLTUiIHJvbGU9Imxpc3QiPgogICAgICAgIHtwcm9kdWN0cy5tYXAoKHApID0+ICgKICAgICAgICAgIDxidXR0b24ga2V5PXtwLl9pZH0gdHlwZT0iYnV0dG9uIiBvbkNsaWNrPXsoKSA9PiBvcGVuKHApfQogICAgICAgICAgICBjbGFzc05hbWU9Imdyb3VwIHJlbGF0aXZlIGZsZXggZmxleC1jb2wgYmctc3VyZmFjZSByb3VuZGVkLWNhcmQgb3ZlcmZsb3ctaGlkZGVuIGJvcmRlciBib3JkZXItYm9yZGVyIHRleHQtbGVmdAogICAgICAgICAgICAgICAgICAgICAgIHRyYW5zaXRpb24tYWxsIGR1cmF0aW9uLVsxODBtc10gaG92ZXI6LXRyYW5zbGF0ZS15LTEgaG92ZXI6c2hhZG93LVswXzhweDMyIHB4LThweF9yZ2JhKDQ0LDU4LDkyLDAuMTgpXSIKICAgICAgICAgICAgYXJpYS1sYWJlbD17YFRyeSBvbiAke3AubmFtZX1gfSByb2xlPSJsaXN0aXRlbSI+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJyZWxhdGl2ZSBhc3BlY3QtcHJvZHVjdCB3LWZ1bGwgYmctc3VyZmFjZS1tdXRlZCBvdmVyZmxvdy1oaWRkZW4iPgogICAgICAgICAgICAgIHtwLmltYWdlVXJsID8gKAogICAgICAgICAgICAgICAgPEltYWdlIHNyYz17cC5pbWFnZVVybH0gYWx0PXtwLm5hbWV9IGZpbGwgc2l6ZXM9IihtYXgtd2lkdGg6NjQwcHgpIDUwdncsMzN2dyIKICAgICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJvYmplY3QtY292ZXIgb2JqZWN0LWNlbnRlciB0cmFuc2l0aW9uLXRyYW5zZm9ybSBkdXJhdGlvbi1bMjgwbXNdIGdyb3VwLWhvdmVyOnNjYWxlLVsxLjAyXSIgLz4KICAgICAgICAgICAgICApIDogKAogICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImFic29sdXRlIGluc2V0LTAgZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1jZW50ZXIiPgogICAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InRleHQtNHhsIiBhcmlhLWhpZGRlbj0idHJ1ZSI+8J+Rlzwvc3Bhbj4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICl9CiAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImFic29sdXRlIGluc2V0LTAgZmxleCBpdGVtcy1lbmQganVzdGlmeS1jZW50ZXIgcGItNCBvcGFjaXR5LTAgZ3JvdXAtaG92ZXI6b3BhY2l0eS0xMDAgdHJhbnNpdGlvbi1vcGFjaXR5IGR1cmF0aW9uLVsyMDBtc10iCiAgICAgICAgICAgICAgICBzdHlsZT17eyBiYWNrZ3JvdW5kOiAibGluZWFyLWdyYWRpZW50KHRvIHRvcCxyZ2JhKDQ0LDU4LDkyLDAuNSkgMCUsdHJhbnNwYXJlbnQgNjAlKSIgfX0+CiAgICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9ImZvbnQtc2FucyBmb250LXNlbWlib2xkIHRleHQtWzE0cHhdIHRleHQtd2hpdGUgZmxleCBpdGVtcy1jZW50ZXIgZ2FwLTEuNSI+CiAgICAgICAgICAgICAgICAgIDxzcGFuIGFyaWEtaGlkZGVuPSJ0cnVlIiBjbGFzc05hbWU9InRleHQtWzE2cHhdIj7inKY8L3NwYW4+VHJ5IE9uCiAgICAgICAgICAgICAgICA8L3NwYW4+CiAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iZmxleCBpdGVtcy1jZW50ZXIganVzdGlmeS1iZXR3ZWVuIGdhcC0yIHB4LTMgcHktMyI+CiAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJmb250LXNhbnMgZm9udC1tZWRpdW0gdGV4dC1bMTRweF0gdGV4dC10ZXh0LXByaW1hcnkgbGluZS1jbGFtcC0xIj57cC5uYW1lfTwvcD4KICAgICAgICAgICAgICA8c3BhbiBjbGFzc05hbWU9InByaWNlLXRhZyB0ZXh0LVsxNHB4XSBmbGV4LXNocmluay0wIj57cC5wcmljZX08L3NwYW4+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgPC9idXR0b24+CiAgICAgICAgKSl9CiAgICAgIDwvZGl2PgogICAgICB7c2VsICYmIDxUcnlPbk1vZGFsIHByb2R1Y3Q9e3NlbH0gc2l0ZVVybD17cHJvY2Vzcy5lbnYuTkVYVF9QVUJMSUNfU0lURV9VUkx9IG9uQ2xvc2U9e2Nsb3NlfSAvPn0KICAgIDwvPgogICk7Cn0K
+"use client";
+import { useState, useCallback } from "react";
+import Image from "next/image";
+import type { SanityProduct } from "@/lib/sanity";
+import { TryOnModal } from "./TryOnModal";
+
+interface Props { products: SanityProduct[]; }
+
+export function TryOnGridClient({ products }: Props) {
+  const [sel,  setSel]  = useState<SanityProduct | null>(null);
+  const open  = useCallback((p: SanityProduct) => setSel(p), []);
+  const close = useCallback(() => setSel(null), []);
+
+  return (
+    <>
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5" role="list">
+        {products.map((p) => (
+          <button key={p._id} type="button" onClick={() => open(p)}
+            className="group relative flex flex-col bg-surface rounded-card overflow-hidden border border-border text-left transition-all duration-[180ms] hover:-translate-y-1 hover:shadow-[0_8px_32px_-8px_rgba(44,58,92,0.18)]"
+            aria-label={`Try on ${p.name}`} role="listitem">
+            <div className="relative aspect-product w-full bg-surface-muted overflow-hidden">
+              {p.imageUrl ? (
+                <Image src={p.imageUrl} alt={p.name} fill sizes="(max-width:640px) 50vw,33vw"
+                  className="object-cover object-center transition-transform duration-[280ms] group-hover:scale-[1.02]" />
+              ) : (
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <span className="text-4xl" aria-hidden="true">👗</span>
+                </div>
+              )}
+              <div className="absolute inset-0 flex items-end justify-center pb-4 opacity-0 group-hover:opacity-100 transition-opacity duration-[200ms]"
+                style={{ background: "linear-gradient(to top,rgba(44,58,92,0.5) 0%,transparent 60%)" }}>
+                <span className="font-sans font-semibold text-[14px] text-white flex items-center gap-1.5">
+                  <span aria-hidden="true" className="text-[16px]">✦</span>Try On
+                </span>
+              </div>
+            </div>
+            <div className="flex items-center justify-between gap-2 px-3 py-3">
+              <p className="font-sans font-medium text-[14px] text-text-primary line-clamp-1">{p.name}</p>
+              <span className="price-tag text-[14px] flex-shrink-0">{p.price}</span>
+            </div>
+          </button>
+        ))}
+      </div>
+      {sel && <TryOnModal product={sel} siteUrl={process.env.NEXT_PUBLIC_SITE_URL} onClose={close} />}
+    </>
+  );
+}
