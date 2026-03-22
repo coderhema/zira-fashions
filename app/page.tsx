@@ -1,1 +1,141 @@
-aW1wb3J0IExpbmsgICAgICAgICBmcm9tICJuZXh0L2xpbmsiOwppbXBvcnQgeyBTdXNwZW5zZSB9IGZyb20gInJlYWN0IjsKaW1wb3J0IHsgZ2V0RmVhdHVyZWRQcm9kdWN0cyB9ICBmcm9tICJAL2xpYi9zYW5pdHkiOwppbXBvcnQgeyBQcm9kdWN0R3JpZENsaWVudCB9ICAgIGZyb20gIkAvY29tcG9uZW50cy9wcm9kdWN0L1Byb2R1Y3RHcmlkQ2xpZW50IjsKaW1wb3J0IHsgUHJvZHVjdENhcmRTa2VsZXRvbiB9ICBmcm9tICJAL2NvbXBvbmVudHMvcHJvZHVjdC9Qcm9kdWN0Q2FyZCI7CmltcG9ydCB7IEhlYWRlciB9ICAgICAgICAgICAgICAgZnJvbSAiQC9jb21wb25lbnRzL2xheW91dC9IZWFkZXIiOwppbXBvcnQgeyBGb290ZXIgfSAgICAgICAgICAgICAgIGZyb20gIkAvY29tcG9uZW50cy9sYXlvdXQvRm9vdGVyIjsKCmNvbnN0IENBVFMgPSBbCiAgeyBsYWJlbDogIkFsbCIsICAgICBocmVmOiAiL3Nob3AiICAgICAgICAgfSwKICB7IGxhYmVsOiAiRGVuaW0iLCAgIGhyZWY6ICIvc2hvcC9kZW5pbSIgICB9LAogIHsgbGFiZWw6ICJEcmVzc2VzIiwgaHJlZjogIi9zaG9wL2RyZXNzZXMiIH0sCiAgeyBsYWJlbDogIlRvcHMiLCAgICBocmVmOiAiL3Nob3AvdG9wcyIgICAgfSwKICB7IGxhYmVsOiAiU2V0cyIsICAgIGhyZWY6ICIvc2hvcC9zZXRzIiAgICB9LAogIHsgbGFiZWw6ICJTYWxlIiwgICAgaHJlZjogIi9zaG9wL3NhbGUiLCBzYWxlOiB0cnVlIH0KXSBhcyBjb25zdDsKCmV4cG9ydCBkZWZhdWx0IGFzeW5jIGZ1bmN0aW9uIEhvbWVQYWdlKCkgewogIGNvbnN0IHByb2R1Y3RzID0gYXdhaXQgZ2V0RmVhdHVyZWRQcm9kdWN0cyg2KTsKCiAgcmV0dXJuICgKICAgIDw+CiAgICAgIDxIZWFkZXIgLz4KICAgICAgPG1haW4+CiAgICAgICAgey8qIEhlcm8gKi99CiAgICAgICAgPHNlY3Rpb24gY2xhc3NOYW1lPSJyZWxhdGl2ZSB3LWZ1bGwgaC1bODVzdmhdIG1kOmgtc2NyZWVuIG1pbi1oLVs1MjBweF0gbWF4LWgtWzkwMHB4XSBmbGV4IGl0ZW1zLWVuZCBvdmVyZmxvdy1oaWRkZW4gYmctcHJpbWFyeSIgYXJpYS1sYWJlbD0iSGVybyI+CiAgICAgICAgICB7LyogZXNsaW50LWRpc2FibGUtbmV4dC1saW5lIEBuZXh0L25leHQvbm8taW1nLWVsZW1lbnQgKi99CiAgICAgICAgICA8aW1nIHNyYz0iL2ltYWdlcy9oZXJvLmpwZyIgYWx0PSJNb2RlbCB3ZWFyaW5nIGEgWmlyYSBGYXNoaW9ucyBkZW5pbSBqdW1wc3VpdCIKICAgICAgICAgICAgY2xhc3NOYW1lPSJhYnNvbHV0ZSBpbnNldC0wIHctZnVsbCBoLWZ1bGwgb2JqZWN0LWNvdmVyIG9iamVjdC1jZW50ZXIiIGZldGNoUHJpb3JpdHk9ImhpZ2giIC8+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0iYWJzb2x1dGUgaW5zZXQtMCBwb2ludGVyLWV2ZW50cy1ub25lIgogICAgICAgICAgICBzdHlsZT17eyBiYWNrZ3JvdW5kOiAibGluZWFyLWdyYWRpZW50KHRvIHRvcCxyZ2JhKDQ0LDU4LDkyLDAuNzIpIDAlLHJnYmEoNDQsNTgsOTIsMC4xMikgNTAlLHRyYW5zcGFyZW50IDEwMCUpIiB9fQogICAgICAgICAgICBhcmlhLWhpZGRlbj0idHJ1ZSIgLz4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJyZWxhdGl2ZSB3LWZ1bGwgcHgtNSBwYi0xMCBtZDpweC0xMiBtZDpwYi0xNCBmbGV4IGZsZXgtY29sIGl0ZW1zLWNlbnRlciBtZDppdGVtcy1zdGFydCBnYXAtNCBtYXgtdy1zY3JlZW4teGwgbXgtYXV0byI+CiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0ic2VjdGlvbi1sYWJlbCIgc3R5bGU9e3sgY29sb3I6ICIjQzlBMDkwIiB9fT5IaWdoc3RyZWV0IFVLICZhbXA7IFVTIEJyYW5kcyDCtyBMYWdvczwvcD4KICAgICAgICAgICAgPGgxIGNsYXNzTmFtZT0iZm9udC1kaXNwbGF5IGZvbnQtbGlnaHQgdGV4dC13aGl0ZSB0ZXh0LWRpc3BsYXkgbGVhZGluZy1kaXNwbGF5IG1heC13LW1kIHRleHQtY2VudGVyIG1kOnRleHQtbGVmdCI+CiAgICAgICAgICAgICAgV2VhciB3aGF0PGJyIC8+TGFnb3MgbG92ZXMuCiAgICAgICAgICAgIDwvaDE+CiAgICAgICAgICAgIDxwIGNsYXNzTmFtZT0iZm9udC1zYW5zIHRleHQtWzE3cHhdIHRleHQtd2hpdGUvODUgbGVhZGluZy1lZGl0b3JpYWwgbWF4LXcteHMgdGV4dC1jZW50ZXIgbWQ6dGV4dC1sZWZ0Ij4KICAgICAgICAgICAgICBCcmFuZCBuZXcgJmFtcDsgcHJlLW93bmVkIGZhc2hpb24sIGRlbGl2ZXJlZCBuYXRpb253aWRlLgogICAgICAgICAgICA8L3A+CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGZsZXgtY29sIHNtOmZsZXgtcm93IGdhcC0zIG10LTEgdy1mdWxsIHNtOnctYXV0byI+CiAgICAgICAgICAgICAgPExpbmsgaHJlZj0iL3Nob3AiIGNsYXNzTmFtZT0iYnRuLXdoYXRzYXBwIHctZnVsbCBzbTp3LWF1dG8ganVzdGlmeS1jZW50ZXIiPlNob3AgTmV3IEFycml2YWxzPC9MaW5rPgogICAgICAgICAgICAgIDxMaW5rIGhyZWY9Ii9zaG9wL2RlbmltIgogICAgICAgICAgICAgICAgY2xhc3NOYW1lPSJidG4tc2Vjb25kYXJ5IGJvcmRlci13aGl0ZS82MCBob3ZlcjpiZy13aGl0ZS8xMCBob3Zlcjpib3JkZXItd2hpdGUgdy1mdWxsIHNtOnctYXV0byBqdXN0aWZ5LWNlbnRlciIKICAgICAgICAgICAgICAgIHN0eWxlPXt7IGNvbG9yOiAid2hpdGUiIH19PgogICAgICAgICAgICAgICAgRGVuaW0gRWRpdAogICAgICAgICAgICAgIDwvTGluaz4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L3NlY3Rpb24+CgogICAgICAgIHsvKiBUcnVzdCBiYXIgKi99CiAgICAgICAgPGRpdiBjbGFzc05hbWU9ImJnLXN1cmZhY2UtbXV0ZWQgYm9yZGVyLXkgYm9yZGVyLWJvcmRlciI+CiAgICAgICAgICA8ZGl2IGNsYXNzTmFtZT0ibWF4LXctc2NyZWVuLXhsIG14LWF1dG8gcHgtNSBweS00IGZsZXggaXRlbXMtY2VudGVyIGp1c3RpZnktY2VudGVyIGdhcC02IG1kOmdhcC0xMCBmbGV4LXdyYXAiPgogICAgICAgICAgICB7W1si8J+amiIsIk5hdGlvbndpZGUgRGVsaXZlcnkiXSxbIvCfkqwiLCJXaGF0c0FwcCBPcmRlcnMiXSxbIuKGqe+4jyIsIkNsZWFyIFBvbGljeSJdLFsi4q2QIiwiVHJ1c3RlZCBieSAzNUsrIl1dLm1hcCgoW2ljb24sIGxhYmVsXSkgPT4gKAogICAgICAgICAgICAgIDxkaXYga2V5PXtsYWJlbH0gY2xhc3NOYW1lPSJmbGV4IGl0ZW1zLWNlbnRlciBnYXAtMiBmb250LXNhbnMgdGV4dC1zbWFsbCBmb250LW1lZGl1bSB0ZXh0LXRleHQtc2Vjb25kYXJ5IHdoaXRlc3BhY2Utbm93cmFwIj4KICAgICAgICAgICAgICAgIDxzcGFuIGFyaWEtaGlkZGVuPSJ0cnVlIj57aWNvbn08L3NwYW4+e2xhYmVsfQogICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICApKX0KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgoKICAgICAgICB7LyogQ2F0ZWdvcnkgcGlsbHMgKi99CiAgICAgICAgPGRpdiBjbGFzc05hbWU9Im1heC13LXNjcmVlbi14bCBteC1hdXRvIHB4LTUgcHQtMTAgbWQ6cHQtMTQiPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9ImZsZXggZ2FwLTIgb3ZlcmZsb3cteC1hdXRvIHBiLTEgc2Nyb2xsYmFyLWhpZGUiPgogICAgICAgICAgICB7Q0FUUy5tYXAoKGMpID0+ICgKICAgICAgICAgICAgICA8TGluayBrZXk9e2MuaHJlZn0gaHJlZj17Yy5ocmVmfQogICAgICAgICAgICAgICAgY2xhc3NOYW1lPXtgZmxleC1zaHJpbmstMCBweC00IHB5LTIgcm91bmRlZC1waWxsIGJvcmRlciBmb250LXNhbnMgZm9udC1tZWRpdW0gdGV4dC1zbWFsbCB0cmFuc2l0aW9uLWNvbG9ycyBkdXJhdGlvbi1bMTgwbXNdCiAgICAgICAgICAgICAgICAgICR7InNhbGUiIGluIGMgJiYgYy5zYWxlCiAgICAgICAgICAgICAgICAgICAgPyAiYm9yZGVyLXNhbGUgdGV4dC1zYWxlIGhvdmVyOmJnLXNhbGUgaG92ZXI6dGV4dC13aGl0ZSIKICAgICAgICAgICAgICAgICAgICA6ICJib3JkZXItYm9yZGVyIHRleHQtdGV4dC1zZWNvbmRhcnkgYmctc3VyZmFjZSBob3Zlcjpib3JkZXItcHJpbWFyeSBob3Zlcjp0ZXh0LXByaW1hcnkifWB9PgogICAgICAgICAgICAgICAge2MubGFiZWx9CiAgICAgICAgICAgICAgPC9MaW5rPgogICAgICAgICAgICApKX0KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvZGl2PgoKICAgICAgICB7LyogRGVuaW0gRWRpdCBoZWFkZXIgKi99CiAgICAgICAgPHNlY3Rpb24gY2xhc3NOYW1lPSJtYXgtdy1zY3JlZW4teGwgbXgtYXV0byBweC01IHB0LTE0IG1kOnB0LTIwIiBhcmlhLWxhYmVsPSJEZW5pbSBFZGl0Ij4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGZsZXgtY29sIG1kOmZsZXgtcm93IG1kOml0ZW1zLWVuZCBtZDpqdXN0aWZ5LWJldHdlZW4gZ2FwLTMgbWItOCI+CiAgICAgICAgICAgIDxkaXY+CiAgICAgICAgICAgICAgPHAgY2xhc3NOYW1lPSJzZWN0aW9uLWxhYmVsIG1iLTEuNSI+Q29yZSBDYXRlZ29yeTwvcD4KICAgICAgICAgICAgICA8aDIgY2xhc3NOYW1lPSJmb250LWRpc3BsYXkgZm9udC1tZWRpdW0gdGV4dC1oMiB0ZXh0LXRleHQtcHJpbWFyeSI+VGhlIERlbmltIEVkaXQ8L2gyPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPExpbmsgaHJlZj0iL3Nob3AvZGVuaW0iIGNsYXNzTmFtZT0iZm9udC1zYW5zIGZvbnQtbWVkaXVtIHRleHQtWzE0cHhdIHRleHQtcHJpbWFyeSB1bmRlcmxpbmUgdW5kZXJsaW5lLW9mZnNldC00IGhvdmVyOnRleHQtcHJpbWFyeS1ob3ZlciB0cmFuc2l0aW9uLWNvbG9ycyI+CiAgICAgICAgICAgICAgU2VlIGFsbCBkZW5pbSDihpIKICAgICAgICAgICAgPC9MaW5rPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9zZWN0aW9uPgoKICAgICAgICB7LyogRmVhdHVyZWQgZ3JpZCAqL30KICAgICAgICA8c2VjdGlvbiBjbGFzc05hbWU9Im1heC13LXNjcmVlbi14bCBteC1hdXRvIHB4LTUgcGItMTQgbWQ6cGItMjAiIGFyaWEtbGFiZWw9IkZlYXR1cmVkIHByb2R1Y3RzIj4KICAgICAgICAgIDxTdXNwZW5zZSBmYWxsYmFjaz17CiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJncmlkIGdyaWQtY29scy0yIG1kOmdyaWQtY29scy0zIGdhcC0zIG1kOmdhcC01Ij4KICAgICAgICAgICAgICB7QXJyYXkuZnJvbSh7IGxlbmd0aDogNiB9KS5tYXAoKF8sIGkpID0+IDxQcm9kdWN0Q2FyZFNrZWxldG9uIGtleT17aX0gLz4pfQogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgIH0+CiAgICAgICAgICAgIDxQcm9kdWN0R3JpZENsaWVudCBwcm9kdWN0cz17cHJvZHVjdHN9IHNob3dUcnlPbiAvPgogICAgICAgICAgPC9TdXNwZW5zZT4KICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPSJmbGV4IGp1c3RpZnktY2VudGVyIG10LTEwIj4KICAgICAgICAgICAgPExpbmsgaHJlZj0iL3Nob3AiIGNsYXNzTmFtZT0iYnRuLXNlY29uZGFyeSI+VmlldyBBbGwgUHJvZHVjdHM8L0xpbms+CiAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L3NlY3Rpb24+CgogICAgICAgIHsvKiBUcnktT24gY2FsbG91dCAqL30KICAgICAgICA8c2VjdGlvbiBjbGFzc05hbWU9InctZnVsbCBweS0xNiBtZDpweS0yMCIgc3R5bGU9e3sgYmFja2dyb3VuZENvbG9yOiAidmFyKC0tY29sb3ItYWNjZW50LWxpZ2h0KSIgfX0gYXJpYS1sYWJlbD0iVmlydHVhbCB0cnktb24iPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9Im1heC13LXNjcmVlbi14bCBteC1hdXRvIHB4LTUgZmxleCBmbGV4LWNvbCBtZDpmbGV4LXJvdyBtZDppdGVtcy1jZW50ZXIgbWQ6anVzdGlmeS1iZXR3ZWVuIGdhcC02Ij4KICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9Im1heC13LWxnIj4KICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9InNlY3Rpb24tbGFiZWwgbWItMiI+TmV3IEZlYXR1cmU8L3A+CiAgICAgICAgICAgICAgPGgyIGNsYXNzTmFtZT0iZm9udC1kaXNwbGF5IGZvbnQtbWVkaXVtIHRleHQtaDIgdGV4dC10ZXh0LXByaW1hcnkgbWItNCI+VHJ5IGl0IG9uIGJlZm9yZSB5b3Ugb3JkZXIuPC9oMj4KICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9ImZvbnQtc2FucyB0ZXh0LWJvZHkgdGV4dC10ZXh0LXNlY29uZGFyeSBsZWFkaW5nLWVkaXRvcmlhbCI+CiAgICAgICAgICAgICAgICBVcGxvYWQgYSBwaG90byBvZiB5b3Vyc2VsZiBhbmQgb3VyIEFJIHNob3dzIHlvdSBob3cgYW55IHBpZWNlIGxvb2tzIG9uIHlvdXIgYm9keSDigJQgYmVmb3JlIHlvdSBzZW5kIHRoYXQgV2hhdHNBcHAgbWVzc2FnZS4KICAgICAgICAgICAgICA8L3A+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8TGluayBocmVmPSIvdHJ5LW9uIiBjbGFzc05hbWU9ImJ0bi1wcmltYXJ5IGZsZXgtc2hyaW5rLTAgc2VsZi1zdGFydCBtZDpzZWxmLWF1dG8iPuKcpiBUcnkgSXQgTm93PC9MaW5rPgogICAgICAgICAgPC9kaXY+CiAgICAgICAgPC9zZWN0aW9uPgoKICAgICAgICB7LyogS2lkcyBiYW5uZXIgKi99CiAgICAgICAgPHNlY3Rpb24gY2xhc3NOYW1lPSJtYXgtdy1zY3JlZW4teGwgbXgtYXV0byBweC01IHB5LTE0IG1kOnB5LTIwIiBhcmlhLWxhYmVsPSJLaWRzIGNvbGxlY3Rpb24iPgogICAgICAgICAgPGRpdiBjbGFzc05hbWU9InJvdW5kZWQtWzIwcHhdIHAtOCBtZDpwLTEyIGZsZXggZmxleC1jb2wgbWQ6ZmxleC1yb3cgbWQ6aXRlbXMtY2VudGVyIG1kOmp1c3RpZnktYmV0d2VlbiBnYXAtNSIKICAgICAgICAgICAgc3R5bGU9e3sgYmFja2dyb3VuZENvbG9yOiAidmFyKC0tY29sb3Ita2lkcy1hY2NlbnQpIiB9fT4KICAgICAgICAgICAgPGRpdj4KICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9ImZvbnQtc2FucyBmb250LXNlbWlib2xkIHRleHQtWzExcHhdIHRyYWNraW5nLVswLjA4ZW1dIHVwcGVyY2FzZSB0ZXh0LXdoaXRlLzgwIG1iLTEuNSI+U3ViLWJyYW5kPC9wPgogICAgICAgICAgICAgIDxoMiBjbGFzc05hbWU9ImZvbnQtZGlzcGxheSBmb250LW1lZGl1bSB0ZXh0LWgyIHRleHQtd2hpdGUgbGVhZGluZy10aWdodCI+WmlyYSBLaWRzPC9oMj4KICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9ImZvbnQtc2FucyB0ZXh0LVsxNXB4XSB0ZXh0LXdoaXRlLzg1IGxlYWRpbmctZWRpdG9yaWFsIG10LTIgbWF4LXcteHMiPgogICAgICAgICAgICAgICAgVHJlbmR5IFVLICZhbXA7IFVTIGJyYW5kcyBmb3IgbGl0dGxlIG9uZXMsIGFnZSAw4oCTMTYuCiAgICAgICAgICAgICAgPC9wPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPExpbmsgaHJlZj0iL2tpZHMiCiAgICAgICAgICAgICAgY2xhc3NOYW1lPSJmbGV4LXNocmluay0wIHNlbGYtc3RhcnQgbWQ6c2VsZi1hdXRvIHB4LTYgcHktMyByb3VuZGVkLXBpbGwgYmctd2hpdGUgZm9udC1zYW5zIGZvbnQtc2VtaWJvbGQgdGV4dC1bMTRweF0gaG92ZXI6Ymctd2hpdGUvOTAgaG92ZXI6c2NhbGUtWzEuMDJdIHRyYW5zaXRpb24tYWxsIgogICAgICAgICAgICAgIHN0eWxlPXt7IGNvbG9yOiAidmFyKC0tY29sb3Ita2lkcy1hY2NlbnQpIiB9fT4KICAgICAgICAgICAgICBTaG9wIEtpZHMg4oaSCiAgICAgICAgICAgIDwvTGluaz4KICAgICAgICAgIDwvZGl2PgogICAgICAgIDwvc2VjdGlvbj4KICAgICAgPC9tYWluPgogICAgICA8Rm9vdGVyIC8+CiAgICA8Lz4KICApOwp9Cg==
+import Link         from "next/link";
+import { Suspense } from "react";
+import { getFeaturedProducts }  from "@/lib/sanity";
+import { ProductGridClient }    from "@/components/product/ProductGridClient";
+import { ProductCardSkeleton }  from "@/components/product/ProductCard";
+import { Header }               from "@/components/layout/Header";
+import { Footer }               from "@/components/layout/Footer";
+
+const CATS = [
+  { label: "All",     href: "/shop"         },
+  { label: "Denim",   href: "/shop/denim"   },
+  { label: "Dresses", href: "/shop/dresses" },
+  { label: "Tops",    href: "/shop/tops"    },
+  { label: "Sets",    href: "/shop/sets"    },
+  { label: "Sale",    href: "/shop/sale", sale: true }
+] as const;
+
+export default async function HomePage() {
+  const products = await getFeaturedProducts(6);
+
+  return (
+    <>
+      <Header />
+      <main>
+        {/* Hero */}
+        <section className="relative w-full h-[85svh] md:h-screen min-h-[520px] max-h-[900px] flex items-end overflow-hidden bg-primary" aria-label="Hero">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/images/hero.jpg" alt="Model wearing a Zira Fashions denim jumpsuit"
+            className="absolute inset-0 w-full h-full object-cover object-center" fetchPriority="high" />
+          <div className="absolute inset-0 pointer-events-none"
+            style={{ background: "linear-gradient(to top,rgba(44,58,92,0.72) 0%,rgba(44,58,92,0.12) 50%,transparent 100%)" }}
+            aria-hidden="true" />
+          <div className="relative w-full px-5 pb-10 md:px-12 md:pb-14 flex flex-col items-center md:items-start gap-4 max-w-screen-xl mx-auto">
+            <p className="section-label" style={{ color: "#C9A090" }}>Highstreet UK &amp; US Brands · Lagos</p>
+            <h1 className="font-display font-light text-white text-display leading-display max-w-md text-center md:text-left">
+              Wear what<br />Lagos loves.
+            </h1>
+            <p className="font-sans text-[17px] text-white/85 leading-editorial max-w-xs text-center md:text-left">
+              Brand new &amp; pre-owned fashion, delivered nationwide.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-3 mt-1 w-full sm:w-auto">
+              <Link href="/shop" className="btn-whatsapp w-full sm:w-auto justify-center">Shop New Arrivals</Link>
+              <Link href="/shop/denim"
+                className="btn-secondary border-white/60 hover:bg-white/10 hover:border-white w-full sm:w-auto justify-center"
+                style={{ color: "white" }}>
+                Denim Edit
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Trust bar */}
+        <div className="bg-surface-muted border-y border-border">
+          <div className="max-w-screen-xl mx-auto px-5 py-4 flex items-center justify-center gap-6 md:gap-10 flex-wrap">
+            {[["🚚","Nationwide Delivery"],["💬","WhatsApp Orders"],["↩️","Clear Policy"],["⭐","Trusted by 35K+"]].map(([icon, label]) => (
+              <div key={label} className="flex items-center gap-2 font-sans text-small font-medium text-text-secondary whitespace-nowrap">
+                <span aria-hidden="true">{icon}</span>{label}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Category pills */}
+        <div className="max-w-screen-xl mx-auto px-5 pt-10 md:pt-14">
+          <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-hide">
+            {CATS.map((c) => (
+              <Link key={c.href} href={c.href}
+                className={`flex-shrink-0 px-4 py-2 rounded-pill border font-sans font-medium text-small transition-colors duration-[180ms]
+                  ${"sale" in c && c.sale
+                    ? "border-sale text-sale hover:bg-sale hover:text-white"
+                    : "border-border text-text-secondary bg-surface hover:border-primary hover:text-primary"}`}>
+                {c.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* Denim Edit header */}
+        <section className="max-w-screen-xl mx-auto px-5 pt-14 md:pt-20" aria-label="Denim Edit">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-3 mb-8">
+            <div>
+              <p className="section-label mb-1.5">Core Category</p>
+              <h2 className="font-display font-medium text-h2 text-text-primary">The Denim Edit</h2>
+            </div>
+            <Link href="/shop/denim" className="font-sans font-medium text-[14px] text-primary underline underline-offset-4 hover:text-primary-hover transition-colors">
+              See all denim →
+            </Link>
+          </div>
+        </section>
+
+        {/* Featured grid */}
+        <section className="max-w-screen-xl mx-auto px-5 pb-14 md:pb-20" aria-label="Featured products">
+          <Suspense fallback={
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5">
+              {Array.from({ length: 6 }).map((_, i) => <ProductCardSkeleton key={i} />)}
+            </div>
+          }>
+            <ProductGridClient products={products} showTryOn />
+          </Suspense>
+          <div className="flex justify-center mt-10">
+            <Link href="/shop" className="btn-secondary">View All Products</Link>
+          </div>
+        </section>
+
+        {/* Try-On callout */}
+        <section className="w-full py-16 md:py-20" style={{ backgroundColor: "var(--color-accent-light)" }} aria-label="Virtual try-on">
+          <div className="max-w-screen-xl mx-auto px-5 flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+            <div className="max-w-lg">
+              <p className="section-label mb-2">New Feature</p>
+              <h2 className="font-display font-medium text-h2 text-text-primary mb-4">Try it on before you order.</h2>
+              <p className="font-sans text-body text-text-secondary leading-editorial">
+                Upload a photo of yourself and our AI shows you how any piece looks on your body — before you send that WhatsApp message.
+              </p>
+            </div>
+            <Link href="/try-on" className="btn-primary flex-shrink-0 self-start md:self-auto">✦ Try It Now</Link>
+          </div>
+        </section>
+
+        {/* Kids banner */}
+        <section className="max-w-screen-xl mx-auto px-5 py-14 md:py-20" aria-label="Kids collection">
+          <div className="rounded-[20px] p-8 md:p-12 flex flex-col md:flex-row md:items-center md:justify-between gap-5"
+            style={{ backgroundColor: "var(--color-kids-accent)" }}>
+            <div>
+              <p className="font-sans font-semibold text-[11px] tracking-[0.08em] uppercase text-white/80 mb-1.5">Sub-brand</p>
+              <h2 className="font-display font-medium text-h2 text-white leading-tight">Zira Kids</h2>
+              <p className="font-sans text-[15px] text-white/85 leading-editorial mt-2 max-w-xs">
+                Trendy UK &amp; US brands for little ones, age 0–16.
+              </p>
+            </div>
+            <Link href="/kids"
+              className="flex-shrink-0 self-start md:self-auto px-6 py-3 rounded-pill bg-white font-sans font-semibold text-[14px] hover:bg-white/90 hover:scale-[1.02] transition-all"
+              style={{ color: "var(--color-kids-accent)" }}>
+              Shop Kids →
+            </Link>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </>
+  );
+}
