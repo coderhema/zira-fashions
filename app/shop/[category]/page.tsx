@@ -47,7 +47,7 @@ export default async function CategoryPage({ params }: { params: { category: str
             <h1 className="font-display font-medium text-h1 text-text-primary">{m.heading}</h1>
             <p className="font-sans text-small text-text-muted mt-1">{products.length} item{products.length !== 1 ? "s" : ""}</p>
           </div>
-          {!isKids && <ShopFilters activeCategory={category} />}
+          {!isKids && <Suspense><ShopFilters activeCategory={category} /></Suspense>}
           <div className="mt-6">
             <Suspense fallback={<div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5">{Array.from({length:6}).map((_,i)=><ProductCardSkeleton key={i}/>)}</div>}>
               <ProductGridClient products={products} showTryOn={!isKids} />
