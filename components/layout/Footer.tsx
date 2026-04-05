@@ -84,7 +84,7 @@ export function Footer() {
         <div className="border-t border-white/10">
           <div className="max-w-screen-xl mx-auto px-5 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
             <p className="font-sans text-micro text-white/40">&copy; {year} Zira Fashions. Lagos, Nigeria.</p>
-            <p className="font-sans text-micro text-white/30">Website by Tolulope</p>
+            <p className="font-sans text-micro text-white/30">Website by <a href="https://www.instagram.com/coderhema/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Coderhema</a></p>
           </div>
         </div>
       </div>

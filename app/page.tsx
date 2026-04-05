@@ -91,7 +91,7 @@ export default async function HomePage() {
         {/* Featured grid */}
         <section className="max-w-screen-xl mx-auto px-5 pb-14 md:pb-20" aria-label="Featured products">
           <Suspense fallback={
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5">
               {Array.from({ length: 6 }).map((_, i) => <ProductCardSkeleton key={i} />)}
             </div>
           }>
