@@ -1,1 +1,39 @@
-IyBaaXJhIEZhc2hpb25zIOKAlCBXZWIgRGVtbwoKTmV4dC5qcyAxNCBlLWNvbW1lcmNlIGRlbW8gZm9yICoqQHppcmFmYXNoaW9ucyoqIChMYWdvcywgTmlnZXJpYSkuCgojIyBGZWF0dXJlcwotIFdoYXRzQXBwLWZpcnN0IGNoZWNrb3V0IOKAlCBubyBjYXJ0LCBldmVyeSBPcmRlciBidXR0b24gb3BlbnMgV2hhdHNBcHAgd2l0aCBhIHByZS1maWxsZWQgbWVzc2FnZQotIE9HIGltYWdlIGdlbmVyYXRpb24gdmlhIGAvYXBpL29nYCDigJQgcHJvZHVjdCBpbWFnZXMgcmVuZGVyIGFzIHJpY2ggY2FyZHMgaW4gV2hhdHNBcHAKLSBWaXJ0dWFsIHRyeS1vbiBwb3dlcmVkIGJ5ICoqR2VtaW5pIDMuMSBGbGFzaCBJbWFnZSAoTmFubyBCYW5hbmEgMikqKgotIFNhbml0eSBDTVMgcHJvZHVjdCBjYXRhbG9nCi0gTmV4dC5qcyAxNCBBcHAgUm91dGVyIChSU0MtZmlyc3QpCi0gVGFpbHdpbmQgQ1NTIHdpdGggZnVsbCBkZXNpZ24gdG9rZW4gc3lzdGVtCi0gQ29ybW9yYW50IEdhcmFtb25kICsgRE0gU2FucyBlZGl0b3JpYWwgdHlwZSBwYWlyaW5nCgojIyBTdGFjawp8IExheWVyIHwgVGVjaCB8CnwtfC18CnwgRnJhbWV3b3JrIHwgTmV4dC5qcyAxNCAoQXBwIFJvdXRlcikgfAp8IFN0eWxpbmcgfCBUYWlsd2luZCBDU1MgdjMgfAp8IENNU3wgU2FuaXR5LmlvIHwKfCBUcnktT24gQUkgfCBHZW1pbmkgQVBJIGBnZW1pbmktMy4xLWZsYXNoLWltYWdlLXByZXZpZXdgIHwKfCBJbWFnZXMgfCBDbG91ZGluYXJ5IHwKfCBPRyBJbWFnZXMgfCBAdmVyY2VsL29nIHwKfCBIb3N0aW5nIHwgVmVyY2VsIHwKCiMjIFNldHVwCmBgYGJhc2gKY3AgLmVudi5leGFtcGxlIC5lbnYubG9jYWwKIyBGaWxsIGluIGFsbCB2YWx1ZXMKbnBtIGluc3RhbGwKbnBtIHJ1biBkZXYKYGBgCgojIyBLZXkgZW52IHZhcnMKLSBgTkVYVF9QVUJMSUNfV0hBVFNBUFBfTlVNQkVSYCDigJQgWmlyYSdzIFdoYXRzQXBwIEJ1c2luZXNzIG51bWJlciAoZGlnaXRzIG9ubHksIG5vICspCi0gYEdFTUlOSV9BUElfS0VZYCDigJQgZnJvbSBbaGxzdHVkaW8uZ29vZ2xlLmNvbS9hcGkta2V5c10oaHR0cHM6Ly9haXN0dWRpby5nb29nbGUuY29tL2FwaS1rZXlzKQotIGBORVhUX1BVQkxJQ19TQU5JVFlfUFJPSkVDVF9JRGAgIOKAlCBmcm9tIHlvdXIgU2FuaXR5IHByb2plY3QKCiMjIFByb2plY3QgYnkKT2x1Z2JlbWkgVG9sdWxvcGUgKFtAY29kZXJoZW1hXShodHRwczovL2dpdGh1Yi5jb20vY29kZXJoZW1hKSkgZm9yIEB6aXJhZmFzaGlvbnMu
+# Zira Fashions — Web Demo
+
+Next.js 14 e-commerce demo for **@zirafashions** (Lagos, Nigeria).
+
+## Features
+- WhatsApp-first checkout — no cart, every Order button opens WhatsApp with a pre-filled message
+- OG image generation via `/api/og` — product images render as rich cards in WhatsApp
+- Virtual try-on powered by **Gemini 3.1 Flash Image (Nano Banana 2)**
+- Sanity CMS product catalog
+- Next.js 14 App Router (RSC-first)
+- Tailwind CSS with full design token system
+- Cormorant Garamond + DM Sans editorial type pairing
+
+## Stack
+| Layer | Tech |
+|-|-|
+| Framework | Next.js 14 (App Router) |
+| Styling | Tailwind CSS v3 |
+| CMS| Sanity.io |
+| Try-On AI | Gemini API `gemini-3.1-flash-image-preview` |
+| Images | Cloudinary |
+| OG Images | @vercel/og |
+| Hosting | Vercel |
+
+## Setup
+```bash
+cp .env.example .env.local
+# Fill in all values
+npm install
+npm run dev
+```
+
+## Key env vars
+- `NEXT_PUBLIC_WHATSAPP_NUMBER` — Zira's WhatsApp Business number (digits only, no +)
+- `GEMINI_API_KEY` — from [hlstudio.google.com/api-keys](https://aistudio.google.com/api-keys)
+- `NEXT_PUBLIC_SANITY_PROJECT_ID`  — from your Sanity project
+
+## Project by
+Olugbemi Tolulope ([@coderhema](https://github.com/coderhema)) for @zirafashions.
