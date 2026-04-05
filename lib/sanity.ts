@@ -24,9 +24,16 @@ export interface SanityProduct {
   description?: string;
 }
 
-const projectId  = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID ?? "";
-const dataset    = process.env.NEXT_PUBLIC_SANITY_DATASET    ?? "production";
+const projectId  = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
+const dataset    = process.env.NEXT_PUBLIC_SANITY_DATASET ?? "production";
 const apiVersion = "2024-03-01";
+
+if (!projectId) {
+  throw new Error(
+    "Missing required environment variable: NEXT_PUBLIC_SANITY_PROJECT_ID. " +
+    "Add it to your .env.local file (for local dev) or to the Vercel project's Environment Variables dashboard."
+  );
+}
 
 export const serverClient = createClient({
   projectId, dataset, apiVersion, useCdn: false,
