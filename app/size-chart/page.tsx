@@ -27,7 +27,7 @@ const KIDS = [
   { age: "5–6 y",  height: "104–116", chest: "56–60" },
   { age: "7–8 y",  height: "116–128", chest: "60–65" },
   { age: "9–10 y", height: "128–140", chest: "65–70" },
-  { age: "11–12 y",height: "140–152", chest: "70–76" },
+  { age: "11–12 y", height: "140–152", chest: "70–76" },
   { age: "13–16 y",height: "152–170", chest: "76–84" },
 ];
 
