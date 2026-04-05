@@ -65,7 +65,7 @@ export default function PolicyPage() {
             here, just send us a message on WhatsApp.
           </p>
 
-          <div className="flex flex-col gap-8 max-w-2xl">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl">
             {SECTIONS.map(({ title, body }) => (
               <div key={title} className="p-6 rounded-card bg-surface border border-border">
                 <h2 className="font-display font-medium text-[22px] text-text-primary mb-3">{title}</h2>

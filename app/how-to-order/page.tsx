@@ -53,7 +53,7 @@ export default function HowToOrderPage() {
             a WhatsApp message — we&apos;ll guide you through everything.
           </p>
 
-          <div className="flex flex-col gap-6 max-w-2xl">
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl">
             {STEPS.map(({ step, title, body }) => (
               <div key={step} className="flex gap-5 p-6 rounded-card bg-surface border border-border">
                 <div

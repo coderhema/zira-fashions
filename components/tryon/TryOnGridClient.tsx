@@ -13,7 +13,7 @@ export function TryOnGridClient({ products }: Props) {
 
   return (
     <>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5" role="list">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5" role="list">
         {products.map((p) => (
           <button key={p._id} type="button" onClick={() => open(p)}
             className="group relative flex flex-col bg-surface rounded-card overflow-hidden border border-border text-left transition-all duration-[180ms] hover:-translate-y-1 hover:shadow-[0_8px_32px_-8px_rgba(44,58,92,0.18)]"

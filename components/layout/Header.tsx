@@ -50,7 +50,7 @@ export function Header() {
             {NAV.map((l) => (
               <Link key={l.href} href={l.href}
                 className={`relative font-sans font-medium text-[14px] tracking-wide transition-colors duration-[180ms] after:absolute after:bottom-[-3px] after:left-0 after:h-[1.5px] after:w-0 after:bg-current after:transition-[width] after:duration-[180ms] hover:after:w-full ${
-                  scrolled ? "text-text-secondary hover:text-text-primary" : "text-white/85 hover:text-white"
+                  scrolled ? "text-text-secondary hover:text-text-primary" : "text-white/85 hover:text-black"
                 }`}>{l.label}</Link>
             ))}
           </nav>
@@ -69,7 +69,7 @@ export function Header() {
           </div>
 
           <button type="button" onClick={() => setOpen(true)}
-            className={`md:hidden flex flex-col gap-[5px] p-2 transition-colors ${scrolled ? "text-text-primary" : "text-white"}`}
+            className={`md:hidden flex flex-col gap-[5px] p-2 transition-colors ${scrolled ? "text-text-primary" : "text-white hover:text-black"}`}
             aria-label="Open menu" aria-expanded={open}>
             <span className="block w-6 h-[1.5px] bg-current rounded-full" />
             <span className="block w-6 h-[1.5px] bg-current rounded-full" />
