@@ -22,8 +22,14 @@ const config: Config = {
         "text-primary":  "var(--color-text-primary)",
         "text-secondary":"var(--color-text-secondary)",
         "text-muted":    "var(--color-text-muted)",
-        "kids-accent":   "var(--color-kids-accent)",
-        border:          "var(--color-border)",
+        "kids-accent":       "var(--color-kids-accent)",
+        "illustration":      "var(--color-illustration)",
+        "illustration-alt":  "var(--color-illustration-alt)",
+        "illustration-icon": "var(--color-illustration-icon)",
+        "circle-bg":         "var(--color-circle-bg)",
+        "dark-surface":      "var(--color-dark-surface)",
+        "dark-surface-alt":  "var(--color-dark-surface-alt)",
+        border:              "var(--color-border)",
         "border-strong": "var(--color-border-strong)"
       },
       fontFamily: {
