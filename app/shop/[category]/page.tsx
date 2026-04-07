@@ -49,7 +49,7 @@ export default async function CategoryPage({ params }: { params: { category: str
           </div>
           {!isKids && <Suspense><ShopFilters activeCategory={category} /></Suspense>}
           <div className="mt-6">
-            <Suspense fallback={<div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5">{Array.from({length:6}).map((_,i)=><ProductCardSkeleton key={i}/>)}</div>}>
+            <Suspense fallback={<div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5">{Array.from({length:6}).map((_,i)=><ProductCardSkeleton key={i}/>)}</div>}>
               <ProductGridClient products={products} showTryOn={!isKids} />
             </Suspense>
           </div>

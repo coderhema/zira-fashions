@@ -24,7 +24,7 @@ export function ProductGridClient({ products, showTryOn = true, priorityCount = 
 
   return (
     <>
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5" role="list" aria-label="Products">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-5" role="list" aria-label="Products">
         {products.map((p, i) => (
           <div key={p._id} role="listitem">
             <ProductCard product={p} showTryOn={showTryOn} onTryOn={open} priority={i < priorityCount} />

@@ -22,6 +22,12 @@
     --color-border:          #E8E4DC;
     --color-border-strong:   #C8C4BC;
     --color-kids-accent:     #E8A0B0;
+    --color-illustration:        #29ABE2;
+    --color-illustration-alt:    #00BFFF;
+    --color-illustration-icon:   #000000;
+    --color-circle-bg:           #FFFFFF;
+    --color-dark-surface:        #2D2D2D;
+    --color-dark-surface-alt:    #3A3A3A;
     --font-display: var(--font-cormorant), "Georgia", serif;
     --font-body:    var(--font-dm-sans), "Inter", system-ui, sans-serif;
     --section-gap:  clamp(64px, 10vw, 120px);
