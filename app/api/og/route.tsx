@@ -36,6 +36,7 @@ export async function GET(req: NextRequest): Promise<ImageResponse> {
         <div style={{ position: "absolute", bottom: -80, left: -80, width: 240, height: 240, borderRadius: "50%", backgroundColor: accent, opacity: 0.12 }} />
         <div style={{ width: 520, height: 548, backgroundColor: C.sf, borderRadius: 16, overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, border: `1px solid ${C.border}`, position: "relative" }}>
           {imgUrl
+            // eslint-disable-next-line @next/next/no-img-element
             ? (<img src={imgUrl} alt={name} width={520} height={548} style={{ objectFit: "cover", width: "100%", height: "100%" }} />)
             : (<div style={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", color: C.tm }}><div style={{ fontSize: 48 }}>👗</div><div style={{ fontSize: 14, fontWeight: 500, marginTop: 8 }}>Zira Fashions</div></div>)
           }
