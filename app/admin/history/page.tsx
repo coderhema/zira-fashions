@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import Image from "next/image";
 import {
   Trash,
@@ -282,13 +282,13 @@ export default function HistoryPage() {
   const [products, setProducts] = useState<SanityProduct[]>([]);
   const [loading, setLoading] = useState(true);
   const [toasts, setToasts] = useState<Toast[]>([]);
-  let toastCounter = 0;
+  const toastCounterRef = useRef(0);
 
-  function addToast(message: string, type: Toast["type"]) {
-    const id = ++toastCounter;
+  const addToast = useCallback((message: string, type: Toast["type"]) => {
+    const id = ++toastCounterRef.current;
     setToasts((prev) => [...prev, { id, message, type }]);
     setTimeout(() => setToasts((prev) => prev.filter((t) => t.id !== id)), 4000);
-  }
+  }, []);
 
   function dismissToast(id: number) {
     setToasts((prev) => prev.filter((t) => t.id !== id));
@@ -309,14 +309,13 @@ export default function HistoryPage() {
       }
     }
     load();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [addToast]);
 
   // Delete handler
   const handleDelete = useCallback(async (id: string) => {
-    const original = [...products];
+    let original: SanityProduct[] = [];
     // Optimistic remove
-    setProducts((prev) => prev.filter((p) => p._id !== id));
+    setProducts((prev) => { original = prev; return prev.filter((p) => p._id !== id); });
     try {
       const res = await fetch(`/api/admin/product?id=${encodeURIComponent(id)}`, { method: "DELETE" });
       const data = await res.json();
@@ -326,13 +325,12 @@ export default function HistoryPage() {
       setProducts(original);
       addToast(e instanceof Error ? e.message : "Delete failed", "error");
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [products]);
+  }, [addToast]);
 
   // Rename handler
   const handleRename = useCallback(async (id: string, name: string) => {
-    const original = [...products];
-    setProducts((prev) => prev.map((p) => p._id === id ? { ...p, name } : p));
+    let original: SanityProduct[] = [];
+    setProducts((prev) => { original = prev; return prev.map((p) => p._id === id ? { ...p, name } : p); });
     try {
       const res = await fetch("/api/admin/product", {
         method: "PATCH",
@@ -346,8 +344,7 @@ export default function HistoryPage() {
       setProducts(original);
       addToast(e instanceof Error ? e.message : "Rename failed", "error");
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [products]);
+  }, [addToast]);
 
   // Group by category
   const grouped = products.reduce<Record<string, SanityProduct[]>>((acc, p) => {
