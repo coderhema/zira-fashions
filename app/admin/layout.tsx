@@ -5,7 +5,8 @@ import { Settings, Menu, Xmark } from "iconoir-react";
 
 const ADMIN_NAV = [
   { label: "Dashboard", href: "/admin" },
-  { label: "Instagram Import", href: "/admin/instagram-import" },
+  { label: "Import", href: "/admin/instagram-import" },
+  { label: "History", href: "/admin/history" },
 ] as const;
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {

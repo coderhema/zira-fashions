@@ -1,6 +1,6 @@
 "use client";
 
-import { useRouter, useSearchParams, usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
 import type { ProductCategory } from "@/lib/sanity";
 
 const FILTERS = [
@@ -18,18 +18,14 @@ type FilterValue = ProductCategory | "all";
 interface Props { activeCategory: ProductCategory | null; }
 
 export function ShopFilters({ activeCategory }: Props) {
-  const router   = useRouter();
-  const pathname = usePathname();
-  const params   = useSearchParams();
+  const router = useRouter();
 
   function setCategory(value: FilterValue) {
-    const next = new URLSearchParams(params.toString());
     if (value === "all") {
-      next.delete("category");
+      router.push("/shop");
     } else {
-      next.set("category", value);
+      router.push(`/shop?category=${value}`);
     }
-    router.push(`${pathname}?${next.toString()}`);
   }
 
   return (
