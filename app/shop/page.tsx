@@ -1,6 +1,6 @@
 import type { Metadata }         from "next";
 import { Suspense }              from "react";
-import { getAllProducts, getProductsByCategory, getSaleProducts, type ProductCategory } from "@/lib/sanity";
+import { getAllProducts, getProductsByCategory, getSaleProducts, getKidsProducts, type ProductCategory } from "@/lib/sanity";
 import { ProductGridClient }     from "@/components/product/ProductGridClient";
 import { ProductCardSkeleton }   from "@/components/product/ProductCard";
 import { Header }                from "@/components/layout/Header";
@@ -17,7 +17,7 @@ const VALID: ProductCategory[] = ["denim", "dresses", "tops", "sets", "sale", "k
 export default async function ShopPage({ searchParams }: { searchParams: { category?: string } }) {
   const rawCat  = searchParams.category;
   const category = VALID.includes(rawCat as ProductCategory) ? rawCat as ProductCategory : null;
-  const products = category === "sale" ? await getSaleProducts() : category ? await getProductsByCategory(category) : await getAllProducts();
+  const products = category === "sale" ? await getSaleProducts() : category === "kids" ? await getKidsProducts() : category ? await getProductsByCategory(category) : await getAllProducts();
   const heading  = category ? category.charAt(0).toUpperCase() + category.slice(1) : "All Products";
 
   return (

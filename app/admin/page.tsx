@@ -6,7 +6,7 @@ const TOOLS = [
     href: "/admin/instagram-import",
     icon: <Instagram width={24} height={24} aria-hidden="true" />,
     title: "Instagram Import",
-    description: "Fetch Instagram posts and upload selected images to Sanity as draft products.",
+    description: "Import Instagram posts and add them as draft products.",
   },
 ] as const;
 
