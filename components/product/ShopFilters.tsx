@@ -24,7 +24,11 @@ export function ShopFilters({ activeCategory }: Props) {
 
   function setCategory(value: FilterValue) {
     const next = new URLSearchParams(params.toString());
-    value === "all" ? next.delete("category") : next.set("category", value);
+    if (value === "all") {
+      next.delete("category");
+    } else {
+      next.set("category", value);
+    }
     router.push(`${pathname}?${next.toString()}`);
   }
 
