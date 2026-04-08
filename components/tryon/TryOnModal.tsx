@@ -126,7 +126,7 @@ export function TryOnModal({ product, siteUrl, onClose }: Props) {
                 <Image src={`data:${result.mimeType};base64,${result.imageData}`} alt={`Try-on: ${product.name}`} fill className="object-cover object-top" unoptimized />
               </div>
               <p className="font-sans text-small text-text-muted text-center leading-editorial">
-                AI-generated preview. Actual fit may vary &mdash; see the <a href="/size-chart" className="underline hover:text-text-secondary">size chart</a>.
+                AI-generated preview. Actual fit may vary — see the <a href="/size-chart" className="underline hover:text-text-secondary">size chart</a>.
               </p>
               <a href={orderUrl} target="_blank" rel="noopener noreferrer" className="btn-whatsapp w-full justify-center">
                 <WaIcon size={18} />Order This Look on WhatsApp

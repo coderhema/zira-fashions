@@ -9,7 +9,7 @@ import { Sparks } from "iconoir-react";
 
 export const metadata: Metadata = {
   title: "Virtual Try-On",
-  description: "Upload a photo and see how Zira Fashions pieces look on you before ordering. AI-powered virtual try-on \u2014 free, no sign-up needed.",
+  description: "Upload a photo and see how Zira Fashions pieces look on you before ordering. AI-powered virtual try-on — free, no sign-up needed.",
 };
 
 export default async function TryOnPage() {
@@ -28,10 +28,10 @@ export default async function TryOnPage() {
               See it on you before you order.
             </h1>
             <p className="font-sans text-body text-text-secondary leading-editorial max-w-md">
-              Pick any piece below, upload a photo of yourself, and our AI will show you exactly how it fits \u2014 before you tap that WhatsApp button.
+              Pick any piece below, upload a photo of yourself, and our AI will show you exactly how it fits — before you tap that WhatsApp button.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mt-4 w-full max-w-xl">
-              {[{ step: "1", label: "Pick a piece" }, { step: "2", label: "Upload your photo" }, { step: "3", label: "See the fit \u2014 then order" }].map(({ step, label }) => (
+              {[{ step: "1", label: "Pick a piece" }, { step: "2", label: "Upload your photo" }, { step: "3", label: "See the fit — then order" }].map(({ step, label }) => (
                 <div key={step} className="flex-1 flex flex-col items-center gap-2 bg-surface rounded-card p-4 border border-border">
                   <span className="w-8 h-8 rounded-full flex items-center justify-center font-sans font-semibold text-[14px] text-white"
                     style={{ backgroundColor: "var(--color-accent)" }} aria-hidden="true">{step}</span>
@@ -52,7 +52,7 @@ export default async function TryOnPage() {
               <h2 className="font-display font-medium text-h2 text-text-primary">Pick a piece to try on</h2>
             </div>
             <a href="/shop" className="font-sans font-medium text-[14px] text-primary underline underline-offset-4 hover:text-primary-hover transition-colors self-end pb-0.5">
-              View all \u2192
+              View all →
             </a>
           </div>
           <Suspense fallback={

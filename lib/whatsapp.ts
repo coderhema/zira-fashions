@@ -19,7 +19,7 @@ const BASE = "https://wa.me";
 export function buildWhatsAppOrderUrl(product: OrderDetails, phone = PHONE): string {
   const isTryOn = "fromTryOn" in product && product.fromTryOn;
   const lines = [
-    "Hi Zira Fashions! I'd like to place an order \ud83d\udecd\ufe0f",
+    "Hi Zira Fashions! I'd like to place an order 🛍️",
     "",
     `Item:  ${product.name}`,
     `Size:  ${product.size}`,
@@ -27,7 +27,7 @@ export function buildWhatsAppOrderUrl(product: OrderDetails, phone = PHONE): str
     `Link:  ${product.productUrl}`,
     product.sku ? `Ref:   ${product.sku}` : null,
     isTryOn ? "" : null,
-    isTryOn ? "P.S. I tried this on using the virtual try-on \ud83d\ude0a" : null,
+    isTryOn ? "P.S. I tried this on using the virtual try-on 😊" : null,
   ]
     .filter((l) => l !== null)
     .join("\n");

@@ -16,7 +16,7 @@ const BADGES = {
 } as const;
 
 function p(sp: URLSearchParams, k: string, d = "") { return sp.get(k) ?? d; }
-function t(s: string, n: number) { return s.length <= n ? s : s.slice(0, n - 1) + "\u2026"; }
+function t(s: string, n: number) { return s.length <= n ? s : s.slice(0, n - 1) + "…"; }
 
 export async function GET(req: NextRequest): Promise<ImageResponse> {
   const params = new URL(req.url).searchParams;

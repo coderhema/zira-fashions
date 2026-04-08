@@ -19,7 +19,7 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "Zira Fashions \u2014 UK & US Highstreet Brands, Lagos",
+    default: "Zira Fashions — UK & US Highstreet Brands, Lagos",
     template: "%s | Zira Fashions",
   },
   description:

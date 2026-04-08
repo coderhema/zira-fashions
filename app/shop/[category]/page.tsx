@@ -16,7 +16,7 @@ const META: Record<ProductCategory, { heading: string; description: string }> = 
   tops:    { heading: "Tops",            description: "Tops from UK and US highstreet brands at Zira Fashions." },
   sets:    { heading: "Co-ords & Sets",  description: "Matching sets from UK and US highstreet brands at Zira Fashions." },
   sale:    { heading: "Sale",            description: "Sale items at Zira Fashions Lagos." },
-  kids:    { heading: "Kids Collection", description: "Trendy UK & US brands for kids aged 0\u201316 at Zira Fashions." },
+  kids:    { heading: "Kids Collection", description: "Trendy UK & US brands for kids aged 0–16 at Zira Fashions." },
 };
 
 export function generateStaticParams() {
