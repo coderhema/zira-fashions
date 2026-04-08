@@ -43,7 +43,7 @@ export function Header() {
             className={`font-display font-medium text-[28px] tracking-tight transition-colors duration-[180ms] ${
               scrolled ? "text-text-primary" : "text-white"
             }`}>
-            Zira
+            Zira Fashion
           </Link>
 
           <nav className="hidden md:flex items-center gap-7" aria-label="Main navigation">
