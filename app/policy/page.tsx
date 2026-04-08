@@ -45,7 +45,7 @@ const SECTIONS = [
   {
     title: "Sold Out Items",
     body: [
-      "If an item you want is sold out, you can tap \u201cNotify Me\u201d on the product page and we will contact you if it becomes available again.",
+      "If an item you want is sold out, you can tap “Notify Me” on the product page and we will contact you if it becomes available again.",
     ],
   },
 ];

@@ -19,7 +19,7 @@ const STEPS = [
   {
     step: "2",
     title: "Pick Your Item",
-    body: "Found something you love? Tap \u201cOrder on WhatsApp\u201d on the product page to send us a pre-filled message.",
+    body: "Found something you love? Tap “Order on WhatsApp” on the product page to send us a pre-filled message.",
   },
   {
     step: "3",

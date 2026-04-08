@@ -9,7 +9,7 @@ import { ShopFilters }           from "@/components/product/ShopFilters";
 
 export const metadata: Metadata = {
   title: "Shop All Products",
-  description: "Browse all Zira Fashions items \u2014 denim, dresses, tops, sets and more. Brand new & pre-owned UK and US highstreet brands. Nationwide delivery.",
+  description: "Browse all Zira Fashions items — denim, dresses, tops, sets and more. Brand new & pre-owned UK and US highstreet brands. Nationwide delivery.",
 };
 
 const VALID: ProductCategory[] = ["denim", "dresses", "tops", "sets", "sale", "kids"];

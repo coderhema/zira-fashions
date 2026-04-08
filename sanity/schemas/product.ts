@@ -9,7 +9,7 @@ export const productSchema = defineType({
     defineField({ name: "name", title: "Product Name", type: "string", validation: (R) => R.required().min(2).max(120) }),
     defineField({ name: "slug", title: "Slug", type: "slug", options: { source: "name", maxLength: 96 }, validation: (R) => R.required() }),
     defineField({ name: "sku", title: "SKU / Reference", type: "string" }),
-    defineField({ name: "price", title: "Price", type: "string", description: "e.g. \u20a612,000", validation: (R) => R.required() }),
+    defineField({ name: "price", title: "Price", type: "string", description: "e.g. ₦12,000", validation: (R) => R.required() }),
     defineField({ name: "originalPrice", title: "Original Price (sale items only)", type: "string" }),
     defineField({ name: "size", title: "Size", type: "string", description: "e.g. UK 6/8", validation: (R) => R.required() }),
     defineField({

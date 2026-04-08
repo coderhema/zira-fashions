@@ -25,8 +25,8 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   else if (product.originalPrice) ogUrl.searchParams.set("badge", "sale");
   else if (product.isNew)     ogUrl.searchParams.set("badge", "new");
 
-  const title       = `${product.name} \u2014 ${product.size}`;
-  const description = `${product.price} \u00b7 Size ${product.size} \u00b7 Zira Fashions. DM to order. Nationwide delivery.`;
+  const title       = `${product.name} — ${product.size}`;
+  const description = `${product.price} · Size ${product.size} · Zira Fashions. DM to order. Nationwide delivery.`;
 
   return {
     title,
