@@ -55,9 +55,9 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "Invalid Instagram username" }, { status: 400 });
   }
 
-  let data: any; // eslint-disable-line @typescript-eslint/no-explicit-any
+  let rawData: any; // eslint-disable-line @typescript-eslint/no-explicit-any
   try {
-    data = await fetchFromRapidApi(username, paginationToken);
+    rawData = await fetchFromRapidApi(username, paginationToken);
   } catch (e) {
     const msg = e instanceof Error ? e.message : "unknown error";
     return NextResponse.json(
@@ -68,21 +68,24 @@ export async function GET(req: NextRequest) {
 
   try {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const posts = (data.reels as any[]).map((reel: any) => {
-      const media = reel.node.media;
+    const posts = (rawData.reels as any[]).map((reel: any) => {
+      const media = reel?.node?.media;
       return {
-        id: media.id,
-        thumbnailUrl: media.image_versions2.candidates[0].url,
-        caption: media.caption?.text ?? '',
+        id: media?.id,
+        thumbnailUrl: media?.image_versions2?.candidates?.[0]?.url,
+        caption: media?.caption?.text ?? '',
       };
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     }).filter((p: any) => p.id && p.thumbnailUrl);
 
     return NextResponse.json(
-      { posts, paginationToken: data.pagination_token ?? null },
+      { posts, paginationToken: rawData.pagination_token ?? null },
       { headers: { "Cache-Control": "no-store" } }
     );
   } catch (err: any) { // eslint-disable-line @typescript-eslint/no-explicit-any
-    return NextResponse.json({ error: err.message }, { status: 500 });
+    return NextResponse.json(
+      { error: err instanceof Error ? err.message : "Failed to parse response" },
+      { status: 500 }
+    );
   }
 }
