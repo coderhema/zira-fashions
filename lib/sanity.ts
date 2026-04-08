@@ -95,6 +95,30 @@ export async function searchProducts(q: string) {
     { q: `${q.toLowerCase()}*` }
   ));
 }
+export interface SiteSettings {
+  heroImage: SanityImageSource | null;
+  heroImageAlt: string;
+}
+
+export async function getSiteSettings(): Promise<SiteSettings> {
+  const raw = await serverClient.fetch<{ heroImage?: SanityImageSource; heroImageAlt?: string } | null>(
+    `*[_type=="siteSettings"][0]{heroImage,heroImageAlt}`
+  );
+  return {
+    heroImage: raw?.heroImage ?? null,
+    heroImageAlt: raw?.heroImageAlt ?? "Model wearing a Zira Fashions outfit",
+  };
+}
+
+export function heroImageUrl(source: SanityImageSource, width = 1200): string {
+  return builder.image(source)
+    .width(width)
+    .auto("format")
+    .quality(85)
+    .fit("max")
+    .url();
+}
+
 export async function sanityFetch<T>(query: string, params: QueryParams = {}) {
   return serverClient.fetch<T>(query, params);
 }

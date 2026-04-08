@@ -1,6 +1,7 @@
 import Link         from "next/link";
+import Image        from "next/image";
 import { Suspense } from "react";
-import { getFeaturedProducts }  from "@/lib/sanity";
+import { getFeaturedProducts, getSiteSettings, heroImageUrl } from "@/lib/sanity";
 import { ProductGridClient }    from "@/components/product/ProductGridClient";
 import { ProductCardSkeleton }  from "@/components/product/ProductCard";
 import { Header }               from "@/components/layout/Header";
@@ -17,7 +18,16 @@ const CATS = [
 ] as const;
 
 export default async function HomePage() {
-  const products = await getFeaturedProducts(6);
+  const [products, siteSettings] = await Promise.all([
+    getFeaturedProducts(6),
+    getSiteSettings(),
+  ]);
+
+  const heroBgUrl = siteSettings.heroImage
+    ? heroImageUrl(siteSettings.heroImage, 1920)
+    : "/images/hero.jpg";
+
+  const heroAlt = siteSettings.heroImageAlt;
 
   return (
     <>
@@ -25,9 +35,14 @@ export default async function HomePage() {
       <main>
         {/* Hero */}
         <section className="relative w-full h-[85svh] md:h-screen min-h-[520px] max-h-[900px] flex items-end overflow-hidden bg-primary" aria-label="Hero">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/images/hero.jpg" alt="Model wearing a Zira Fashions denim jumpsuit"
-            className="absolute inset-0 w-full h-full object-cover object-center" fetchPriority="high" />
+          <Image
+            src={heroBgUrl}
+            alt={heroAlt}
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover object-center"
+          />
           <div className="absolute inset-0 pointer-events-none"
             style={{ background: "linear-gradient(to top,rgba(44,58,92,0.72) 0%,rgba(44,58,92,0.12) 50%,transparent 100%)" }}
             aria-hidden="true" />
