@@ -79,7 +79,7 @@ const sanity = createClient({
 // Instagram Graph API helpers
 // ---------------------------------------------------------------------------
 const IG_API = "https://graph.instagram.com";
-const FIELDS = "id,caption,media_type,media_url,thumbnail_url,timestamp,permalink";
+const FIELDS = "id,caption,media_type,media_url,thumbnail_url";
 
 async function fetchInstagramPosts() {
   const url = `${IG_API}/me/media?fields=${FIELDS}&access_token=${INSTAGRAM_ACCESS_TOKEN}&limit=50`;
@@ -126,8 +126,6 @@ async function upsertSanityDocument(post, imageRef) {
     _type: "instagramPost",
     instagramId: post.id,
     caption:     post.caption ?? "",
-    permalink:   post.permalink,
-    publishedAt: post.timestamp,
     image: {
       _type: "image",
       asset: imageRef,
@@ -149,7 +147,7 @@ async function main() {
   let failed    = 0;
 
   for (const post of posts) {
-    const imageUrl = post.media_url ?? post.thumbnail_url;
+    const imageUrl = post.media_type === "VIDEO" ? post.thumbnail_url : post.media_url;
 
     if (!imageUrl) {
       console.warn(`⚠️   Post ${post.id}: no image URL (media_type=${post.media_type}). Skipping.`);
