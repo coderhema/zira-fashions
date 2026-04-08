@@ -10,7 +10,7 @@ import {
   WarningCircle,
   MediaImageList,
   SelectWindow,
-  Cancel,
+  Xmark,
 } from "iconoir-react";
 
 interface Post {
@@ -245,7 +245,7 @@ export default function InstagramImportPage() {
                   className="inline-flex items-center gap-1.5 font-sans text-small font-medium text-text-secondary hover:text-text-primary disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
                   aria-label="Deselect all posts"
                 >
-                  <Cancel width={15} height={15} aria-hidden="true" />
+                  <Xmark width={15} height={15} aria-hidden="true" />
                   Deselect All
                 </button>
 
