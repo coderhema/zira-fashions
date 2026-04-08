@@ -44,7 +44,7 @@ export function Header() {
             <Image
               src="/logo.png"
               alt="Zira Fashions"
-              width={120}
+              width={40}
               height={40}
               className="h-9 md:h-10 w-auto object-contain"
               priority
