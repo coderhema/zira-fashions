@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback } from "react";
+import { useRouter } from "next/navigation";
 import {
   Instagram,
   Search,
@@ -11,12 +12,16 @@ import {
   MediaImageList,
   SelectWindow,
   Xmark,
+  Home,
+  Refresh,
 } from "iconoir-react";
 
 interface Post {
   id: string;
   thumbnailUrl: string;
   caption: string;
+  name: string;
+  price: string;
 }
 
 type UploadStatus = "idle" | "uploading" | "success" | "error";
@@ -26,7 +31,17 @@ interface PostStatus {
   error?: string;
 }
 
+const CATEGORIES = [
+  { value: "uncategorized", label: "Uncategorized" },
+  { value: "denim",         label: "Denims" },
+  { value: "kids",          label: "Kids" },
+  { value: "tops",          label: "Tops" },
+  { value: "dresses",       label: "Dresses" },
+  { value: "accessories",   label: "Accessories" },
+] as const;
+
 export default function InstagramImportPage() {
+  const router = useRouter();
   const [username, setUsername] = useState("");
   const [posts, setPosts] = useState<Post[]>([]);
   const [paginationToken, setPaginationToken] = useState<string | null>(null);
@@ -36,6 +51,13 @@ export default function InstagramImportPage() {
   const [fetchError, setFetchError] = useState<string | null>(null);
   const [uploading, setUploading] = useState(false);
   const [uploadDone, setUploadDone] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState("uncategorized");
+  // Per-post editable name/price overrides
+  const [nameOverrides, setNameOverrides] = useState<Record<string, string>>({});
+  const [priceOverrides, setPriceOverrides] = useState<Record<string, string>>({});
+  // Success modal
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const [finalUploadedCount, setFinalUploadedCount] = useState(0);
 
   const doFetch = useCallback(async (name: string, token: string | null, reset: boolean) => {
     setFetching(true);
@@ -46,6 +68,8 @@ export default function InstagramImportPage() {
       setStatuses({});
       setUploadDone(false);
       setPaginationToken(null);
+      setNameOverrides({});
+      setPriceOverrides({});
     }
 
     try {
@@ -106,10 +130,19 @@ export default function InstagramImportPage() {
     });
 
     try {
+      const postsPayload = toUpload.map((p) => ({
+        id: p.id,
+        thumbnailUrl: p.thumbnailUrl,
+        caption: p.caption,
+        name: nameOverrides[p.id] ?? p.name,
+        price: priceOverrides[p.id] ?? p.price,
+        category: selectedCategory,
+      }));
+
       const res = await fetch("/api/upload-to-sanity", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ posts: toUpload }),
+        body: JSON.stringify({ posts: postsPayload }),
       });
 
       if (!res.ok || !res.body) {
@@ -172,7 +205,22 @@ export default function InstagramImportPage() {
 
     setUploading(false);
     setUploadDone(true);
-  }, [posts, selected]);
+    setStatuses((finalStatuses) => {
+      const successCount = Object.values(finalStatuses).filter((s) => s.status === "success").length;
+      setFinalUploadedCount(successCount);
+      setShowSuccessModal(true);
+      return finalStatuses;
+    });
+  }, [posts, selected, nameOverrides, priceOverrides, selectedCategory]);
+
+  const handleUploadMore = useCallback(() => {
+    setShowSuccessModal(false);
+    setSelected(new Set());
+    setStatuses({});
+    setUploadDone(false);
+    setNameOverrides({});
+    setPriceOverrides({});
+  }, []);
 
   const selectedCount = selected.size;
   const allSelected = posts.length > 0 && selected.size === posts.length;
@@ -184,6 +232,44 @@ export default function InstagramImportPage() {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Success Modal */}
+      {showSuccessModal && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4"
+          style={{ background: "rgba(44,58,92,0.5)", backdropFilter: "blur(4px)" }}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Upload complete"
+        >
+          <div className="bg-surface rounded-card border border-border shadow-[0_8px_40px_-8px_rgba(44,58,92,0.2)] w-full max-w-sm p-8 flex flex-col items-center gap-6">
+            <div className="w-14 h-14 rounded-full bg-[#25855A]/10 flex items-center justify-center">
+              <CheckCircle width={28} height={28} className="text-[#25855A]" aria-hidden="true" />
+            </div>
+            <div className="text-center space-y-1.5">
+              <h2 className="font-sans font-semibold text-h3 text-text-primary">Upload Complete</h2>
+              <p className="font-sans text-body text-text-secondary">
+                {finalUploadedCount} image{finalUploadedCount !== 1 ? "s" : ""} successfully uploaded to Sanity.
+              </p>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-3 w-full">
+              <button
+                onClick={() => router.push("/")}
+                className="flex-1 inline-flex items-center justify-center gap-2 h-11 px-5 rounded-input bg-primary text-white font-sans font-medium text-body transition-colors hover:opacity-90"
+              >
+                <Home width={16} height={16} aria-hidden="true" />
+                Go to Homepage
+              </button>
+              <button
+                onClick={handleUploadMore}
+                className="flex-1 inline-flex items-center justify-center gap-2 h-11 px-5 rounded-input bg-surface border border-border text-text-primary font-sans font-medium text-body transition-colors hover:bg-background"
+              >
+                <Refresh width={16} height={16} aria-hidden="true" />
+                Upload More
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
       {/* Page header */}
       <div className="bg-surface border-b border-border">
         <div className="max-w-5xl mx-auto px-5 py-5 flex items-center gap-3">
@@ -312,106 +398,132 @@ export default function InstagramImportPage() {
               )}
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
               {posts.map((post) => {
                 const isSelected = selected.has(post.id);
                 const status = statuses[post.id];
+                const nameVal = nameOverrides[post.id] ?? post.name;
+                const priceVal = priceOverrides[post.id] ?? post.price;
 
                 return (
-                  <div
-                    key={post.id}
-                    onClick={() => !uploading && toggleSelect(post.id)}
-                    role="checkbox"
-                    aria-checked={isSelected}
-                    aria-label={post.caption ? `Post: ${post.caption.slice(0, 60)}` : `Post ${post.id}`}
-                    tabIndex={0}
-                    onKeyDown={(e) => (e.key === " " || e.key === "Enter") && !uploading && toggleSelect(post.id)}
-                    className={`relative aspect-square rounded-card overflow-hidden cursor-pointer select-none transition-all duration-150 ring-2 ${
-                      isSelected ? "ring-primary" : "ring-transparent"
-                    } ${uploading ? "cursor-default" : "hover:ring-primary/50"}`}
-                  >
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src={post.thumbnailUrl}
-                      alt={post.caption ? post.caption.slice(0, 80) : `Instagram post ${post.id}`}
-                      className="w-full h-full object-cover"
-                      loading="lazy"
-                    />
-
-                    {/* Checkbox overlay */}
+                  <div key={post.id} className="flex flex-col gap-2">
+                    {/* Thumbnail */}
                     <div
-                      className={`absolute top-2 left-2 w-5 h-5 rounded-full border-2 flex items-center justify-center transition-colors ${
-                        isSelected
-                          ? "bg-primary border-primary"
-                          : "bg-white/70 border-white/90 backdrop-blur-sm"
-                      }`}
-                      aria-hidden="true"
+                      onClick={() => !uploading && toggleSelect(post.id)}
+                      role="checkbox"
+                      aria-checked={isSelected}
+                      aria-label={post.caption ? `Post: ${post.caption.slice(0, 60)}` : `Post ${post.id}`}
+                      tabIndex={0}
+                      onKeyDown={(e) => (e.key === " " || e.key === "Enter") && !uploading && toggleSelect(post.id)}
+                      className={`relative aspect-square rounded-card overflow-hidden cursor-pointer select-none transition-all duration-150 ring-2 ${
+                        isSelected ? "ring-primary" : "ring-transparent"
+                      } ${uploading ? "cursor-default" : "hover:ring-primary/50"}`}
                     >
-                      {isSelected && (
-                        <svg
-                          viewBox="0 0 10 8"
-                          fill="none"
-                          className="w-2.5 h-2 text-white"
-                          stroke="currentColor"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={post.thumbnailUrl}
+                        alt={post.caption ? post.caption.slice(0, 80) : `Instagram post ${post.id}`}
+                        className="w-full h-full object-cover"
+                        loading="lazy"
+                      />
+
+                      {/* Checkbox overlay */}
+                      <div
+                        className={`absolute top-2 left-2 w-5 h-5 rounded-full border-2 flex items-center justify-center transition-colors ${
+                          isSelected
+                            ? "bg-primary border-primary"
+                            : "bg-white/70 border-white/90 backdrop-blur-sm"
+                        }`}
+                        aria-hidden="true"
+                      >
+                        {isSelected && (
+                          <svg
+                            viewBox="0 0 10 8"
+                            fill="none"
+                            className="w-2.5 h-2 text-white"
+                            stroke="currentColor"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                          >
+                            <path d="M1 4l2.5 2.5L9 1" />
+                          </svg>
+                        )}
+                      </div>
+
+                      {/* Upload status overlay */}
+                      {status && (
+                        <div
+                          className={`absolute inset-0 flex flex-col items-center justify-center gap-1 ${
+                            status.status === "uploading"
+                              ? "bg-primary/60 backdrop-blur-[2px]"
+                              : status.status === "success"
+                              ? "bg-[#25855A]/70 backdrop-blur-[2px]"
+                              : "bg-[#B05A4A]/70 backdrop-blur-[2px]"
+                          }`}
                         >
-                          <path d="M1 4l2.5 2.5L9 1" />
-                        </svg>
+                          {status.status === "uploading" && (
+                            <>
+                              <WarningCircle
+                                width={20}
+                                height={20}
+                                className="text-white animate-pulse"
+                                aria-hidden="true"
+                              />
+                              <span className="font-sans text-micro text-white font-medium">Uploading…</span>
+                            </>
+                          )}
+                          {status.status === "success" && (
+                            <>
+                              <CheckCircle width={20} height={20} className="text-white" aria-hidden="true" />
+                              <span className="font-sans text-micro text-white font-medium">Uploaded</span>
+                            </>
+                          )}
+                          {status.status === "error" && (
+                            <>
+                              <XmarkCircle width={20} height={20} className="text-white" aria-hidden="true" />
+                              <span
+                                className="font-sans text-micro text-white font-medium text-center px-2 leading-tight"
+                                title={status.error}
+                              >
+                                Failed
+                              </span>
+                            </>
+                          )}
+                        </div>
+                      )}
+
+                      {/* Caption tooltip on hover */}
+                      {post.caption && !status && (
+                        <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/60 to-transparent p-2 opacity-0 hover:opacity-100 transition-opacity pointer-events-none">
+                          <p className="font-sans text-micro text-white line-clamp-2 leading-snug">
+                            {post.caption}
+                          </p>
+                        </div>
                       )}
                     </div>
 
-                    {/* Upload status overlay */}
-                    {status && (
-                      <div
-                        className={`absolute inset-0 flex flex-col items-center justify-center gap-1 ${
-                          status.status === "uploading"
-                            ? "bg-primary/60 backdrop-blur-[2px]"
-                            : status.status === "success"
-                            ? "bg-[#25855A]/70 backdrop-blur-[2px]"
-                            : "bg-[#B05A4A]/70 backdrop-blur-[2px]"
-                        }`}
-                      >
-                        {status.status === "uploading" && (
-                          <>
-                            <WarningCircle
-                              width={20}
-                              height={20}
-                              className="text-white animate-pulse"
-                              aria-hidden="true"
-                            />
-                            <span className="font-sans text-micro text-white font-medium">Uploading…</span>
-                          </>
-                        )}
-                        {status.status === "success" && (
-                          <>
-                            <CheckCircle width={20} height={20} className="text-white" aria-hidden="true" />
-                            <span className="font-sans text-micro text-white font-medium">Uploaded</span>
-                          </>
-                        )}
-                        {status.status === "error" && (
-                          <>
-                            <XmarkCircle width={20} height={20} className="text-white" aria-hidden="true" />
-                            <span
-                              className="font-sans text-micro text-white font-medium text-center px-2 leading-tight"
-                              title={status.error}
-                            >
-                              Failed
-                            </span>
-                          </>
-                        )}
-                      </div>
-                    )}
-
-                    {/* Caption tooltip on hover */}
-                    {post.caption && !status && (
-                      <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/60 to-transparent p-2 opacity-0 hover:opacity-100 transition-opacity pointer-events-none">
-                        <p className="font-sans text-micro text-white line-clamp-2 leading-snug">
-                          {post.caption}
-                        </p>
-                      </div>
-                    )}
+                    {/* Editable name & price */}
+                    <div className="flex flex-col gap-1.5" onClick={(e) => e.stopPropagation()}>
+                      <input
+                        type="text"
+                        value={nameVal}
+                        onChange={(e) => setNameOverrides((prev) => ({ ...prev, [post.id]: e.target.value }))}
+                        placeholder="Product name"
+                        disabled={uploading}
+                        aria-label="Product name"
+                        className="w-full h-8 px-2.5 bg-surface border border-border rounded text-small text-text-primary placeholder:text-text-muted focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 transition-colors disabled:opacity-50"
+                      />
+                      <input
+                        type="text"
+                        value={priceVal}
+                        onChange={(e) => setPriceOverrides((prev) => ({ ...prev, [post.id]: e.target.value }))}
+                        placeholder="Price (e.g. ₦12000)"
+                        disabled={uploading}
+                        aria-label="Price"
+                        className="w-full h-8 px-2.5 bg-surface border border-border rounded text-small text-text-primary placeholder:text-text-muted focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 transition-colors disabled:opacity-50"
+                      />
+                    </div>
                   </div>
                 );
               })}
@@ -470,27 +582,46 @@ export default function InstagramImportPage() {
               </div>
             )}
 
-            <div className="flex items-center justify-between gap-4">
-              <p className="font-sans text-small text-text-secondary">
+            {/* Category selector + Upload button row */}
+            <div className="flex flex-wrap items-center gap-3">
+              <p className="font-sans text-small text-text-secondary flex-shrink-0">
                 {selectedCount} post{selectedCount !== 1 ? "s" : ""} selected
               </p>
-              <button
-                onClick={handleUpload}
-                disabled={uploading}
-                className="btn-primary disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
-              >
-                {uploading ? (
-                  <span className="inline-flex items-center gap-2">
-                    <WarningCircle width={16} height={16} aria-hidden="true" className="animate-pulse" />
-                    Uploading {uploadedCount + errorCount}/{selectedCount}…
-                  </span>
-                ) : (
-                  <span className="inline-flex items-center gap-2">
-                    <CloudUpload width={16} height={16} aria-hidden="true" />
-                    Upload Selected to Sanity
-                  </span>
-                )}
-              </button>
+              <div className="flex-1 flex flex-wrap items-center gap-3">
+                <div className="flex items-center gap-2 min-w-[180px]">
+                  <label htmlFor="category-select" className="font-sans text-small text-text-secondary whitespace-nowrap flex-shrink-0">
+                    Category:
+                  </label>
+                  <select
+                    id="category-select"
+                    value={selectedCategory}
+                    onChange={(e) => setSelectedCategory(e.target.value)}
+                    disabled={uploading}
+                    className="flex-1 h-9 px-2.5 bg-surface border border-border rounded-input font-sans text-small text-text-primary focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/20 transition-colors disabled:opacity-50"
+                  >
+                    {CATEGORIES.map((cat) => (
+                      <option key={cat.value} value={cat.value}>{cat.label}</option>
+                    ))}
+                  </select>
+                </div>
+                <button
+                  onClick={handleUpload}
+                  disabled={uploading}
+                  className="btn-primary disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none ml-auto"
+                >
+                  {uploading ? (
+                    <span className="inline-flex items-center gap-2">
+                      <WarningCircle width={16} height={16} aria-hidden="true" className="animate-pulse" />
+                      Uploading {uploadedCount + errorCount}/{selectedCount}…
+                    </span>
+                  ) : (
+                    <span className="inline-flex items-center gap-2">
+                      <CloudUpload width={16} height={16} aria-hidden="true" />
+                      Upload Selected to Sanity
+                    </span>
+                  )}
+                </button>
+              </div>
             </div>
           </div>
         )}
