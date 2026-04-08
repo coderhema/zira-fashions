@@ -8,30 +8,15 @@ export interface ScrapedPost {
   caption: string;
 }
 
-const RAPIDAPI_HOST = "instagram-scraper-api2.p.rapidapi.com";
-const MEDIA_TYPE_VIDEO = 2;
+const RAPIDAPI_HOST = "instagram-scraper-stable-api.p.rapidapi.com";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function extractItems(items: any[]): ScrapedPost[] {
   return items
     .map((item) => {
       const id = String(item.id ?? item.pk ?? "");
-
-      // Use thumbnail_url for videos, display_url for images
-      const isVideo = item.is_video === true || item.media_type === MEDIA_TYPE_VIDEO;
-      const thumbnailUrl = String(
-        (isVideo ? item.thumbnail_url : null) ??
-          item.display_url ??
-          item.image_versions2?.candidates?.[0]?.url ??
-          ""
-      );
-
-      const caption = String(
-        item.caption?.text ??
-          item.edge_media_to_caption?.edges?.[0]?.node?.text ??
-          item.caption ??
-          ""
-      );
+      const thumbnailUrl = String(item.image_versions2?.candidates?.[0]?.url ?? "");
+      const caption = String(item.caption?.text ?? "");
 
       return { id, thumbnailUrl, caption };
     })
@@ -42,32 +27,40 @@ async function fetchFromRapidApi(username: string): Promise<ScrapedPost[]> {
   const apiKey = process.env.RAPIDAPI_KEY;
   if (!apiKey) throw new Error("RAPIDAPI_KEY environment variable is not set");
 
-  const url = `https://${RAPIDAPI_HOST}/v1/posts?username_or_id_or_url=${encodeURIComponent(username)}`;
+  const url = `https://${RAPIDAPI_HOST}/get_ig_user_reels.php`;
+
+  const body = new URLSearchParams({
+    username_or_url: `https://www.instagram.com/${username}`,
+    amount: "20",
+    pagination_token: "",
+  });
 
   const res = await fetch(url, {
+    method: "POST",
     headers: {
+      "Content-Type": "application/x-www-form-urlencoded",
       "x-rapidapi-key": apiKey,
       "x-rapidapi-host": RAPIDAPI_HOST,
     },
+    body: body.toString(),
     signal: AbortSignal.timeout(20_000),
   });
 
   if (!res.ok) {
-    const body = await res.text().catch(() => "");
-    throw new Error(`RapidAPI responded with HTTP ${res.status}: ${body.slice(0, 200)}`);
+    const text = await res.text().catch(() => "");
+    throw new Error(`RapidAPI responded with HTTP ${res.status}: ${text.slice(0, 200)}`);
   }
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const data: any = await res.json();
 
-  // The API returns { data: { items: [...] } }
   const items: unknown[] =
     data?.data?.items ??
     data?.items ??
     [];
 
   if (!Array.isArray(items) || items.length === 0) {
-    throw new Error("No posts found in RapidAPI response");
+    throw new Error("No reels found in RapidAPI response");
   }
 
   return extractItems(items);
