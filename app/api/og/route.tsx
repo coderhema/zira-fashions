@@ -1,7 +1,8 @@
 import { ImageResponse } from "@vercel/og";
 import type { NextRequest } from "next/server";
+import { serverClient } from "@/lib/sanity";
 
-export const runtime = "edge";
+export const runtime = "nodejs";
 
 const C = {
   bg: "#F7F4EE", sf: "#FFFFFF", sm: "#F0EDE6", pr: "#2C3A5C",
@@ -19,15 +20,38 @@ function p(sp: URLSearchParams, k: string, d = "") { return sp.get(k) ?? d; }
 function t(s: string, n: number) { return s.length <= n ? s : s.slice(0, n - 1) + "…"; }
 
 export async function GET(req: NextRequest): Promise<ImageResponse> {
-  const params = new URL(req.url).searchParams;
-  const name   = t(p(params, "name", "Zira Fashions"), 48);
-  const price  = p(params, "price");
-  const size   = p(params, "size");
-  const imgUrl = p(params, "image");
-  const badge  = p(params, "badge") as keyof typeof BADGES | "";
-  const isKids = p(params, "kids") === "true";
+  const params    = new URL(req.url).searchParams;
+  const productId = params.get("productId");
+
+  let name: string, price: string, size: string, imgUrl: string, badge: string, isKids: boolean;
+
+  if (productId) {
+    // Fetch product from Sanity by _id
+    const product = await serverClient.fetch<{
+      title?: string; name?: string; price?: string; size?: string;
+      imageUrl?: string; isSoldOut?: boolean; isNew?: boolean;
+      originalPrice?: string; isKids?: boolean;
+    } | null>(
+      `*[_id == $id][0]{ name, price, size, "imageUrl": image.asset->url, isSoldOut, isNew, originalPrice, isKids }`,
+      { id: productId }
+    );
+    name    = t(product?.name ?? "Zira Fashions", 48);
+    price   = product?.price ?? "";
+    size    = product?.size ?? "";
+    imgUrl  = product?.imageUrl ?? "";
+    isKids  = product?.isKids ?? false;
+    badge   = product?.isSoldOut ? "sold-out" : product?.originalPrice ? "sale" : product?.isNew ? "new" : "";
+  } else {
+    name    = t(p(params, "name", "Zira Fashions"), 48);
+    price   = p(params, "price");
+    size    = p(params, "size");
+    imgUrl  = p(params, "image");
+    badge   = p(params, "badge");
+    isKids  = p(params, "kids") === "true";
+  }
+
   const accent = isKids ? C.kids : C.ac;
-  const bc     = badge && badge in BADGES ? BADGES[badge] : null;
+  const bc     = badge && badge in BADGES ? BADGES[badge as keyof typeof BADGES] : null;
 
   return new ImageResponse(
     (

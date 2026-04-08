@@ -248,7 +248,7 @@ export default function InstagramImportPage() {
             <div className="text-center space-y-1.5">
               <h2 className="font-sans font-semibold text-h3 text-text-primary">Upload Complete</h2>
               <p className="font-sans text-body text-text-secondary">
-                {finalUploadedCount} image{finalUploadedCount !== 1 ? "s" : ""} successfully uploaded to Sanity.
+                {finalUploadedCount} image{finalUploadedCount !== 1 ? "s" : ""} uploaded successfully.
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 w-full">
@@ -279,7 +279,7 @@ export default function InstagramImportPage() {
               Instagram Import
             </h1>
             <p className="font-sans text-small text-text-muted mt-0.5">
-              Fetch posts via RapidAPI and upload selected images to Sanity as draft products.
+              Import Instagram posts and add them as draft products.
             </p>
           </div>
         </div>
@@ -617,7 +617,7 @@ export default function InstagramImportPage() {
                   ) : (
                     <span className="inline-flex items-center gap-2">
                       <CloudUpload width={16} height={16} aria-hidden="true" />
-                      Upload Selected to Sanity
+                      Upload Products
                     </span>
                   )}
                 </button>

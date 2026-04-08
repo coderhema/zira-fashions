@@ -17,13 +17,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
 
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://zirafashions.com";
   const ogUrl   = new URL("/api/og", siteUrl);
-  ogUrl.searchParams.set("name",  product.name);
-  ogUrl.searchParams.set("price", product.price);
-  ogUrl.searchParams.set("size",  product.size);
-  if (product.imageUrl)       ogUrl.searchParams.set("image", product.imageUrl);
-  if (product.isSoldOut)      ogUrl.searchParams.set("badge", "sold-out");
-  else if (product.originalPrice) ogUrl.searchParams.set("badge", "sale");
-  else if (product.isNew)     ogUrl.searchParams.set("badge", "new");
+  ogUrl.searchParams.set("productId", product._id);
 
   const title       = `${product.name} — ${product.size}`;
   const description = `${product.price} · Size ${product.size} · Zira Fashions. DM to order. Nationwide delivery.`;
