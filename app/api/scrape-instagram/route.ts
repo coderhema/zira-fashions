@@ -10,25 +10,7 @@ export interface ScrapedPost {
 
 const RAPIDAPI_HOST = "instagram-scraper-stable-api.p.rapidapi.com";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function extractItems(items: any[]): ScrapedPost[] {
-  return items
-    .map((item) => {
-      const id = String(item.id ?? item.pk ?? "");
-      const thumbnailUrl = String(item.image_versions2?.candidates?.[0]?.url ?? "");
-      const caption = String(item.caption?.text ?? "");
-
-      return { id, thumbnailUrl, caption };
-    })
-    .filter((p) => p.id && p.thumbnailUrl);
-}
-
-interface FetchResult {
-  posts: ScrapedPost[];
-  paginationToken: string | null;
-}
-
-async function fetchFromRapidApi(username: string, paginationToken = ""): Promise<FetchResult> {
+async function fetchFromRapidApi(username: string, paginationToken = ""): Promise<unknown> {
   const apiKey = process.env.RAPIDAPI_KEY;
   if (!apiKey) throw new Error("RAPIDAPI_KEY environment variable is not set");
 
@@ -59,23 +41,7 @@ async function fetchFromRapidApi(username: string, paginationToken = ""): Promis
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const data: any = await res.json();
   console.log("RapidAPI raw response:", JSON.stringify(data, null, 2));
-
-  const items: unknown[] =
-    data?.data?.items ??
-    data?.items ??
-    [];
-
-  if (!Array.isArray(items) || items.length === 0) {
-    throw new Error("No reels found in RapidAPI response");
-  }
-
-  const nextToken: string | null =
-    data?.data?.pagination_token ??
-    data?.pagination_token ??
-    data?.next_max_id ??
-    null;
-
-  return { posts: extractItems(items), paginationToken: nextToken || null };
+  return data;
 }
 
 export async function GET(req: NextRequest) {
@@ -89,17 +55,34 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "Invalid Instagram username" }, { status: 400 });
   }
 
+  let data: any; // eslint-disable-line @typescript-eslint/no-explicit-any
   try {
-    const result = await fetchFromRapidApi(username, paginationToken);
-    return NextResponse.json(
-      { posts: result.posts, paginationToken: result.paginationToken },
-      { headers: { "Cache-Control": "no-store" } }
-    );
+    data = await fetchFromRapidApi(username, paginationToken);
   } catch (e) {
     const msg = e instanceof Error ? e.message : "unknown error";
     return NextResponse.json(
       { error: `Could not fetch Instagram posts: ${msg}` },
       { status: 502 }
     );
+  }
+
+  try {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const posts = (data.reels as any[]).map((reel: any) => {
+      const media = reel.node.media;
+      return {
+        id: media.id,
+        thumbnailUrl: media.image_versions2.candidates[0].url,
+        caption: media.caption?.text ?? '',
+      };
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    }).filter((p: any) => p.id && p.thumbnailUrl);
+
+    return NextResponse.json(
+      { posts, paginationToken: data.pagination_token ?? null },
+      { headers: { "Cache-Control": "no-store" } }
+    );
+  } catch (err: any) { // eslint-disable-line @typescript-eslint/no-explicit-any
+    return NextResponse.json({ error: err.message }, { status: 500 });
   }
 }
