@@ -58,14 +58,13 @@ export default function AdminLayout({ children }: { children: React.ReactNode })
         className={`fixed inset-0 z-50 md:hidden transition-opacity duration-200 ${
           open ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
-        aria-hidden="true"
         onClick={() => setOpen(false)}
         style={{ background: "rgba(44,58,92,0.45)", backdropFilter: "blur(3px)" }}
       />
 
       {/* Mobile drawer */}
       <div
-        className={`fixed top-0 right-0 bottom-0 z-50 w-[75vw] max-w-[280px] md:hidden flex flex-col bg-surface border-l border-border shadow-xl transition-transform duration-200 ease-[cubic-bezier(0.4,0,0.2,1)] ${
+        className={`fixed top-0 right-0 bottom-0 z-50 w-[75vw] max-w-[280px] md:hidden flex flex-col bg-surface border-l border-border shadow-xl transition-transform duration-200 ease-in-out ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
         role="dialog"
