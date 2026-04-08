@@ -27,10 +27,6 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_SITE_URL ?? "https://zirafashions.com"
   ),
-  icons: {
-    icon: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
-  },
   openGraph: {
     type: "website",
     locale: "en_NG",
