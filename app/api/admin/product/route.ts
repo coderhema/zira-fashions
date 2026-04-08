@@ -6,7 +6,7 @@ export const runtime = "nodejs";
 // DELETE /api/admin/product?id=<documentId>
 export async function DELETE(req: NextRequest) {
   const id = new URL(req.url).searchParams.get("id");
-  if (!id || typeof id !== "string") {
+  if (!id) {
     return NextResponse.json({ error: "id is required" }, { status: 400 });
   }
   try {
@@ -29,7 +29,7 @@ export async function PATCH(req: NextRequest) {
     return NextResponse.json({ error: "Invalid JSON" }, { status: 400 });
   }
   const { id, name } = body as { id?: string; name?: string };
-  if (!id || !name || typeof id !== "string" || typeof name !== "string") {
+  if (!id || !name) {
     return NextResponse.json({ error: "id and name are required" }, { status: 400 });
   }
   try {
