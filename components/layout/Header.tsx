@@ -16,7 +16,7 @@ function WaIcon() {
   return <Whatsapp width={20} height={20} aria-hidden="true" />;
 }
 
-export function Header() {
+export function Header({ darkHero = false }: { darkHero?: boolean }) {
   const [scrolled, setScrolled] = useState(false);
   const [open,     setOpen]     = useState(false);
 
@@ -41,7 +41,7 @@ export function Header() {
         <div className="max-w-screen-xl mx-auto h-full px-5 md:px-8 flex items-center justify-between">
           <Link href="/" aria-label="Zira Fashions"
             className={`font-display font-medium text-[28px] tracking-tight transition-colors duration-[180ms] ${
-              scrolled ? "text-text-primary" : "text-white"
+              scrolled ? "text-text-primary" : darkHero ? "text-white" : "text-text-primary"
             }`}>
             Zira Fashion
           </Link>
@@ -50,24 +50,24 @@ export function Header() {
             {NAV.map((l) => (
               <Link key={l.href} href={l.href}
                 className={`relative font-sans font-medium text-[14px] tracking-wide transition-colors duration-[180ms] after:absolute after:bottom-[-3px] after:left-0 after:h-[1.5px] after:w-0 after:bg-current after:transition-[width] after:duration-[180ms] hover:after:w-full ${
-                  scrolled ? "text-text-secondary hover:text-text-primary" : "text-white/85 hover:text-black"
+                  scrolled ? "text-text-secondary hover:text-text-primary" : darkHero ? "text-white/85 hover:text-white" : "text-text-secondary hover:text-text-primary"
                 }`}>{l.label}</Link>
             ))}
           </nav>
 
           <div className="hidden md:flex items-center gap-4">
             <a href={contact} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"
-              className={`transition-colors hover:opacity-70 ${scrolled ? "text-primary" : "text-white"}`}>
+              className={`transition-colors hover:opacity-70 ${scrolled ? "text-primary" : darkHero ? "text-white" : "text-primary"}`}>
               <WaIcon />
             </a>
             <Link href="/search" aria-label="Search"
-              className={`transition-colors hover:opacity-70 ${scrolled ? "text-text-secondary" : "text-white"}`}>
+              className={`transition-colors hover:opacity-70 ${scrolled ? "text-text-secondary" : darkHero ? "text-white" : "text-text-secondary"}`}>
               <Search width={20} height={20} aria-hidden="true" />
             </Link>
           </div>
 
           <button type="button" onClick={() => setOpen(true)}
-            className={`md:hidden flex items-center justify-center p-2 transition-colors ${scrolled ? "text-text-primary" : "text-white hover:text-black"}`}
+            className={`md:hidden flex items-center justify-center p-2 transition-colors ${scrolled ? "text-text-primary" : darkHero ? "text-white" : "text-text-primary"}`}
             aria-label="Open menu" aria-expanded={open}>
             <Menu width={24} height={24} aria-hidden="true" />
           </button>

@@ -14,7 +14,7 @@ export const productSchema = defineType({
     defineField({ name: "size", title: "Size", type: "string", description: "e.g. UK 6/8", validation: (R) => R.required() }),
     defineField({
       name: "category", title: "Category", type: "string",
-      options: { list: [{ title: "Denim", value: "denim" }, { title: "Dresses", value: "dresses" }, { title: "Tops", value: "tops" }, { title: "Sets", value: "sets" }, { title: "Sale", value: "sale" }, { title: "Kids", value: "kids" }], layout: "radio" },
+      options: { list: [{ title: "Denim", value: "denim" }, { title: "Dresses", value: "dresses" }, { title: "Tops", value: "tops" }, { title: "Sets", value: "sets" }, { title: "Sale", value: "sale" }, { title: "Kids", value: "kids" }, { title: "Accessories", value: "accessories" }, { title: "Uncategorized", value: "uncategorized" }], layout: "radio" },
       validation: (R) => R.required(),
     }),
     defineField({ name: "image", title: "Product Image", type: "image", options: { hotspot: true }, validation: (R) => R.required() }),

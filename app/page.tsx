@@ -21,7 +21,7 @@ export default async function HomePage() {
 
   return (
     <>
-      <Header />
+      <Header darkHero />
       <main>
         {/* Hero */}
         <section className="relative w-full h-[85svh] md:h-screen min-h-[520px] max-h-[900px] flex items-end overflow-hidden bg-primary" aria-label="Hero">

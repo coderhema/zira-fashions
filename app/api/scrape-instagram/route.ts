@@ -6,6 +6,17 @@ export interface ScrapedPost {
   id: string;
   thumbnailUrl: string;
   caption: string;
+  name: string;
+  price: string;
+}
+
+function extractName(caption: string): string {
+  return caption?.split('\n')[0]?.trim() ?? '';
+}
+
+function extractPrice(caption: string): string {
+  const match = caption?.match(/[₦$£€N]?\s?(\d[\d,.]+)/);
+  return match ? match[1].replace(/,/g, '') : '';
 }
 
 const RAPIDAPI_HOST = "instagram-scraper-stable-api.p.rapidapi.com";
@@ -70,10 +81,13 @@ export async function GET(req: NextRequest) {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     const posts = (rawData.reels as any[]).map((reel: any) => {
       const media = reel?.node?.media;
+      const caption = media?.caption?.text ?? '';
       return {
         id: media?.id,
         thumbnailUrl: media?.image_versions2?.candidates?.[0]?.url,
-        caption: media?.caption?.text ?? '',
+        caption,
+        name: extractName(caption),
+        price: extractPrice(caption),
       };
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
     }).filter((p: any) => p.id && p.thumbnailUrl);

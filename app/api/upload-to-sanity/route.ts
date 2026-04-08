@@ -7,6 +7,9 @@ interface PostInput {
   id: string;
   thumbnailUrl: string;
   caption?: string;
+  name?: string;
+  price?: string;
+  category?: string;
 }
 
 // Allowlist of hostname suffixes accepted for thumbnailUrl.
@@ -45,7 +48,7 @@ function toSlug(caption: string, id: string): string {
 }
 
 async function uploadPost(post: PostInput): Promise<ProgressEvent> {
-  const { id, thumbnailUrl, caption = "" } = post;
+  const { id, thumbnailUrl, caption = "", name: postName, price: postPrice, category: postCategory } = post;
 
   // Download image as buffer
   const imgRes = await fetch(thumbnailUrl, { signal: AbortSignal.timeout(20_000) });
@@ -59,8 +62,10 @@ async function uploadPost(post: PostInput): Promise<ProgressEvent> {
   });
 
   const captionText = caption.trim();
-  const name = captionText.slice(0, 80) || `Instagram Post ${id}`;
-  const slug = toSlug(captionText, id);
+  const name = (postName?.trim() || captionText.slice(0, 80) || `Instagram Post ${id}`).slice(0, 80);
+  const slug = toSlug(captionText || name, id);
+  const price = postPrice?.trim() || "TBD";
+  const category = postCategory?.trim() || "uncategorized";
 
   // Create a draft product document using the existing product schema.
   // Required fields are pre-filled with placeholder values so the document
@@ -70,9 +75,9 @@ async function uploadPost(post: PostInput): Promise<ProgressEvent> {
     _type: "product",
     name,
     slug: { _type: "slug", current: slug },
-    price: "TBD",
+    price,
     size: "TBD",
-    category: "dresses",
+    category,
     image: {
       _type: "image",
       asset: { _type: "reference", _ref: asset._id },
