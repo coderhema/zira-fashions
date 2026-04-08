@@ -98,28 +98,76 @@ export default function InstagramImportPage() {
     setUploading(true);
     setUploadDone(false);
 
+    // Optimistically mark all selected posts as uploading
     setStatuses((prev) => {
       const next = { ...prev };
       for (const p of toUpload) next[p.id] = { status: "uploading" };
       return next;
     });
 
-    for (const post of toUpload) {
-      try {
-        const res = await fetch("/api/upload-to-sanity", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ id: post.id, thumbnailUrl: post.thumbnailUrl, caption: post.caption }),
-        });
-        const data = await res.json();
-        if (!res.ok) throw new Error(data.error ?? `HTTP ${res.status}`);
-        setStatuses((prev) => ({ ...prev, [post.id]: { status: "success" } }));
-      } catch (e) {
-        setStatuses((prev) => ({
-          ...prev,
-          [post.id]: { status: "error", error: e instanceof Error ? e.message : "Upload failed" },
-        }));
+    try {
+      const res = await fetch("/api/upload-to-sanity", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ posts: toUpload }),
+      });
+
+      if (!res.ok || !res.body) {
+        // Non-streaming error (e.g. 400 validation failure)
+        const data: unknown = await res.json().catch(() => ({}));
+        throw new Error(
+          (data as { error?: string }).error ?? `HTTP ${res.status}`
+        );
       }
+
+      // Consume the NDJSON stream and update per-image status as events arrive
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = "";
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split("\n");
+        buffer = lines.pop() ?? "";
+
+        for (const line of lines) {
+          const trimmed = line.trim();
+          if (!trimmed) continue;
+          try {
+            const event = JSON.parse(trimmed) as {
+              id: string;
+              status: UploadStatus;
+              error?: string;
+            };
+            // Skip the "uploading" heartbeat — we already set it above
+            if (event.status !== "uploading") {
+              setStatuses((prev) => ({
+                ...prev,
+                [event.id]: { status: event.status, error: event.error },
+              }));
+            }
+          } catch (parseErr) {
+            console.error("Malformed NDJSON line from upload stream:", trimmed, parseErr);
+          }
+        }
+      }
+    } catch (e) {
+      // Mark any posts still showing "uploading" as failed
+      setStatuses((prev) => {
+        const next = { ...prev };
+        for (const p of toUpload) {
+          if (next[p.id]?.status === "uploading") {
+            next[p.id] = {
+              status: "error",
+              error: e instanceof Error ? e.message : "Upload failed",
+            };
+          }
+        }
+        return next;
+      });
     }
 
     setUploading(false);
