@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { buildWhatsAppContactUrl } from "@/lib/whatsapp";
 import { Search, Xmark, Menu, Whatsapp } from "iconoir-react";
@@ -39,9 +40,16 @@ export function Header() {
         scrolled ? "bg-surface shadow-[0_2px_20px_-4px_rgba(44,58,92,0.12)]" : "bg-transparent"
       }`}>
         <div className="max-w-screen-xl mx-auto h-full px-5 md:px-8 flex items-center justify-between">
-          <Link href="/" className={`font-display font-medium text-[22px] md:text-[26px] tracking-tight transition-colors duration-[180ms] ${
-            scrolled ? "text-text-primary" : "text-white"
-          }`}>Zira Fashions</Link>
+          <Link href="/" aria-label="Zira Fashions">
+            <Image
+              src="/logo.png"
+              alt="Zira Fashions"
+              width={40}
+              height={40}
+              className="h-9 md:h-10 w-auto object-contain"
+              priority
+            />
+          </Link>
 
           <nav className="hidden md:flex items-center gap-7" aria-label="Main navigation">
             {NAV.map((l) => (
