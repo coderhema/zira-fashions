@@ -13,7 +13,7 @@ import {
   Check,
   Xmark,
 } from "iconoir-react";
-import type { SanityProduct, ProductCategory } from "@/lib/sanity";
+import type { SanityProduct } from "@/lib/sanity";
 
 // ─── Types ──────────────────────────────────────────────────────────────────
 
