@@ -23,7 +23,12 @@ function extractItems(items: any[]): ScrapedPost[] {
     .filter((p) => p.id && p.thumbnailUrl);
 }
 
-async function fetchFromRapidApi(username: string): Promise<ScrapedPost[]> {
+interface FetchResult {
+  posts: ScrapedPost[];
+  paginationToken: string | null;
+}
+
+async function fetchFromRapidApi(username: string, paginationToken = ""): Promise<FetchResult> {
   const apiKey = process.env.RAPIDAPI_KEY;
   if (!apiKey) throw new Error("RAPIDAPI_KEY environment variable is not set");
 
@@ -32,7 +37,7 @@ async function fetchFromRapidApi(username: string): Promise<ScrapedPost[]> {
   const body = new URLSearchParams({
     username_or_url: `https://www.instagram.com/${username}`,
     amount: "20",
-    pagination_token: "",
+    pagination_token: paginationToken,
   });
 
   const res = await fetch(url, {
@@ -53,6 +58,7 @@ async function fetchFromRapidApi(username: string): Promise<ScrapedPost[]> {
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const data: any = await res.json();
+  console.log("RapidAPI raw response:", JSON.stringify(data, null, 2));
 
   const items: unknown[] =
     data?.data?.items ??
@@ -63,11 +69,18 @@ async function fetchFromRapidApi(username: string): Promise<ScrapedPost[]> {
     throw new Error("No reels found in RapidAPI response");
   }
 
-  return extractItems(items);
+  const nextToken: string | null =
+    data?.data?.pagination_token ??
+    data?.pagination_token ??
+    data?.next_max_id ??
+    null;
+
+  return { posts: extractItems(items), paginationToken: nextToken || null };
 }
 
 export async function GET(req: NextRequest) {
   const username = req.nextUrl.searchParams.get("username")?.trim() ?? "";
+  const paginationToken = req.nextUrl.searchParams.get("pagination_token") ?? "";
 
   if (!username) {
     return NextResponse.json({ error: "username is required" }, { status: 400 });
@@ -77,8 +90,11 @@ export async function GET(req: NextRequest) {
   }
 
   try {
-    const posts = await fetchFromRapidApi(username);
-    return NextResponse.json({ posts }, { headers: { "Cache-Control": "no-store" } });
+    const result = await fetchFromRapidApi(username, paginationToken);
+    return NextResponse.json(
+      { posts: result.posts, paginationToken: result.paginationToken },
+      { headers: { "Cache-Control": "no-store" } }
+    );
   } catch (e) {
     const msg = e instanceof Error ? e.message : "unknown error";
     return NextResponse.json(

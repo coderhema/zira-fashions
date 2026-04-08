@@ -9,6 +9,8 @@ import {
   XmarkCircle,
   WarningCircle,
   MediaImageList,
+  SelectWindow,
+  Cancel,
 } from "iconoir-react";
 
 interface Post {
@@ -27,6 +29,7 @@ interface PostStatus {
 export default function InstagramImportPage() {
   const [username, setUsername] = useState("");
   const [posts, setPosts] = useState<Post[]>([]);
+  const [paginationToken, setPaginationToken] = useState<string | null>(null);
   const [selected, setSelected] = useState<Set<string>>(new Set());
   const [statuses, setStatuses] = useState<Record<string, PostStatus>>({});
   const [fetching, setFetching] = useState(false);
@@ -34,27 +37,43 @@ export default function InstagramImportPage() {
   const [uploading, setUploading] = useState(false);
   const [uploadDone, setUploadDone] = useState(false);
 
-  const handleFetch = useCallback(async () => {
-    const name = username.trim();
-    if (!name) return;
+  const doFetch = useCallback(async (name: string, token: string | null, reset: boolean) => {
     setFetching(true);
     setFetchError(null);
-    setPosts([]);
-    setSelected(new Set());
-    setStatuses({});
-    setUploadDone(false);
+    if (reset) {
+      setPosts([]);
+      setSelected(new Set());
+      setStatuses({});
+      setUploadDone(false);
+      setPaginationToken(null);
+    }
 
     try {
-      const res = await fetch(`/api/scrape-instagram?username=${encodeURIComponent(name)}`);
+      let url = `/api/scrape-instagram?username=${encodeURIComponent(name)}`;
+      if (token) url += `&pagination_token=${encodeURIComponent(token)}`;
+      const res = await fetch(url);
       const data = await res.json();
       if (!res.ok) throw new Error(data.error ?? `HTTP ${res.status}`);
-      setPosts(data.posts ?? []);
+      setPosts((prev) => reset ? (data.posts ?? []) : [...prev, ...(data.posts ?? [])]);
+      setPaginationToken(data.paginationToken ?? null);
     } catch (e) {
       setFetchError(e instanceof Error ? e.message : "Failed to fetch posts");
     } finally {
       setFetching(false);
     }
-  }, [username]);
+  }, []);
+
+  const handleFetch = useCallback(() => {
+    const name = username.trim();
+    if (!name) return;
+    doFetch(name, null, true);
+  }, [username, doFetch]);
+
+  const handleLoadMore = useCallback(() => {
+    const name = username.trim();
+    if (!name || !paginationToken) return;
+    doFetch(name, paginationToken, false);
+  }, [username, paginationToken, doFetch]);
 
   const toggleSelect = useCallback((id: string) => {
     setSelected((prev) => {
@@ -64,11 +83,13 @@ export default function InstagramImportPage() {
     });
   }, []);
 
-  const toggleAll = useCallback(() => {
-    setSelected((prev) =>
-      prev.size === posts.length ? new Set() : new Set(posts.map((p) => p.id))
-    );
+  const selectAll = useCallback(() => {
+    setSelected(new Set(posts.map((p) => p.id)));
   }, [posts]);
+
+  const deselectAll = useCallback(() => {
+    setSelected(new Set());
+  }, []);
 
   const handleUpload = useCallback(async () => {
     const toUpload = posts.filter((p) => selected.has(p.id));
@@ -77,7 +98,6 @@ export default function InstagramImportPage() {
     setUploading(true);
     setUploadDone(false);
 
-    // Mark all selected as uploading
     setStatuses((prev) => {
       const next = { ...prev };
       for (const p of toUpload) next[p.id] = { status: "uploading" };
@@ -110,6 +130,9 @@ export default function InstagramImportPage() {
   const allSelected = posts.length > 0 && selected.size === posts.length;
   const uploadedCount = Object.values(statuses).filter((s) => s.status === "success").length;
   const errorCount = Object.values(statuses).filter((s) => s.status === "error").length;
+  const uploadingCount = Object.values(statuses).filter((s) => s.status === "uploading").length;
+  const progressTotal = uploadedCount + errorCount + uploadingCount;
+  const progressPercent = selectedCount > 0 ? Math.round(((uploadedCount + errorCount) / selectedCount) * 100) : 0;
 
   return (
     <div className="min-h-screen bg-background">
@@ -157,14 +180,9 @@ export default function InstagramImportPage() {
               disabled={fetching || !username.trim()}
               className="btn-primary flex-shrink-0 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
             >
-              {fetching ? (
+              {fetching && !paginationToken ? (
                 <span className="inline-flex items-center gap-2">
-                  <WarningCircle
-                    width={16}
-                    height={16}
-                    aria-hidden="true"
-                    className="animate-pulse"
-                  />
+                  <WarningCircle width={16} height={16} aria-hidden="true" className="animate-pulse" />
                   Fetching…
                 </span>
               ) : (
@@ -199,22 +217,40 @@ export default function InstagramImportPage() {
         {posts.length > 0 && (
           <section aria-label="Instagram posts">
             {/* Grid header */}
-            <div className="flex items-center justify-between mb-4">
-              <div className="flex items-center gap-3">
-                <label className="flex items-center gap-2 cursor-pointer select-none">
-                  <input
-                    type="checkbox"
-                    checked={allSelected}
-                    onChange={toggleAll}
-                    className="w-4 h-4 rounded border-border accent-primary cursor-pointer"
-                    aria-label="Select all posts"
-                  />
-                  <span className="font-sans text-small font-medium text-text-secondary">
-                    {allSelected ? "Deselect all" : "Select all"}
+            <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
+              <div className="flex flex-wrap items-center gap-3">
+                {/* Selected count badge */}
+                {selectedCount > 0 && (
+                  <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary/10 text-primary font-sans text-small font-semibold">
+                    <CheckCircle width={14} height={14} aria-hidden="true" />
+                    {selectedCount} selected
                   </span>
-                </label>
+                )}
+
+                {/* Select All */}
+                <button
+                  onClick={selectAll}
+                  disabled={allSelected || uploading}
+                  className="inline-flex items-center gap-1.5 font-sans text-small font-medium text-text-secondary hover:text-text-primary disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+                  aria-label="Select all posts"
+                >
+                  <SelectWindow width={15} height={15} aria-hidden="true" />
+                  Select All
+                </button>
+
+                {/* Deselect All */}
+                <button
+                  onClick={deselectAll}
+                  disabled={selectedCount === 0 || uploading}
+                  className="inline-flex items-center gap-1.5 font-sans text-small font-medium text-text-secondary hover:text-text-primary disabled:opacity-40 disabled:cursor-not-allowed transition-colors"
+                  aria-label="Deselect all posts"
+                >
+                  <Cancel width={15} height={15} aria-hidden="true" />
+                  Deselect All
+                </button>
+
                 <span className="font-sans text-small text-text-muted">
-                  {posts.length} post{posts.length !== 1 ? "s" : ""} · {selectedCount} selected
+                  {posts.length} post{posts.length !== 1 ? "s" : ""}
                 </span>
               </div>
 
@@ -228,7 +264,7 @@ export default function InstagramImportPage() {
               )}
             </div>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
               {posts.map((post) => {
                 const isSelected = selected.has(post.id);
                 const status = statuses[post.id];
@@ -332,39 +368,82 @@ export default function InstagramImportPage() {
                 );
               })}
             </div>
+
+            {/* Load More button */}
+            {paginationToken && (
+              <div className="mt-6 flex justify-center">
+                <button
+                  onClick={handleLoadMore}
+                  disabled={fetching || uploading}
+                  className="btn-primary disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                >
+                  {fetching ? (
+                    <span className="inline-flex items-center gap-2">
+                      <WarningCircle width={16} height={16} aria-hidden="true" className="animate-pulse" />
+                      Loading…
+                    </span>
+                  ) : (
+                    <span className="inline-flex items-center gap-2">
+                      <MediaImageList width={16} height={16} aria-hidden="true" />
+                      Load More
+                    </span>
+                  )}
+                </button>
+              </div>
+            )}
           </section>
         )}
 
         {/* Upload bar */}
-        {posts.length > 0 && (
-          <div className="sticky bottom-0 -mx-5 px-5 py-4 bg-surface/95 backdrop-blur border-t border-border flex items-center justify-between gap-4">
-            <p className="font-sans text-small text-text-secondary">
-              {selectedCount > 0
-                ? `${selectedCount} post${selectedCount !== 1 ? "s" : ""} selected`
-                : "Select posts to upload"}
-            </p>
-            <button
-              onClick={handleUpload}
-              disabled={uploading || selectedCount === 0}
-              className="btn-primary disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
-            >
-              {uploading ? (
-                <span className="inline-flex items-center gap-2">
-                  <WarningCircle
-                    width={16}
-                    height={16}
-                    aria-hidden="true"
-                    className="animate-pulse"
+        {selectedCount > 0 && (
+          <div className="sticky bottom-0 -mx-5 px-5 py-4 bg-surface/95 backdrop-blur border-t border-border space-y-3">
+            {/* Progress bar — only shown while uploading or after done */}
+            {(uploading || uploadDone) && progressTotal > 0 && (
+              <div className="space-y-1">
+                <div className="flex items-center justify-between">
+                  <span className="font-sans text-small text-text-secondary">
+                    {uploading ? `Uploading ${uploadedCount + errorCount} / ${selectedCount}…` : `${uploadedCount} uploaded${errorCount > 0 ? ` · ${errorCount} failed` : ""}`}
+                  </span>
+                  <span className="font-sans text-small text-text-muted">{progressPercent}%</span>
+                </div>
+                <div className="h-1.5 w-full bg-border rounded-full overflow-hidden">
+                  <div
+                    className="h-full rounded-full transition-all duration-300"
+                    style={{
+                      width: `${progressPercent}%`,
+                      backgroundColor: errorCount > 0 && !uploading ? "#B05A4A" : "#25855A",
+                    }}
+                    role="progressbar"
+                    aria-valuenow={progressPercent}
+                    aria-valuemin={0}
+                    aria-valuemax={100}
                   />
-                  Uploading {uploadedCount + errorCount}/{selectedCount}…
-                </span>
-              ) : (
-                <span className="inline-flex items-center gap-2">
-                  <CloudUpload width={16} height={16} aria-hidden="true" />
-                  Upload Selected to Sanity
-                </span>
-              )}
-            </button>
+                </div>
+              </div>
+            )}
+
+            <div className="flex items-center justify-between gap-4">
+              <p className="font-sans text-small text-text-secondary">
+                {selectedCount} post{selectedCount !== 1 ? "s" : ""} selected
+              </p>
+              <button
+                onClick={handleUpload}
+                disabled={uploading}
+                className="btn-primary disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+              >
+                {uploading ? (
+                  <span className="inline-flex items-center gap-2">
+                    <WarningCircle width={16} height={16} aria-hidden="true" className="animate-pulse" />
+                    Uploading {uploadedCount + errorCount}/{selectedCount}…
+                  </span>
+                ) : (
+                  <span className="inline-flex items-center gap-2">
+                    <CloudUpload width={16} height={16} aria-hidden="true" />
+                    Upload Selected to Sanity
+                  </span>
+                )}
+              </button>
+            </div>
           </div>
         )}
       </main>
