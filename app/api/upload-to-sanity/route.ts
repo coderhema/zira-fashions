@@ -3,6 +3,37 @@ import { serverClient } from "@/lib/sanity";
 
 export const runtime = "nodejs";
 
+interface PostInput {
+  id: string;
+  thumbnailUrl: string;
+  caption?: string;
+}
+
+// Allowlist of hostname suffixes accepted for thumbnailUrl.
+// These cover Instagram's CDN (cdninstagram.com) and Facebook's CDN (fbcdn.net)
+// which Instagram also uses for media delivery.
+const ALLOWED_CDN_SUFFIXES = [".cdninstagram.com", ".fbcdn.net"];
+
+function isAllowedThumbnailUrl(raw: string): boolean {
+  try {
+    const parsed = new URL(raw);
+    if (parsed.protocol !== "https:") return false;
+    return ALLOWED_CDN_SUFFIXES.some(
+      (suffix) => parsed.hostname === suffix.slice(1) || parsed.hostname.endsWith(suffix)
+    );
+  } catch {
+    return false;
+  }
+}
+
+// Progress event written to the NDJSON stream for each post.
+interface ProgressEvent {
+  id: string;
+  status: "uploading" | "success" | "error";
+  docId?: string;
+  error?: string;
+}
+
 function toSlug(caption: string, id: string): string {
   const base = caption
     .toLowerCase()
@@ -13,6 +44,50 @@ function toSlug(caption: string, id: string): string {
   return base ? `${base}-${suffix}` : `instagram-${suffix}`;
 }
 
+async function uploadPost(post: PostInput): Promise<ProgressEvent> {
+  const { id, thumbnailUrl, caption = "" } = post;
+
+  // Download image as buffer
+  const imgRes = await fetch(thumbnailUrl, { signal: AbortSignal.timeout(20_000) });
+  if (!imgRes.ok) throw new Error(`Image download failed for post ${id}: HTTP ${imgRes.status}`);
+  const buffer = Buffer.from(await imgRes.arrayBuffer());
+
+  // Upload image asset to Sanity
+  const asset = await serverClient.assets.upload("image", buffer, {
+    filename: `instagram-${id}.jpg`,
+    contentType: "image/jpeg",
+  });
+
+  const captionText = caption.trim();
+  const name = captionText.slice(0, 80) || `Instagram Post ${id}`;
+  const slug = toSlug(captionText, id);
+
+  // Create a draft product document using the existing product schema.
+  // Required fields are pre-filled with placeholder values so the document
+  // can be reviewed and completed in Sanity Studio.
+  const doc = {
+    _id: `drafts.instagram-${id}`,
+    _type: "product",
+    name,
+    slug: { _type: "slug", current: slug },
+    price: "TBD",
+    size: "TBD",
+    category: "dresses",
+    image: {
+      _type: "image",
+      asset: { _type: "reference", _ref: asset._id },
+    },
+    description: captionText || undefined,
+    isNew: true,
+    isSoldOut: false,
+    isKids: false,
+  };
+
+  await serverClient.createOrReplace(doc);
+
+  return { id, status: "success", docId: doc._id };
+}
+
 export async function POST(req: NextRequest) {
   let body: unknown;
   try {
@@ -21,68 +96,64 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: "Invalid JSON body" }, { status: 400 });
   }
 
-  const { id, thumbnailUrl, caption } = body as {
-    id?: string;
-    thumbnailUrl?: string;
-    caption?: string;
-  };
+  const { posts } = body as { posts?: unknown };
 
-  if (!id || !thumbnailUrl) {
-    return NextResponse.json({ error: "id and thumbnailUrl are required" }, { status: 400 });
+  if (!Array.isArray(posts) || posts.length === 0) {
+    return NextResponse.json({ error: "posts array is required" }, { status: 400 });
   }
 
-  // Download image as buffer
-  let buffer: Buffer;
-  try {
-    const imgRes = await fetch(thumbnailUrl, { signal: AbortSignal.timeout(20_000) });
-    if (!imgRes.ok) throw new Error(`HTTP ${imgRes.status}`);
-    buffer = Buffer.from(await imgRes.arrayBuffer());
-  } catch (e) {
-    return NextResponse.json(
-      { error: `Failed to download image: ${e instanceof Error ? e.message : "unknown"}` },
-      { status: 502 }
-    );
+  for (const p of posts) {
+    if (
+      typeof p !== "object" ||
+      p === null ||
+      typeof (p as Record<string, unknown>).id !== "string" ||
+      typeof (p as Record<string, unknown>).thumbnailUrl !== "string"
+    ) {
+      return NextResponse.json(
+        { error: "Each post must have a string id and thumbnailUrl" },
+        { status: 400 }
+      );
+    }
+    if (!isAllowedThumbnailUrl((p as Record<string, unknown>).thumbnailUrl as string)) {
+      return NextResponse.json(
+        { error: "thumbnailUrl must be an HTTPS URL from an Instagram CDN domain" },
+        { status: 400 }
+      );
+    }
   }
 
-  // Upload image asset to Sanity
-  try {
-    const asset = await serverClient.assets.upload("image", buffer, {
-      filename: `instagram-${id}.jpg`,
-      contentType: "image/jpeg",
-    });
+  const validPosts = posts as PostInput[];
+  const encoder = new TextEncoder();
 
-    const captionText = (caption ?? "").trim();
-    const name = captionText.slice(0, 80) || `Instagram Post ${id}`;
-    const slug = toSlug(captionText, id);
+  const stream = new ReadableStream({
+    async start(controller) {
+      const emit = (event: ProgressEvent) => {
+        controller.enqueue(encoder.encode(JSON.stringify(event) + "\n"));
+      };
 
-    // Create a draft product document using the existing product schema.
-    // Required fields are pre-filled with placeholder values so the document
-    // can be reviewed and completed in Sanity Studio.
-    const doc = {
-      _id: `drafts.instagram-${id}`,
-      _type: "product",
-      name,
-      slug: { _type: "slug", current: slug },
-      price: "TBD",
-      size: "TBD",
-      category: "dresses",
-      image: {
-        _type: "image",
-        asset: { _type: "reference", _ref: asset._id },
-      },
-      description: captionText || undefined,
-      isNew: true,
-      isSoldOut: false,
-      isKids: false,
-    };
+      for (const post of validPosts) {
+        emit({ id: post.id, status: "uploading" });
+        try {
+          const result = await uploadPost(post);
+          emit(result);
+        } catch (e) {
+          emit({
+            id: post.id,
+            status: "error",
+            error: e instanceof Error ? e.message : "Upload failed",
+          });
+        }
+      }
 
-    await serverClient.createOrReplace(doc);
+      controller.close();
+    },
+  });
 
-    return NextResponse.json({ success: true, docId: doc._id });
-  } catch (e) {
-    return NextResponse.json(
-      { error: `Sanity upload failed: ${e instanceof Error ? e.message : "unknown"}` },
-      { status: 500 }
-    );
-  }
+  return new Response(stream, {
+    headers: {
+      "Content-Type": "application/x-ndjson",
+      "Cache-Control": "no-store",
+      "X-Content-Type-Options": "nosniff",
+    },
+  });
 }
