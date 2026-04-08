@@ -4,6 +4,7 @@ import { getProductBySlug, getAllProducts } from "@/lib/sanity";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { PDPClient } from "@/components/product/PDPClient";
+import { ArrowLeft } from "iconoir-react";
 
 export async function generateStaticParams() {
   const products = await getAllProducts();
@@ -61,9 +62,7 @@ export default async function PDPPage({ params }: { params: { slug: string } }) 
         <PDPClient product={product} siteUrl={siteUrl} />
         <div className="max-w-screen-xl mx-auto px-5 py-12 border-t border-border">
           <a href="/shop" className="inline-flex items-center gap-2 font-sans font-medium text-[14px] text-text-secondary hover:text-text-primary transition-colors">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" aria-hidden="true">
-              <path d="M10 4 6 8l4 4" />
-            </svg>
+            <ArrowLeft width={16} height={16} aria-hidden="true" />
             Back to all products
           </a>
         </div>

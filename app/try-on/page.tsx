@@ -5,6 +5,7 @@ import { TryOnGridClient } from "@/components/tryon/TryOnGridClient";
 import { ProductCardSkeleton } from "@/components/product/ProductCard";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { Sparks } from "iconoir-react";
 
 export const metadata: Metadata = {
   title: "Virtual Try-On",
@@ -63,7 +64,7 @@ export default async function TryOnPage() {
           </Suspense>
           {display.length === 0 && (
             <div className="flex flex-col items-center justify-center py-20 gap-4">
-              <span className="text-5xl" aria-hidden="true">\u2726</span>
+              <Sparks width={48} height={48} aria-hidden="true" className="text-text-muted" />
               <p className="font-sans font-medium text-[16px] text-text-secondary">Try-on coming soon.</p>
               <a href="/shop" className="btn-primary mt-2">Browse the Shop</a>
             </div>

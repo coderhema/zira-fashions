@@ -3,6 +3,7 @@ import { useState, useRef, useCallback, type ChangeEvent, type DragEvent } from 
 import Image from "next/image";
 import type { SanityProduct } from "@/lib/sanity";
 import { buildWhatsAppOrderUrl } from "@/lib/whatsapp";
+import { Xmark } from "iconoir-react";
 
 type Status = "idle" | "validating" | "processing" | "done" | "error";
 interface Result { imageData: string; mimeType: string; }
@@ -84,9 +85,7 @@ export function TryOnModal({ product, siteUrl, onClose }: Props) {
             <h2 className="font-sans font-semibold text-[17px] text-text-primary leading-tight">{product.name}</h2>
           </div>
           <button type="button" onClick={onClose} className="w-8 h-8 flex items-center justify-center rounded-full text-text-muted hover:bg-surface-muted transition-colors" aria-label="Close">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-              <path d="M12.78 4.28a.75.75 0 00-1.06-1.06L8 6.94 4.28 3.22a.75.75 0 00-1.06 1.06L6.94 8l-3.72 3.72a.75.75 0 101.06 1.06L8 9.06l3.72 3.72a.75.75 0 101.06-1.06L9.06 8l3.72-3.72z" />
-            </svg>
+            <Xmark width={16} height={16} aria-hidden="true" />
           </button>
         </div>
 

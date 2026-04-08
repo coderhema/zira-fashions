@@ -4,6 +4,7 @@ import { useState } from "react";
 import type { SanityProduct } from "@/lib/sanity";
 import { TryOnModal } from "@/components/tryon/TryOnModal";
 import { buildWhatsAppOrderUrl, buildWhatsAppNotifyUrl } from "@/lib/whatsapp";
+import { Sparks } from "iconoir-react";
 
 function WaIcon() {
   return (
@@ -89,7 +90,7 @@ export function PDPClient({ product, siteUrl }: Props) {
                 <button type="button" onClick={() => setTryOnOpen(true)}
                   className="w-full h-[52px] rounded-pill border border-border font-sans font-semibold text-[15px] text-text-secondary hover:border-accent hover:text-accent transition-colors flex items-center justify-center gap-2"
                   aria-label={`Try on ${product.name} virtually`}>
-                  <span aria-hidden="true" className="text-[17px]">✦</span>Try On with AI
+                  <Sparks width={17} height={17} aria-hidden="true" />Try On with AI
                 </button>
               )}
             </div>

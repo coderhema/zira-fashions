@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { buildWhatsAppContactUrl } from "@/lib/whatsapp";
+import { DeliveryTruck, ChatBubble, Undo, Star } from "iconoir-react";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -44,13 +45,13 @@ export default function AboutPage() {
 
             <div className="flex flex-col gap-4">
               {[
-                { icon: "🚚", title: "Nationwide Delivery", body: "We deliver to every state in Nigeria. Fast, reliable, and trackable." },
-                { icon: "💬", title: "WhatsApp Orders", body: "Simply DM us on WhatsApp to place your order. No complicated checkout." },
-                { icon: "↩️", title: "Clear Return Policy", body: "We stand behind every item we sell. Questions? Just ask us." },
-                { icon: "⭐", title: "Trusted by 35K+", body: "Join thousands of satisfied customers who shop with Zira Fashions." },
+                { icon: <DeliveryTruck width={24} height={24} />, title: "Nationwide Delivery", body: "We deliver to every state in Nigeria. Fast, reliable, and trackable." },
+                { icon: <ChatBubble width={24} height={24} />, title: "WhatsApp Orders", body: "Simply DM us on WhatsApp to place your order. No complicated checkout." },
+                { icon: <Undo width={24} height={24} />, title: "Clear Return Policy", body: "We stand behind every item we sell. Questions? Just ask us." },
+                { icon: <Star width={24} height={24} />, title: "Trusted by 35K+", body: "Join thousands of satisfied customers who shop with Zira Fashions." },
               ].map(({ icon, title, body }) => (
                 <div key={title} className="flex gap-4 p-5 rounded-card bg-surface border border-border">
-                  <span className="text-2xl flex-shrink-0" aria-hidden="true">{icon}</span>
+                  <span className="flex-shrink-0 text-text-secondary" aria-hidden="true">{icon}</span>
                   <div>
                     <p className="font-sans font-semibold text-[15px] text-text-primary mb-1">{title}</p>
                     <p className="font-sans text-small text-text-secondary leading-editorial">{body}</p>
