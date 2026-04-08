@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { buildWhatsAppContactUrl } from "@/lib/whatsapp";
+import { Search, Xmark, Menu } from "iconoir-react";
 
 const NAV = [
   { label: "Shop",   href: "/shop" },
@@ -62,18 +63,14 @@ export function Header() {
             </a>
             <Link href="/search" aria-label="Search"
               className={`transition-colors hover:opacity-70 ${scrolled ? "text-text-secondary" : "text-white"}`}>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                <circle cx="11" cy="11" r="8" /><path d="m21 21-4.35-4.35" />
-              </svg>
+              <Search width={20} height={20} aria-hidden="true" />
             </Link>
           </div>
 
           <button type="button" onClick={() => setOpen(true)}
-            className={`md:hidden flex flex-col gap-[5px] p-2 transition-colors ${scrolled ? "text-text-primary" : "text-white hover:text-black"}`}
+            className={`md:hidden flex items-center justify-center p-2 transition-colors ${scrolled ? "text-text-primary" : "text-white hover:text-black"}`}
             aria-label="Open menu" aria-expanded={open}>
-            <span className="block w-6 h-[1.5px] bg-current rounded-full" />
-            <span className="block w-6 h-[1.5px] bg-current rounded-full" />
-            <span className="block w-4 h-[1.5px] bg-current rounded-full ml-auto" />
+            <Menu width={24} height={24} aria-hidden="true" />
           </button>
         </div>
       </header>
@@ -97,9 +94,7 @@ export function Header() {
         <div className="flex justify-end p-5">
           <button type="button" onClick={() => setOpen(false)}
             className="text-white/70 hover:text-white p-2 transition-colors" aria-label="Close menu">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-              <path d="M18 6 6 18M6 6l12 12" />
-            </svg>
+            <Xmark width={20} height={20} aria-hidden="true" />
           </button>
         </div>
         <nav className="flex flex-col px-8 pb-8 gap-1 flex-1" aria-label="Mobile navigation">

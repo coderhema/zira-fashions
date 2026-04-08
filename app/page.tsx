@@ -5,6 +5,7 @@ import { ProductGridClient }    from "@/components/product/ProductGridClient";
 import { ProductCardSkeleton }  from "@/components/product/ProductCard";
 import { Header }               from "@/components/layout/Header";
 import { Footer }               from "@/components/layout/Footer";
+import { DeliveryTruck, ChatBubble, Undo, Star, Sparks } from "iconoir-react";
 
 const CATS = [
   { label: "All",     href: "/shop"         },
@@ -52,7 +53,12 @@ export default async function HomePage() {
         {/* Trust bar */}
         <div className="bg-surface-muted border-y border-border">
           <div className="max-w-screen-xl mx-auto px-5 py-4 flex items-center justify-center gap-6 md:gap-10 flex-wrap">
-            {[["🚚","Nationwide Delivery"],["💬","WhatsApp Orders"],["↩️","Clear Policy"],["⭐","Trusted by 35K+"]].map(([icon, label]) => (
+            {[
+              { icon: <DeliveryTruck width={18} height={18} />, label: "Nationwide Delivery" },
+              { icon: <ChatBubble width={18} height={18} />, label: "WhatsApp Orders" },
+              { icon: <Undo width={18} height={18} />, label: "Clear Policy" },
+              { icon: <Star width={18} height={18} />, label: "Trusted by 35K+" },
+            ].map(({ icon, label }) => (
               <div key={label} className="flex items-center gap-2 font-sans text-small font-medium text-text-secondary whitespace-nowrap">
                 <span aria-hidden="true">{icon}</span>{label}
               </div>
@@ -112,7 +118,7 @@ export default async function HomePage() {
                 Upload a photo of yourself and our AI shows you how any piece looks on your body — before you send that WhatsApp message.
               </p>
             </div>
-            <Link href="/try-on" className="btn-primary flex-shrink-0 self-start md:self-auto">✦ Try It Now</Link>
+            <Link href="/try-on" className="btn-primary flex-shrink-0 self-start md:self-auto flex items-center gap-2"><Sparks width={16} height={16} aria-hidden="true" />Try It Now</Link>
           </div>
         </section>
 
