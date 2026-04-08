@@ -40,7 +40,7 @@ export function Header() {
       }`}>
         <div className="max-w-screen-xl mx-auto h-full px-5 md:px-8 flex items-center justify-between">
           <Link href="/" aria-label="Zira Fashions"
-            className={`font-serif text-2xl font-semibold tracking-wide transition-colors duration-[180ms] ${
+            className={`font-display font-medium text-[28px] tracking-tight transition-colors duration-[180ms] ${
               scrolled ? "text-text-primary" : "text-white"
             }`}>
             Zira Fashion
